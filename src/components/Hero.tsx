@@ -111,6 +111,14 @@ export default function Hero() {
                 {/* Bottom decorative line */}
                 <div className="mt-4 flex items-center justify-center">
                   <div className="w-16 h-0.5 bg-gradient-to-r from-blue-400 to-teal-400 rounded-full"></div>
+                  
+                  <a 
+                    href="#contact" 
+                    className="inline-flex items-center gap-2 px-6 py-3 mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-300"
+                  >
+                    <span>Book Free Consultation</span>
+                    <div className="w-2 h-2 bg-white rounded-full animate-bounce"></div>
+                  </a>
                 </div>
               </div>
                   >
@@ -120,13 +128,6 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-          </div>
-          
-          {/* Software Logos Section */}
-          <div className="mt-8 p-6 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-slate-200">
-            <p className="text-sm font-semibold text-slate-700 text-center mb-4">Trusted Software Partners</p>
-            <div className="grid grid-cols-3 gap-6 items-center">
-              <div className="text-center">
                 <div className="w-16 h-16 mx-auto mb-2 bg-blue-50 rounded-xl flex items-center justify-center shadow-sm">
                   <img 
                     src="https://cdn.worldvectorlogo.com/logos/quickbooks-1.svg" 
