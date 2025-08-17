@@ -156,57 +156,6 @@ export default function Services() {
         </div>
       </div>
       </section>
-                  alt="Xero"
-                  className="w-8 h-8 object-contain"
-                />
-                <span className="text-sm font-medium text-slate-700">Xero</span>
-              </div>
-              <div className="w-px h-6 bg-slate-300"></div>
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-gradient-to-br from-green-600 to-emerald-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">S50</span>
-                </div>
-                <span className="text-sm font-medium text-slate-700">Sage 50</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div className="grid md:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div 
-              key={index}
-              onClick={() => handleServiceClick(service)}
-              className="group relative rounded-2xl bg-white p-8 shadow-xl border border-slate-200 hover:shadow-2xl hover:border-blue-300 hover:scale-105 transition-all duration-500 overflow-hidden cursor-pointer"
-            >
-              {/* Subtle hover gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-indigo-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl pointer-events-none"></div>
-              
-              {/* Professional accents */}
-              <div className="absolute top-3 right-3 w-2 h-2 bg-blue-400 rotate-45 opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
-              <div className="absolute bottom-3 left-3 w-1.5 h-1.5 bg-indigo-500 rounded-full opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
-              
-              {/* Icon */}
-              <div className={`relative mb-6 w-16 h-16 rounded-lg bg-gradient-to-br ${service.color} flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-300`}>
-                <service.icon className="w-8 h-8 text-white" />
-              </div>
-              
-              <h3 className="relative text-xl font-bold text-slate-800 mb-3 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
-                {service.title}
-              </h3>
-              <p className="relative text-slate-600 leading-relaxed group-hover:text-slate-700 transition-colors">
-                {service.description}
-              </p>
-              
-              {/* Click indicator */}
-              <div className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-blue-600 text-sm font-bold">→</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-      </section>
       
       <ServiceModal 
         isOpen={isModalOpen}
