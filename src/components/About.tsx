@@ -55,21 +55,21 @@ export default function About() {
           </h2>
           
           <p className="text-lg text-slate-700 leading-relaxed mb-6">
-            I'm <strong>Kuldeep, CPA</strong>, Principal at <strong>Kempt CPA Professional Corporation</strong>. We serve Canadian individuals and businesses with straightforward, tech‑enabled accounting and proactive advice.
+            I'm <strong>Kuldeep, CPA</strong>, Principal at <strong>Kempt CPA Professional Corporation</strong>. We serve individuals and businesses with straightforward, tech‑enabled accounting and proactive advice.
           </p>
           
           <div className="space-y-4">
             <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-lg transition-shadow">
               <Award className="w-6 h-6 text-blue-500" />
-              <span className="font-medium text-slate-700">CPA Ontario / CPA Canada</span>
+              <span className="font-medium text-slate-700">CPA Ontario</span>
             </div>
             <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-lg transition-shadow">
               <Briefcase className="w-6 h-6 text-orange-500" />
-              <span className="font-medium text-slate-700">QuickBooks Online • Xero • Dext • Hubdoc</span>
+              <span className="font-medium text-slate-700">QuickBooks • Xero • Sage 50</span>
             </div>
             <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-lg transition-shadow">
               <MapPin className="w-6 h-6 text-teal-500" />
-              <span className="font-medium text-slate-700">Remote across Canada from Toronto, Ontario</span>
+              <span className="font-medium text-slate-700">Services in Brantford, Ontario</span>
             </div>
           </div>
           
@@ -77,7 +77,7 @@ export default function About() {
             <h3 className="font-bold text-slate-800 mb-2">✨ Why Choose Kempt CPA?</h3>
             <p className="text-slate-700 leading-relaxed">
               We combine traditional CPA expertise with modern technology and a client-first approach. 
-              Every engagement is tailored to help your business thrive in the Canadian market.
+              Every engagement is tailored to help your business thrive with personalized service and attention to detail.
             </p>
           </div>
         </div>

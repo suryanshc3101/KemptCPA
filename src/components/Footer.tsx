@@ -22,15 +22,13 @@ export default function Footer() {
             </h3>
           </div>
           <p className="text-slate-300 leading-relaxed">
-            Helping Canadian individuals and businesses stay compliant and grow with clean books, smart tax planning, and reliable support.
+            Helping individuals and businesses stay compliant and grow with clean books, smart tax planning, and reliable support.
           </p>
           <div className="mt-4 flex gap-2">
             <span className="px-3 py-1 text-xs bg-blue-500/20 text-blue-200 rounded-full border border-blue-500/30">
               CPA Ontario
             </span>
-            <span className="px-3 py-1 text-xs bg-teal-500/20 text-teal-200 rounded-full border border-teal-500/30">
-              Canada-wide
-            </span>
+            <span className="px-3 py-1 text-xs bg-teal-500/20 text-teal-200 rounded-full border border-teal-500/30">Brantford, Ontario</span>
           </div>
         </div>
         
@@ -48,11 +46,11 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-slate-400" />
-              <span>Toronto, Ontario, Canada</span>
+              <span>Services in Brantford, Ontario</span>
             </li>
             <li className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-slate-400" />
-              <span>Remote Services Nationwide</span>
+              <span>QuickBooks • Xero • Sage 50</span>
             </li>
           </ul>
         </div>
@@ -93,7 +91,7 @@ export default function Footer() {
           <p>© 2025 Kempt CPA Professional Corporation. All rights reserved.</p>
           <div className="flex items-center gap-2">
             <Sparkles className="w-3 h-3 text-blue-400" />
-            <span>Proudly serving Canadian businesses nationwide</span>
+            <span>Proudly serving businesses in Brantford, Ontario</span>
           </div>
         </div>
       </div>

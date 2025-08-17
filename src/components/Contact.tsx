@@ -48,7 +48,7 @@ export default function Contact() {
             <span className="text-sm font-semibold text-blue-600 tracking-wide uppercase">Get In Touch</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent mb-4">
-            Contact / Book a Call
+            Contact / Book 30 Minutes
           </h2>
           <p className="text-xl text-slate-600">
             We'll reply within 1 business day.
@@ -143,12 +143,12 @@ export default function Contact() {
             </p>
             <a 
               className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors group" 
-              href="https://calendly.com/kemptcpa/20min" 
+              href="https://calendly.com/kemptcpa/30min" 
               target="_blank" 
               rel="noreferrer"
             >
               <Calendar className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              calendly.com/kemptcpa/20min
+              calendly.com/kemptcpa/30min
             </a>
           </div>
           

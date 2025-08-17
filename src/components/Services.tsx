@@ -1,42 +1,42 @@
 import React from 'react';
-import { Shield, FileText, Calculator, TrendingUp, Users, Lightbulb } from 'lucide-react';
+import { Shield, FileText, Calculator, TrendingUp, Users, Lightbulb, ClipboardCheck } from 'lucide-react';
 
 const services = [
   {
-    icon: Shield,
+    icon: ClipboardCheck,
     color: 'from-blue-600 to-indigo-600',
-    title: "CRA Representation",
-    description: "We communicate with the Canada Revenue Agency on your behalf to resolve notices, questions, and compliance issues."
+    title: "Assistance in Finance audit reviews and Notice to reader engagements",
+    description: "Professional assistance with financial statement audits, reviews, and notice to reader engagements to meet your compliance requirements."
   },
   {
-    icon: FileText,
+    icon: Users,
     color: 'from-slate-600 to-blue-600',
-    title: "GST/HST Filings",
-    description: "Accurate, on‑time filings across provinces/territories, with guidance on registration and remittances."
+    title: "T1 & T2",
+    description: "Personal and corporate tax return preparation and filing, ensuring compliance with CRA requirements and maximizing deductions."
   },
   {
     icon: Calculator,
     color: 'from-slate-600 to-slate-700',
-    title: "Bookkeeping",
-    description: "Monthly reconciliations, financial statements, and year‑end ready records in QBO or Xero."
+    title: "Book Keeping (QuickBooks, Xero, Sage 50)",
+    description: "Complete bookkeeping services using QuickBooks, Xero, and Sage 50 with monthly reconciliations and financial reporting."
   },
   {
-    icon: TrendingUp,
+    icon: FileText,
     color: 'from-teal-600 to-emerald-600',
-    title: "Corporate Tax (T2)",
-    description: "Planning, preparation & filing, including CRA correspondence."
-  },
-  {
-    icon: Users,
-    color: 'from-teal-600 to-blue-600',
-    title: "Personal Tax (T1)",
-    description: "Employment, self‑employed, investment, rental, and foreign income disclosures."
+    title: "GST/HST",
+    description: "GST/HST registration, filing, and compliance management across all provinces and territories."
   },
   {
     icon: Lightbulb,
-    color: 'from-emerald-600 to-teal-600',
+    color: 'from-teal-600 to-blue-600',
     title: "Business Advisory",
-    description: "Cash flow, budgeting, KPIs, incorporation/structure, and growth planning."
+    description: "Strategic business advice, financial planning, cash flow management, and growth strategies to help your business succeed."
+  },
+  {
+    icon: Shield,
+    color: 'from-emerald-600 to-teal-600',
+    title: "CRA Representation",
+    description: "Professional representation and communication with the Canada Revenue Agency for audits, disputes, and compliance matters."
   }
 ];
 

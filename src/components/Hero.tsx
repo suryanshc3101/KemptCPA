@@ -28,7 +28,7 @@ export default function Hero() {
             Stress‑free Canadian accounting, tax, and assurance — by a CPA you can trust.
           </h1>
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-8">
-            Kempt CPA Professional Corporation helps individuals and businesses stay compliant with the CRA, keep clean books, and plan ahead.
+            Kempt CPA Professional Corporation helps individuals and businesses stay compliant, keep clean books, and plan ahead with QuickBooks, Xero, and Sage 50.
           </p>
           
           {/* Feature highlights */}
@@ -58,7 +58,7 @@ export default function Hero() {
               href="#contact" 
               className="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-slate-700 text-white font-semibold hover:from-blue-700 hover:to-slate-800 transition-all duration-300 text-center shadow-lg hover:shadow-xl hover:scale-105"
             >
-              Book a Free 20‑Minute Consult
+              Book a Free 30‑Minute Consult
             </a>
             <a 
               href="#services" 
@@ -70,8 +70,8 @@ export default function Hero() {
           
           <div className="flex flex-wrap gap-4 text-sm text-gray-500">
             <span className="px-3 py-1 bg-gradient-to-r from-blue-100 to-slate-100 text-blue-700 rounded-full border border-blue-200">CPA Ontario</span>
-            <span className="px-3 py-1 bg-gradient-to-r from-slate-100 to-blue-100 text-slate-700 rounded-full border border-slate-200">QuickBooks / Xero</span>
-            <span className="px-3 py-1 bg-gradient-to-r from-teal-100 to-blue-100 text-teal-700 rounded-full border border-teal-200">Remote across Canada</span>
+            <span className="px-3 py-1 bg-gradient-to-r from-slate-100 to-blue-100 text-slate-700 rounded-full border border-slate-200">QuickBooks • Xero • Sage 50</span>
+            <span className="px-3 py-1 bg-gradient-to-r from-teal-100 to-blue-100 text-teal-700 rounded-full border border-teal-200">Brantford, Ontario</span>
           </div>
         </div>
         
