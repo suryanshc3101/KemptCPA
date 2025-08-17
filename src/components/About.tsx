@@ -21,16 +21,16 @@ export default function About() {
         <div className="relative group order-2 md:order-1">
           <div className="aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-500">
             <img 
-              src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800" 
-              alt="Professional CPA accounting workspace"
+              src="https://images.pexels.com/photos/6863194/pexels-photo-6863194.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Professional CPA Kuldeep working on tax returns and financial statements"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/50 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/30"></div>
             <div className="absolute bottom-6 left-6 right-6">
               <h3 className="text-xl font-bold text-white mb-2">
                 Kuldeep, CPA
               </h3>
-              <p className="text-white/90 text-sm mb-3">Professional Excellence in Accounting</p>
+              <p className="text-white text-sm font-medium mb-3">Professional Excellence in Accounting</p>
               <div className="flex gap-2">
                 <Award className="w-5 h-5 text-yellow-400" />
                 <Award className="w-5 h-5 text-yellow-400" />
@@ -66,8 +66,8 @@ export default function About() {
           </div>
           
           <div className="mt-8 p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50 border border-slate-200 hover:shadow-lg transition-all duration-300">
-            <h3 className="font-bold text-slate-800 mb-2">✨ Why Choose Kempt CPA?</h3>
-            <p className="text-slate-700 leading-relaxed">
+            <h3 className="font-bold text-slate-900 mb-2">✨ Why Choose Kempt CPA?</h3>
+            <p className="text-slate-800 leading-relaxed font-medium">
               We combine traditional CPA expertise with modern technology and a client-first approach. 
               Every engagement is tailored to help your business thrive with personalized service and attention to detail.
             </p>

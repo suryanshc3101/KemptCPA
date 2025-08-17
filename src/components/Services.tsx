@@ -87,24 +87,22 @@ export default function Services() {
           <div className="mt-8 flex justify-center">
             <div className="flex items-center gap-8 p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-slate-200">
               <div className="flex items-center gap-3">
-                <img 
-                  src="https://cdn.worldvectorlogo.com/logos/quickbooks-1.svg" 
-                  alt="QuickBooks"
-                  className="w-8 h-8 object-contain"
-                />
+                <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">QB</span>
+                </div>
                 <span className="text-sm font-medium text-slate-700">QuickBooks</span>
               </div>
               <div className="w-px h-6 bg-slate-300"></div>
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">xero</span>
+                  <span className="text-white text-xs font-bold">Xero</span>
                 </div>
                 <span className="text-sm font-medium text-slate-700">Xero</span>
               </div>
               <div className="w-px h-6 bg-slate-300"></div>
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-gradient-to-r from-green-600 to-green-700 rounded flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">SAGE</span>
+                <div className="w-8 h-8 bg-gradient-to-r from-green-600 to-emerald-600 rounded flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">S50</span>
                 </div>
                 <span className="text-sm font-medium text-slate-700">Sage 50</span>
               </div>

@@ -78,14 +78,14 @@ export default function Contact() {
 
         <div className="relative mb-8">
           <img 
-            src="https://images.pexels.com/photos/6863332/pexels-photo-6863332.jpeg?auto=compress&cs=tinysrgb&w=1200" 
-            alt="Professional consultation meeting"
+            src="https://images.pexels.com/photos/6863378/pexels-photo-6863378.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+            alt="CPA consultation meeting with financial planning documents"
             className="w-full h-48 object-cover rounded-2xl shadow-lg"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent rounded-2xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/20 rounded-2xl"></div>
           <div className="absolute bottom-4 left-6">
-            <p className="text-white font-semibold">Ready to discuss your accounting needs?</p>
-            <p className="text-white/80 text-sm">Schedule your free 30-minute consultation today</p>
+            <p className="text-white font-bold text-lg">Ready to discuss your accounting needs?</p>
+            <p className="text-white text-sm font-medium">Schedule your free 30-minute consultation today</p>
           </div>
         </div>
           {/* Background gradient overlay */}

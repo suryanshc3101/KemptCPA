@@ -78,16 +78,16 @@ export default function Hero() {
         <div className="relative z-10">
           <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl hover:scale-105 transition-all duration-500">
             <img 
-              src="https://images.pexels.com/photos/6863183/pexels-photo-6863183.jpeg?auto=compress&cs=tinysrgb&w=800" 
-              alt="Professional accounting and tax services"
+              src="https://images.pexels.com/photos/6863525/pexels-photo-6863525.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Professional CPA working with financial documents and calculator"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/20"></div>
             <div className="absolute bottom-6 left-6 right-6">
               <h3 className="text-xl font-bold text-white mb-2">
                 Professional CPA Services
               </h3>
-              <p className="text-white/90 text-sm">Tax • Bookkeeping • Advisory • CRA Representation</p>
+              <p className="text-white text-sm font-medium">Tax • Bookkeeping • Advisory • CRA Representation</p>
             </div>
           </div>
           
