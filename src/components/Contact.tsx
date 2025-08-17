@@ -78,8 +78,8 @@ export default function Contact() {
 
         <div className="relative mb-8">
           <img 
-            src="https://images.pexels.com/photos/6863378/pexels-photo-6863378.jpeg?auto=compress&cs=tinysrgb&w=1200" 
-            alt="CPA consultation meeting with financial planning documents"
+            src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+            alt="Professional business consultation meeting with CPA discussing financial statements and tax planning"
             className="w-full h-48 object-cover rounded-2xl shadow-lg"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/20 rounded-2xl"></div>

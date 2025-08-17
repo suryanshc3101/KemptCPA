@@ -47,7 +47,7 @@ const serviceDetails = {
       "Management review and recommendations",
       "Final reporting and delivery"
     ],
-    image: "https://images.pexels.com/photos/6863349/pexels-photo-6863349.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200"
   },
   "T1 & T2": {
     overview: "Expert personal (T1) and corporate (T2) tax return preparation and strategic tax planning services. We ensure full compliance with Canada Revenue Agency requirements while maximizing available deductions and credits to minimize your tax liability.",
@@ -82,7 +82,7 @@ const serviceDetails = {
       "Monitor refund status and deadlines",
       "Handle any CRA follow-up correspondence"
     ],
-    image: "https://images.pexels.com/photos/6863183/pexels-photo-6863183.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    image: "https://images.pexels.com/photos/8919544/pexels-photo-8919544.jpeg?auto=compress&cs=tinysrgb&w=1200"
   },
   "Book Keeping (QuickBooks, Xero, Sage 50)": {
     overview: "Professional bookkeeping services utilizing industry-leading software platforms including QuickBooks Online/Desktop, Xero, and Sage 50. We maintain accurate, up-to-date financial records while providing real-time insights into your business performance.",
@@ -119,7 +119,7 @@ const serviceDetails = {
       "Annual cleanup and optimization",
       "Year-end preparation and reporting"
     ],
-    image: "https://images.pexels.com/photos/6863332/pexels-photo-6863332.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1200"
   },
   "GST/HST": {
     overview: "Comprehensive GST/HST services covering registration, filing, compliance, and optimization across all Canadian provinces and territories. We ensure full compliance while maximizing input tax credit recoveries and minimizing your administrative burden.",
@@ -155,7 +155,7 @@ const serviceDetails = {
       "Quarterly compliance health checks",
       "Handle any CRA inquiries or audits"
     ],
-    image: "https://images.pexels.com/photos/6863365/pexels-photo-6863365.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    image: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1200"
   },
   "Business Advisory": {
     overview: "Strategic business advisory services designed to accelerate growth, improve profitability, and build sustainable competitive advantages. We combine financial expertise with practical business experience to guide your decision-making and strategic planning.",
@@ -192,7 +192,7 @@ const serviceDetails = {
       "Regular performance reviews and adjustments",
       "Ongoing support and adjustments"
     ],
-    image: "https://images.pexels.com/photos/6863525/pexels-photo-6863525.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    image: "https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=1200"
   },
   "CRA Representation": {
     overview: "Expert representation and advocacy with the Canada Revenue Agency for audits, disputes, objections, and complex compliance matters. We protect your interests while working toward favorable resolutions that minimize financial impact and stress.",
@@ -229,7 +229,7 @@ const serviceDetails = {
       "Negotiate settlements and agreements",
       "Provide ongoing support and monitoring"
     ],
-    image: "https://images.pexels.com/photos/6863378/pexels-photo-6863378.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    image: "https://images.pexels.com/photos/5668882/pexels-photo-5668882.jpeg?auto=compress&cs=tinysrgb&w=1200"
   }
 };
 

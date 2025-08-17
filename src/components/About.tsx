@@ -21,8 +21,8 @@ export default function About() {
         <div className="relative group order-2 md:order-1">
           <div className="aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-500">
             <img 
-              src="https://images.pexels.com/photos/6863194/pexels-photo-6863194.jpeg?auto=compress&cs=tinysrgb&w=800" 
-              alt="Professional CPA Kuldeep working on tax returns and financial statements"
+              src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Professional male CPA in business attire reviewing financial documents and tax forms"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/30"></div>

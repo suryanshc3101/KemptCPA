@@ -78,8 +78,8 @@ export default function Hero() {
         <div className="relative z-10">
           <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl hover:scale-105 transition-all duration-500">
             <img 
-              src="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg?auto=compress&cs=tinysrgb&w=800" 
-              alt="Professional accounting workspace with calculator, documents, and financial reports"
+              src="https://images.pexels.com/photos/6289065/pexels-photo-6289065.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Professional CPA working on tax returns and financial statements at desk with calculator"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/30"></div>
