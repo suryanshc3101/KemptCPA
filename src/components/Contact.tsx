@@ -70,7 +70,10 @@ export default function Contact() {
           {/* Background gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 via-teal-50/20 to-indigo-50/30 rounded-3xl pointer-events-none"></div>
           
-          <div>
+        <form onSubmit={handleSubmit} className="relative grid gap-6 bg-gradient-to-br from-white to-slate-50 p-8 rounded-3xl border border-slate-200 shadow-2xl hover:shadow-3xl transition-shadow duration-500">
+          {/* Background gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 via-teal-50/20 to-indigo-50/30 rounded-3xl pointer-events-none"></div>
+          
           <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label className="relative block text-sm font-semibold text-slate-700 mb-2">Name *</label>
@@ -144,10 +147,8 @@ export default function Contact() {
               )}
             </span>
           </button>
-          </div>
         </form>
 
-        <form onSubmit={handleSubmit} className="relative grid gap-6 bg-gradient-to-br from-white to-slate-50 p-8 rounded-3xl border border-slate-200 shadow-2xl hover:shadow-3xl transition-shadow duration-500">
         <div className="mt-12 grid md:grid-cols-2 gap-6">
           <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-dashed border-blue-200 hover:border-blue-300 transition-colors">
             <Calendar className="w-8 h-8 text-blue-600 mb-3" />
