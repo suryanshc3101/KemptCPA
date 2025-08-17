@@ -55,7 +55,18 @@ export default function Contact() {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="relative grid gap-6 bg-gradient-to-br from-white to-slate-50 p-8 rounded-3xl border border-slate-200 shadow-2xl hover:shadow-3xl transition-shadow duration-500">
+        <div className="relative mb-8">
+          <img 
+            src="https://images.pexels.com/photos/6863332/pexels-photo-6863332.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+            alt="Professional consultation meeting"
+            className="w-full h-48 object-cover rounded-2xl shadow-lg"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent rounded-2xl"></div>
+          <div className="absolute bottom-4 left-6">
+            <p className="text-white font-semibold">Ready to discuss your accounting needs?</p>
+            <p className="text-white/80 text-sm">Schedule your free 30-minute consultation today</p>
+          </div>
+        </div>
           {/* Background gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 via-teal-50/20 to-indigo-50/30 rounded-3xl pointer-events-none"></div>
           
@@ -134,6 +145,7 @@ export default function Contact() {
           </button>
         </form>
 
+        <form onSubmit={handleSubmit} className="relative grid gap-6 bg-gradient-to-br from-white to-slate-50 p-8 rounded-3xl border border-slate-200 shadow-2xl hover:shadow-3xl transition-shadow duration-500">
         <div className="mt-12 grid md:grid-cols-2 gap-6">
           <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-dashed border-blue-200 hover:border-blue-300 transition-colors">
             <Calendar className="w-8 h-8 text-blue-600 mb-3" />

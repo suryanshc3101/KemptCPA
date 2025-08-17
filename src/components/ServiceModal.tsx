@@ -168,7 +168,16 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
       <div className="relative max-w-4xl w-full max-h-[90vh] overflow-y-auto bg-white rounded-3xl shadow-2xl">
         {/* Header */}
-        <div className={`relative p-8 bg-gradient-to-r ${service.color} text-white rounded-t-3xl`}>
+        <div className={`relative p-8 bg-gradient-to-r ${service.color} text-white rounded-t-3xl overflow-hidden`}>
+          {/* Background image for financial services */}
+          <div className="absolute inset-0 opacity-20">
+            <img 
+              src="https://images.pexels.com/photos/6801649/pexels-photo-6801649.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+              alt="Financial services background"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          
           <button 
             onClick={onClose}
             className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-colors"

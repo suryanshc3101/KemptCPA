@@ -80,8 +80,38 @@ export default function Services() {
             Services
           </h2>
           <p className="mt-4 text-xl text-slate-600 max-w-3xl mx-auto">
-          CRA Representation • GST/HST Filings • Accounting • Taxes • Business Advisory
+            CRA Representation • GST/HST Filings • Accounting • Taxes • Business Advisory
           </p>
+          
+          {/* Software Partners */}
+          <div className="mt-8 flex justify-center">
+            <div className="flex items-center gap-8 p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-slate-200">
+              <div className="flex items-center gap-3">
+                <img 
+                  src="https://cdn.worldvectorlogo.com/logos/quickbooks-1.svg" 
+                  alt="QuickBooks"
+                  className="w-8 h-8 object-contain"
+                />
+                <span className="text-sm font-medium text-slate-700">QuickBooks</span>
+              </div>
+              <div className="w-px h-6 bg-slate-300"></div>
+              <div className="flex items-center gap-3">
+                <img 
+                  src="https://cdn.worldvectorlogo.com/logos/xero-2.svg" 
+                  alt="Xero"
+                  className="w-8 h-8 object-contain"
+                />
+                <span className="text-sm font-medium text-slate-700">Xero</span>
+              </div>
+              <div className="w-px h-6 bg-slate-300"></div>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-gradient-to-br from-green-600 to-emerald-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">S50</span>
+                </div>
+                <span className="text-sm font-medium text-slate-700">Sage 50</span>
+              </div>
+            </div>
+          </div>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">

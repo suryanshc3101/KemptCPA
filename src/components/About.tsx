@@ -19,28 +19,24 @@ export default function About() {
       
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
         <div className="relative group order-2 md:order-1">
-          <div className="aspect-[4/3] w-full rounded-3xl bg-gradient-to-br from-slate-100 via-white to-blue-100 shadow-2xl overflow-hidden hover:scale-105 transition-transform duration-500">
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-500/10 to-blue-500/10"></div>
-            <div className="absolute inset-6 rounded-2xl bg-gradient-to-br from-white/95 to-slate-50/95 backdrop-blur-sm flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-slate-600 to-blue-600 flex items-center justify-center shadow-xl animate-pulse">
-                  <Briefcase className="w-12 h-12 text-white animate-pulse" />
-                </div>
-                <h3 className="text-xl font-bold bg-gradient-to-r from-slate-600 to-blue-600 bg-clip-text text-transparent mb-2">
-                  Kuldeep, CPA
-                </h3>
-                <p className="text-slate-600">Professional Excellence</p>
-                <div className="flex justify-center gap-2 mt-3">
-                  <Award className="w-5 h-5 text-yellow-500" />
-                  <Award className="w-5 h-5 text-yellow-500" />
-                  <Award className="w-5 h-5 text-yellow-500" />
-                </div>
+          <div className="aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-500">
+            <img 
+              src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Professional CPA accounting workspace"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/50 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 right-6">
+              <h3 className="text-xl font-bold text-white mb-2">
+                Kuldeep, CPA
+              </h3>
+              <p className="text-white/90 text-sm mb-3">Professional Excellence in Accounting</p>
+              <div className="flex gap-2">
+                <Award className="w-5 h-5 text-yellow-400" />
+                <Award className="w-5 h-5 text-yellow-400" />
+                <Award className="w-5 h-5 text-yellow-400" />
               </div>
             </div>
-            {/* Floating elements */}
-            <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-br from-amber-400 to-orange-400 rounded-full animate-bounce delay-1000"></div>
-            <div className="absolute -bottom-3 -left-3 w-8 h-8 bg-gradient-to-br from-teal-400 to-emerald-400 rounded-full animate-bounce delay-2000"></div>
-            <div className="absolute top-1/3 right-2 w-3 h-3 bg-gradient-to-br from-slate-400 to-blue-400 rounded-full animate-bounce delay-1500"></div>
           </div>
         </div>
         

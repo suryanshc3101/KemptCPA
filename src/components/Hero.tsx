@@ -76,22 +76,52 @@ export default function Hero() {
         </div>
         
         <div className="relative z-10">
-          <div className="relative aspect-[4/3] w-full rounded-3xl bg-white shadow-2xl border border-slate-200 overflow-hidden group hover:shadow-3xl hover:scale-105 transition-all duration-500">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-indigo-50/30"></div>
-            
-            {/* Professional corner accents */}
-            <div className="absolute top-4 right-4 w-3 h-3 bg-slate-400 rotate-45 opacity-60"></div>
-            <div className="absolute bottom-4 left-4 w-2 h-2 bg-blue-500 rounded-full opacity-70"></div>
-            
-            <div className="absolute inset-4 rounded-xl bg-white/95 backdrop-blur-sm flex items-center justify-center">
+          <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl hover:scale-105 transition-all duration-500">
+            <img 
+              src="https://images.pexels.com/photos/6863183/pexels-photo-6863183.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Professional accounting and tax services"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 right-6">
+              <h3 className="text-xl font-bold text-white mb-2">
+                Professional CPA Services
+              </h3>
+              <p className="text-white/90 text-sm">Tax • Bookkeeping • Advisory • CRA Representation</p>
+            </div>
+          </div>
+          
+          {/* Software Logos Section */}
+          <div className="mt-8 p-6 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-slate-200">
+            <p className="text-sm font-semibold text-slate-700 text-center mb-4">Trusted Software Partners</p>
+            <div className="grid grid-cols-3 gap-6 items-center">
               <div className="text-center">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-xl bg-gradient-to-br from-blue-600 to-slate-700 flex items-center justify-center shadow-xl">
-                  <Sparkles className="w-12 h-12 text-white animate-pulse" />
+                <div className="w-16 h-16 mx-auto mb-2 bg-blue-50 rounded-xl flex items-center justify-center shadow-sm">
+                  <img 
+                    src="https://cdn.worldvectorlogo.com/logos/quickbooks-1.svg" 
+                    alt="QuickBooks"
+                    className="w-10 h-10 object-contain"
+                  />
                 </div>
-                <h3 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-slate-700 bg-clip-text text-transparent">
-                  CRA Compliance Experts
-                </h3>
-                <p className="text-slate-600 mt-2">Tax • Bookkeeping • Advisory</p>
+                <span className="text-xs font-medium text-slate-600">QuickBooks</span>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 mx-auto mb-2 bg-teal-50 rounded-xl flex items-center justify-center shadow-sm">
+                  <img 
+                    src="https://cdn.worldvectorlogo.com/logos/xero-2.svg" 
+                    alt="Xero"
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
+                <span className="text-xs font-medium text-slate-600">Xero</span>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 mx-auto mb-2 bg-green-50 rounded-xl flex items-center justify-center shadow-sm">
+                  <div className="w-10 h-10 bg-gradient-to-br from-green-600 to-emerald-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">S50</span>
+                  </div>
+                </div>
+                <span className="text-xs font-medium text-slate-600">Sage 50</span>
               </div>
             </div>
           </div>
