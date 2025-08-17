@@ -121,36 +121,27 @@ export default function Hero() {
                   </a>
                 </div>
               </div>
-                  >
-                    <span>Book Free Consultation</span>
-                    <div className="w-2 h-2 bg-white rounded-full animate-bounce"></div>
-                  </a>
+            
+            {/* Software Integration Partners */}
+            <div className="flex items-center justify-center mt-8">
+              <div className="flex items-center justify-center gap-6 p-4 bg-white/90 backdrop-blur-sm rounded-2xl border border-white/40 shadow-lg">
+                <div className="text-center">
+                  <div className="w-12 h-12 mx-auto mb-2 bg-blue-600 rounded-lg flex items-center justify-center shadow-sm">
+                    <span className="text-white text-xs font-bold">QB</span>
+                  </div>
+                  <span className="text-xs font-medium text-slate-600">QuickBooks</span>
                 </div>
-              </div>
-            </div>
-                <div className="w-16 h-16 mx-auto mb-2 bg-blue-50 rounded-xl flex items-center justify-center shadow-sm">
-                  <img 
-                    src="https://cdn.worldvectorlogo.com/logos/quickbooks-1.svg" 
-                    alt="QuickBooks"
-                    className="w-10 h-10 object-contain"
-                  />
+                <div className="w-px h-12 bg-slate-300"></div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-sm">
+                    <span className="text-white text-xs font-bold">Xero</span>
+                  </div>
+                  <span className="text-xs font-medium text-slate-600">Xero</span>
                 </div>
-                <span className="text-xs font-medium text-slate-600">QuickBooks</span>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-sm">
-                  <span className="text-white text-sm font-bold">xero</span>
-                </div>
-                <span className="text-xs font-medium text-slate-600">Xero</span>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-2 bg-gradient-to-r from-green-600 to-green-700 rounded-xl flex items-center justify-center shadow-sm">
-                  <span className="text-white text-sm font-bold">SAGE</span>
-                </div>
-                <span className="text-xs font-medium text-slate-600">Sage 50</span>
-              </div>
-            </div>
-          </div>
+                <div className="w-px h-12 bg-slate-300"></div>
+                <div className="text-center">
+                  <div className="w-12 h-12 mx-auto mb-2 bg-gradient-to-r from-green-600 to-emerald-600 rounded-lg flex items-center justify-center shadow-sm">
+                    <span className="text-white text-xs font-bold">S50</span>
         </div>
       </div>
     </section>
