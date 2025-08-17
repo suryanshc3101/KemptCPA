@@ -142,15 +142,14 @@ export default function Hero() {
                 <div className="text-center">
                   <div className="w-12 h-12 mx-auto mb-2 bg-gradient-to-r from-green-600 to-emerald-600 rounded-lg flex items-center justify-center shadow-sm">
                     <span className="text-white text-xs font-bold">S50</span>
+                  </div>
+                  <span className="text-xs font-medium text-slate-600">Sage 50</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
-}
-}
-  )
-}
-  )
-}
-  )
 }
