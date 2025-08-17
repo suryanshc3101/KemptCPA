@@ -106,20 +106,14 @@ export default function Hero() {
                 <span className="text-xs font-medium text-slate-600">QuickBooks</span>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-2 bg-teal-50 rounded-xl flex items-center justify-center shadow-sm">
-                  <img 
-                    src="https://cdn.worldvectorlogo.com/logos/xero-2.svg" 
-                    alt="Xero"
-                    className="w-10 h-10 object-contain"
-                  />
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-sm">
+                  <span className="text-white text-sm font-bold">xero</span>
                 </div>
                 <span className="text-xs font-medium text-slate-600">Xero</span>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-2 bg-green-50 rounded-xl flex items-center justify-center shadow-sm">
-                  <div className="w-10 h-10 bg-gradient-to-br from-green-600 to-emerald-600 rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xs font-bold">S50</span>
-                  </div>
+                <div className="w-16 h-16 mx-auto mb-2 bg-gradient-to-r from-green-600 to-green-700 rounded-xl flex items-center justify-center shadow-sm">
+                  <span className="text-white text-sm font-bold">SAGE</span>
                 </div>
                 <span className="text-xs font-medium text-slate-600">Sage 50</span>
               </div>

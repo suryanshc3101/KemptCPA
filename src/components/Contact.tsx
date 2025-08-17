@@ -5,6 +5,8 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
+    countryCode: '+1',
     business: '',
     software: '',
     message: ''
@@ -30,6 +32,17 @@ export default function Contact() {
     });
   };
 
+  const countryCodes = [
+    { code: '+1', country: 'Canada/US', flag: '🇨🇦' },
+    { code: '+44', country: 'UK', flag: '🇬🇧' },
+    { code: '+91', country: 'India', flag: '🇮🇳' },
+    { code: '+61', country: 'Australia', flag: '🇦🇺' },
+    { code: '+33', country: 'France', flag: '🇫🇷' },
+    { code: '+49', country: 'Germany', flag: '🇩🇪' },
+    { code: '+86', country: 'China', flag: '🇨🇳' },
+    { code: '+81', country: 'Japan', flag: '🇯🇵' },
+  ];
+
   return (
     <section id="contact" className="relative py-20 bg-gradient-to-b from-slate-50/50 via-blue-50/30 to-indigo-50/20 overflow-hidden">
       {/* Background decoration */}
@@ -53,6 +66,14 @@ export default function Contact() {
           <p className="text-xl text-slate-600">
             We'll reply within 1 business day.
           </p>
+          
+          {/* Form Service Integration Notice */}
+          <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-xl">
+            <p className="text-sm text-blue-800">
+              💡 <strong>Form Integration Suggestion:</strong> Connect this form with <strong>Formspree</strong> (formspree.io), 
+              <strong>Netlify Forms</strong>, or <strong>EmailJS</strong> to receive submissions directly to your email.
+            </p>
+          </div>
         </div>
 
         <div className="relative mb-8">
@@ -97,6 +118,34 @@ export default function Contact() {
               />
             </div>
           </div>
+          
+          {/* Phone Number with Country Code */}
+          <div>
+            <label className="relative block text-sm font-semibold text-slate-700 mb-2">Phone Number</label>
+            <div className="flex gap-2">
+              <select 
+                name="countryCode" 
+                value={formData.countryCode}
+                onChange={(e) => setFormData({...formData, countryCode: e.target.value})}
+                className="relative rounded-xl border-2 border-slate-200 px-3 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300 text-sm"
+              >
+                {countryCodes.map((country) => (
+                  <option key={country.code} value={country.code}>
+                    {country.flag} {country.code}
+                  </option>
+                ))}
+              </select>
+              <input 
+                name="phone" 
+                type="tel" 
+                placeholder="555-123-4567"
+                value={formData.phone}
+                onChange={handleChange}
+                className="relative flex-1 rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300"
+              />
+            </div>
+          </div>
+          
           <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label className="relative block text-sm font-semibold text-slate-700 mb-2">Business Name</label>
@@ -191,9 +240,20 @@ export default function Contact() {
         <div className="mt-8 text-center text-slate-500">
           <p className="flex items-center justify-center gap-2">
             <Sparkles className="w-4 h-4 text-blue-400" />
-            Schedule your free consultation: {' '}
+            Schedule your free consultation: 
             We're here to help your business succeed
           </p>
+          
+          {/* Integration Instructions */}
+          <div className="mt-6 p-6 bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl border border-slate-200">
+            <h4 className="font-semibold text-slate-800 mb-2">📋 Form Integration Options:</h4>
+            <div className="text-sm text-slate-600 space-y-1">
+              <p><strong>Formspree:</strong> Easy setup, free tier available - formspree.io</p>
+              <p><strong>Netlify Forms:</strong> Built-in if hosting on Netlify - netlify.com/forms</p>
+              <p><strong>EmailJS:</strong> Send emails directly from frontend - emailjs.com</p>
+              <p><strong>Google Forms:</strong> Free alternative with Google Sheets integration</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

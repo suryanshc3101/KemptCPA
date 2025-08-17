@@ -96,8 +96,66 @@ export default function Services() {
               </div>
               <div className="w-px h-6 bg-slate-300"></div>
               <div className="flex items-center gap-3">
-                <img 
-                  src="https://cdn.worldvectorlogo.com/logos/xero-2.svg" 
+                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">xero</span>
+                </div>
+                <span className="text-sm font-medium text-slate-700">Xero</span>
+              </div>
+              <div className="w-px h-6 bg-slate-300"></div>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-gradient-to-r from-green-600 to-green-700 rounded flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">SAGE</span>
+                </div>
+                <span className="text-sm font-medium text-slate-700">Sage 50</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <div 
+              key={index}
+              onClick={() => handleServiceClick(service)}
+              className="group relative rounded-2xl bg-white p-8 shadow-xl border border-slate-200 hover:shadow-2xl hover:border-blue-300 hover:scale-105 transition-all duration-500 overflow-hidden cursor-pointer"
+            >
+              {/* Enhanced hover effects */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-indigo-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl pointer-events-none"></div>
+              
+              {/* Animated background elements */}
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400/10 to-indigo-400/10 rounded-full -translate-y-10 translate-x-10 group-hover:translate-y-0 group-hover:translate-x-0 transition-transform duration-700"></div>
+              <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-br from-teal-400/10 to-emerald-400/10 rounded-full translate-y-8 -translate-x-8 group-hover:translate-y-0 group-hover:translate-x-0 transition-transform duration-700"></div>
+              
+              {/* Professional accents */}
+              <div className="absolute top-3 right-3 w-2 h-2 bg-blue-400 rotate-45 opacity-0 group-hover:opacity-60 transition-all duration-300 group-hover:animate-pulse"></div>
+              <div className="absolute bottom-3 left-3 w-1.5 h-1.5 bg-indigo-500 rounded-full opacity-0 group-hover:opacity-70 transition-all duration-300 group-hover:animate-bounce"></div>
+              
+              {/* Icon with enhanced animation */}
+              <div className={`relative mb-6 w-16 h-16 rounded-lg bg-gradient-to-br ${service.color} flex items-center justify-center shadow-md group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
+                <service.icon className="w-8 h-8 text-white group-hover:animate-pulse" />
+              </div>
+              
+              <h3 className="relative text-xl font-bold text-slate-800 mb-3 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+                {service.title}
+              </h3>
+              <p className="relative text-slate-600 leading-relaxed group-hover:text-slate-700 transition-colors line-clamp-3">
+                {service.description}
+              </p>
+              
+              {/* Enhanced click indicator */}
+              <div className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-gradient-to-r from-blue-500/10 to-indigo-500/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110">
+                <span className="text-blue-600 text-sm font-bold animate-bounce">→</span>
+              </div>
+              
+              {/* Click instruction */}
+              <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-70 transition-opacity duration-300">
+                <span className="text-xs text-slate-500 bg-white/80 px-2 py-1 rounded-full">Click for details</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      </section>
                   alt="Xero"
                   className="w-8 h-8 object-contain"
                 />
