@@ -60,10 +60,6 @@ export default function About() {
           
           <div className="space-y-4">
             <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-lg transition-shadow">
-              <Award className="w-6 h-6 text-blue-500" />
-              <span className="font-medium text-slate-700">CPA Ontario</span>
-            </div>
-            <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-lg transition-shadow">
               <Briefcase className="w-6 h-6 text-orange-500" />
               <span className="font-medium text-slate-700">QuickBooks • Xero • Sage 50</span>
             </div>

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Shield, FileText, Calculator, TrendingUp, Users, Lightbulb, ClipboardCheck } from 'lucide-react';
+import ServiceModal from './ServiceModal';
 
 const services = [
   {
@@ -41,8 +42,22 @@ const services = [
 ];
 
 export default function Services() {
+  const [selectedService, setSelectedService] = useState<typeof services[0] | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleServiceClick = (service: typeof services[0]) => {
+    setSelectedService(service);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedService(null);
+  };
+
   return (
-    <section id="services" className="relative py-20 bg-gradient-to-b from-white via-blue-50/40 to-slate-50/60 overflow-hidden">
+    <>
+      <section id="services" className="relative py-20 bg-gradient-to-b from-white via-blue-50/40 to-slate-50/60 overflow-hidden">
       {/* Subtle background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Professional diagonal lines */}
@@ -73,7 +88,8 @@ export default function Services() {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group relative rounded-2xl bg-white p-8 shadow-xl border border-slate-200 hover:shadow-2xl hover:border-blue-300 hover:scale-105 transition-all duration-500 overflow-hidden"
+              onClick={() => handleServiceClick(service)}
+              className="group relative rounded-2xl bg-white p-8 shadow-xl border border-slate-200 hover:shadow-2xl hover:border-blue-300 hover:scale-105 transition-all duration-500 overflow-hidden cursor-pointer"
             >
               {/* Subtle hover gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-indigo-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl pointer-events-none"></div>
@@ -93,10 +109,22 @@ export default function Services() {
               <p className="relative text-slate-600 leading-relaxed group-hover:text-slate-700 transition-colors">
                 {service.description}
               </p>
+              
+              {/* Click indicator */}
+              <div className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                <span className="text-blue-600 text-sm font-bold">→</span>
+              </div>
             </div>
           ))}
         </div>
       </div>
-    </section>
+      </section>
+      
+      <ServiceModal 
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        service={selectedService}
+      />
+    </>
   );
 }
