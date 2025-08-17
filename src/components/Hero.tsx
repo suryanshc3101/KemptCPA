@@ -78,16 +78,47 @@ export default function Hero() {
         <div className="relative z-10">
           <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl hover:scale-105 transition-all duration-500">
             <img 
-              src="https://images.pexels.com/photos/6863525/pexels-photo-6863525.jpeg?auto=compress&cs=tinysrgb&w=800" 
-              alt="Professional CPA working with financial documents and calculator"
+              src="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Professional accounting workspace with calculator, documents, and financial reports"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/20"></div>
-            <div className="absolute bottom-6 left-6 right-6">
-              <h3 className="text-xl font-bold text-white mb-2">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/30"></div>
+            
+            {/* Centered text with enhanced effects */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center px-6 py-8 bg-black/40 backdrop-blur-md rounded-2xl border border-white/20 shadow-2xl">
+                {/* Decorative elements */}
+                <div className="flex items-center justify-center mb-4">
+                  <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-blue-400 to-transparent mr-3"></div>
+                  <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse shadow-lg shadow-blue-400/50"></div>
+                  <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-blue-400 to-transparent ml-3"></div>
+                </div>
+                
+                <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-4 bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text">
                 Professional CPA Services
-              </h3>
-              <p className="text-white text-sm font-medium">Tax • Bookkeeping • Advisory • CRA Representation</p>
+                </h3>
+                
+                <div className="flex items-center justify-center gap-2 mb-4">
+                  <span className="px-3 py-1 bg-blue-500/20 text-blue-200 rounded-full text-sm font-medium border border-blue-400/30 backdrop-blur-sm">Tax</span>
+                  <span className="px-3 py-1 bg-teal-500/20 text-teal-200 rounded-full text-sm font-medium border border-teal-400/30 backdrop-blur-sm">Bookkeeping</span>
+                </div>
+                
+                <div className="flex items-center justify-center gap-2">
+                  <span className="px-3 py-1 bg-indigo-500/20 text-indigo-200 rounded-full text-sm font-medium border border-indigo-400/30 backdrop-blur-sm">Advisory</span>
+                  <span className="px-3 py-1 bg-emerald-500/20 text-emerald-200 rounded-full text-sm font-medium border border-emerald-400/30 backdrop-blur-sm">CRA Rep</span>
+                </div>
+                
+                {/* Bottom decorative line */}
+                <div className="mt-4 flex items-center justify-center">
+                  <div className="w-16 h-0.5 bg-gradient-to-r from-blue-400 to-teal-400 rounded-full"></div>
+                </div>
+              </div>
+                  >
+                    <span>Book Free Consultation</span>
+                    <div className="w-2 h-2 bg-white rounded-full animate-bounce"></div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           
