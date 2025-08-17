@@ -70,6 +70,7 @@ export default function Contact() {
           {/* Background gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 via-teal-50/20 to-indigo-50/30 rounded-3xl pointer-events-none"></div>
           
+          <div>
           <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label className="relative block text-sm font-semibold text-slate-700 mb-2">Name *</label>
@@ -143,6 +144,7 @@ export default function Contact() {
               )}
             </span>
           </button>
+          </div>
         </form>
 
         <form onSubmit={handleSubmit} className="relative grid gap-6 bg-gradient-to-br from-white to-slate-50 p-8 rounded-3xl border border-slate-200 shadow-2xl hover:shadow-3xl transition-shadow duration-500">
