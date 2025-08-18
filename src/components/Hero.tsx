@@ -4,6 +4,21 @@ import { Sparkles, TrendingUp, Shield, Building2 } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-slate-50/50 to-indigo-50/30 min-h-screen flex items-center">
+      {/* Company Name - Top Left */}
+      <div className="absolute top-6 left-6 z-20">
+        <div className="flex items-center gap-3">
+          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-slate-700 flex items-center justify-center shadow-lg">
+            <Building2 className="w-6 h-6 text-white" />
+          </div>
+          <div>
+            <h1 className="text-xl font-bold bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent">
+              KemptCPA
+            </h1>
+            <p className="text-xs text-slate-600 font-medium">Professional Corporation</p>
+          </div>
+        </div>
+      </div>
+      
       {/* Floating orbs background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Professional grid pattern */}
@@ -117,26 +132,32 @@ export default function Hero() {
             
             {/* Software Integration Partners */}
             <div className="absolute bottom-4 left-4 right-4">
-              <div className="flex items-center justify-center gap-4 p-3 bg-gradient-to-r from-black/60 to-black/40 backdrop-blur-md rounded-xl border border-white/20">
+              <div className="flex items-center justify-center gap-6 p-4 bg-gradient-to-r from-black/80 to-black/60 backdrop-blur-md rounded-xl border border-white/20">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xs font-bold">QB</span>
-                  </div>
-                  <span className="text-white text-xs font-semibold">QuickBooks</span>
+                  <img 
+                    src="https://logos-world.net/wp-content/uploads/2021/03/QuickBooks-Logo.png" 
+                    alt="QuickBooks" 
+                    className="w-8 h-8 object-contain bg-white rounded p-1"
+                  />
+                  <span className="text-white text-sm font-medium">QuickBooks</span>
                 </div>
-                <div className="w-px h-4 bg-white/30"></div>
+                <div className="w-px h-6 bg-white/30"></div>
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xs font-bold">X</span>
-                  </div>
-                  <span className="text-white text-xs font-semibold">Xero</span>
+                  <img 
+                    src="https://logos-world.net/wp-content/uploads/2021/03/Xero-Logo.png" 
+                    alt="Xero" 
+                    className="w-8 h-8 object-contain bg-white rounded p-1"
+                  />
+                  <span className="text-white text-sm font-medium">Xero</span>
                 </div>
-                <div className="w-px h-4 bg-white/30"></div>
+                <div className="w-px h-6 bg-white/30"></div>
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-gradient-to-r from-green-600 to-emerald-600 rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xs font-bold">S</span>
-                  </div>
-                  <span className="text-white text-xs font-semibold">Sage 50</span>
+                  <img 
+                    src="https://logos-world.net/wp-content/uploads/2020/11/Sage-Logo.png" 
+                    alt="Sage 50" 
+                    className="w-8 h-8 object-contain bg-white rounded p-1"
+                  />
+                  <span className="text-white text-sm font-medium">Sage 50</span>
                 </div>
               </div>
             </div>
