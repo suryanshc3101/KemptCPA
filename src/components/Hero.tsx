@@ -4,19 +4,6 @@ import { Sparkles, TrendingUp, Shield, Building2 } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-slate-50/50 to-indigo-50/30 min-h-screen flex items-center">
-      {/* Logo in top left */}
-      <div className="absolute top-6 left-6 z-20">
-        <div className="flex items-center gap-3 p-3 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-slate-200">
-          <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center">
-            <Building2 className="w-6 h-6 text-white" />
-          </div>
-          <div>
-            <h3 className="font-bold text-slate-900 text-sm leading-tight">KEMPTCPA</h3>
-            <p className="text-xs text-slate-600 leading-tight">Professional Corporation</p>
-          </div>
-        </div>
-      </div>
-      
       {/* Floating orbs background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Professional grid pattern */}
