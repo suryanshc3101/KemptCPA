@@ -73,12 +73,6 @@ export default function Hero() {
           
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <a 
-              href="#contact" 
-              className="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-slate-700 text-white font-semibold hover:from-blue-700 hover:to-slate-800 transition-all duration-300 text-center shadow-lg hover:shadow-xl hover:scale-105"
-            >
-              Book a Free 30‑Minute Consult
-            </a>
-            <a 
               href="#services" 
               className="px-8 py-4 rounded-xl border-2 border-blue-300 font-semibold hover:border-blue-600 hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 transition-all duration-300 text-center text-slate-700 hover:scale-105"
             >
