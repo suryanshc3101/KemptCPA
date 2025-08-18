@@ -1,9 +1,22 @@
 import React from 'react';
-import { Sparkles, TrendingUp, Shield } from 'lucide-react';
+import { Sparkles, TrendingUp, Shield, Building2 } from 'lucide-react';
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-slate-50/50 to-indigo-50/30 min-h-screen flex items-center">
+      {/* Logo in top left */}
+      <div className="absolute top-6 left-6 z-20">
+        <div className="flex items-center gap-3 p-3 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-slate-200">
+          <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center">
+            <Building2 className="w-6 h-6 text-white" />
+          </div>
+          <div>
+            <h3 className="font-bold text-slate-900 text-sm leading-tight">KEMPTCPA</h3>
+            <p className="text-xs text-slate-600 leading-tight">Professional Corporation</p>
+          </div>
+        </div>
+      </div>
+      
       {/* Floating orbs background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Professional grid pattern */}
@@ -25,7 +38,7 @@ export default function Hero() {
             Professional CPA Services
           </span>
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent mb-6">
-            Stress‑free Canadian accounting, tax, and assurance — by a CPA you can trust.
+            Stress-free Canadian accounting, tax, and assurance — by a CPA you can trust.
           </h1>
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-8">
             Kempt CPA Professional Corporation helps individuals and businesses stay compliant, keep clean books, and plan ahead with QuickBooks, Xero, and Sage 50.
@@ -116,27 +129,27 @@ export default function Hero() {
             </div>
             
             {/* Software Integration Partners */}
-            <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
-              <div className="flex items-center justify-center gap-6 p-4 bg-white/90 backdrop-blur-sm rounded-2xl border border-white/40 shadow-lg">
-                <div className="text-center">
-                  <div className="w-12 h-12 mx-auto mb-2 bg-blue-600 rounded-lg flex items-center justify-center shadow-sm">
+            <div className="absolute bottom-4 left-4 right-4">
+              <div className="flex items-center justify-center gap-4 p-3 bg-gradient-to-r from-black/60 to-black/40 backdrop-blur-md rounded-xl border border-white/20">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
                     <span className="text-white text-xs font-bold">QB</span>
                   </div>
-                  <span className="text-xs font-medium text-slate-600">QuickBooks</span>
+                  <span className="text-white text-xs font-semibold">QuickBooks</span>
                 </div>
-                <div className="w-px h-12 bg-slate-300"></div>
-                <div className="text-center">
-                  <div className="w-12 h-12 mx-auto mb-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-sm">
-                    <span className="text-white text-xs font-bold">Xero</span>
+                <div className="w-px h-4 bg-white/30"></div>
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">X</span>
                   </div>
-                  <span className="text-xs font-medium text-slate-600">Xero</span>
+                  <span className="text-white text-xs font-semibold">Xero</span>
                 </div>
-                <div className="w-px h-12 bg-slate-300"></div>
-                <div className="text-center">
-                  <div className="w-12 h-12 mx-auto mb-2 bg-gradient-to-r from-green-600 to-emerald-600 rounded-lg flex items-center justify-center shadow-sm">
-                    <span className="text-white text-xs font-bold">S50</span>
+                <div className="w-px h-4 bg-white/30"></div>
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-gradient-to-r from-green-600 to-emerald-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">S</span>
                   </div>
-                  <span className="text-xs font-medium text-slate-600">Sage 50</span>
+                  <span className="text-white text-xs font-semibold">Sage 50</span>
                 </div>
               </div>
             </div>
