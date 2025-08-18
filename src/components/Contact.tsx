@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, Calendar, Mail, MapPin, Sparkles } from 'lucide-react';
+import { Send, Calendar, Mail, MapPin, Sparkles, Phone } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
