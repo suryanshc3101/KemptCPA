@@ -4,19 +4,11 @@ import { Sparkles, TrendingUp, Shield, Building2 } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-slate-50/50 to-indigo-50/30 min-h-screen flex items-center">
-      {/* Company Name - Top Left */}
-      <div className="absolute top-6 left-6 z-20">
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-slate-700 flex items-center justify-center shadow-lg">
-            <Building2 className="w-6 h-6 text-white" />
-          </div>
-          <div>
-            <h1 className="text-xl font-bold bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent">
-              KemptCPA
-            </h1>
-            <p className="text-xs text-slate-600 font-medium">Professional Corporation</p>
-          </div>
-        </div>
+      {/* KemptCPA - Extreme Top Left */}
+      <div className="absolute top-4 left-4 z-20">
+        <h1 className="text-2xl font-bold bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent">
+          KemptCPA
+        </h1>
       </div>
       
       {/* Floating orbs background */}
@@ -36,8 +28,8 @@ export default function Hero() {
       
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
         <div className="relative z-10">
-          <span className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent tracking-wide uppercase mb-4 block flex items-center gap-2">
-            Professional CPA Services
+          <span className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent tracking-wide uppercase mb-4 block">
+            CPA Services
           </span>
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent mb-6">
             Stress-free Canadian accounting, tax, and assurance — by a CPA you can trust.
@@ -134,29 +126,23 @@ export default function Hero() {
             <div className="absolute bottom-4 left-4 right-4">
               <div className="flex items-center justify-center gap-6 p-4 bg-gradient-to-r from-black/80 to-black/60 backdrop-blur-md rounded-xl border border-white/20">
                 <div className="flex items-center gap-2">
-                  <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/03/QuickBooks-Logo.png" 
-                    alt="QuickBooks" 
-                    className="w-8 h-8 object-contain bg-white rounded p-1"
-                  />
+                  <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">QB</span>
+                  </div>
                   <span className="text-white text-sm font-medium">QuickBooks</span>
                 </div>
                 <div className="w-px h-6 bg-white/30"></div>
                 <div className="flex items-center gap-2">
-                  <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/03/Xero-Logo.png" 
-                    alt="Xero" 
-                    className="w-8 h-8 object-contain bg-white rounded p-1"
-                  />
+                  <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">X</span>
+                  </div>
                   <span className="text-white text-sm font-medium">Xero</span>
                 </div>
                 <div className="w-px h-6 bg-white/30"></div>
                 <div className="flex items-center gap-2">
-                  <img 
-                    src="https://logos-world.net/wp-content/uploads/2020/11/Sage-Logo.png" 
-                    alt="Sage 50" 
-                    className="w-8 h-8 object-contain bg-white rounded p-1"
-                  />
+                  <div className="w-8 h-8 bg-gradient-to-r from-green-600 to-emerald-600 rounded flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">S50</span>
+                  </div>
                   <span className="text-white text-sm font-medium">Sage 50</span>
                 </div>
               </div>
