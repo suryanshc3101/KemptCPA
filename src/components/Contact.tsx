@@ -224,9 +224,9 @@ export default function Contact() {
         <div className="mt-12 grid md:grid-cols-2 gap-6">
           <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-dashed border-blue-200 hover:border-blue-300 transition-colors">
             <Calendar className="w-8 h-8 text-blue-600 mb-3" />
-            <h3 className="font-bold text-slate-800 mb-2">Book Direct</h3>
+            <h3 className="font-bold text-slate-800 mb-2">30-Minute Discovery Call</h3>
             <p className="text-slate-600 mb-3">
-              Skip the form and schedule your free consultation:
+              Schedule your complimentary discovery call to discuss your needs:
             </p>
             <a 
               className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors group" 
@@ -270,13 +270,6 @@ export default function Contact() {
             Schedule your free consultation: 
             We're here to help your business succeed
           </p>
-          
-          {/* Production Note */}
-          <div className="mt-6 p-4 bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl border border-slate-200">
-            <p className="text-xs text-slate-600">
-              <strong>📋 For Production:</strong> Connect this form with Formspree, Netlify Forms, or EmailJS to receive submissions directly.
-            </p>
-          </div>
         </div>
       </div>
     </section>

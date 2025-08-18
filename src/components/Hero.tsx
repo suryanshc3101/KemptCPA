@@ -7,9 +7,19 @@ export default function Hero() {
       {/* Subtle magical background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Professional subtle patterns */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(59,130,246,0.03),transparent_50%),radial-gradient(circle_at_75%_75%,rgba(16,185,129,0.02),transparent_50%)]"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-400/8 to-indigo-400/6 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-teal-400/6 to-emerald-400/4 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(59,130,246,0.05),transparent_50%),radial-gradient(circle_at_75%_75%,rgba(16,185,129,0.04),transparent_50%)]"></div>
+        
+        {/* Enhanced magical orbs with advanced animations */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-400/12 to-indigo-400/8 rounded-full blur-3xl animate-pulse hover:animate-ping transition-all duration-1000"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-teal-400/10 to-emerald-400/6 rounded-full blur-3xl animate-pulse hover:scale-110 transition-all duration-1000" style={{animationDelay: '2s'}}></div>
+        
+        {/* Advanced floating particles */}
+        <div className="absolute top-1/4 left-1/3 w-2 h-2 bg-blue-400/60 rounded-full animate-bounce opacity-70" style={{animationDelay: '0s', animationDuration: '3s'}}></div>
+        <div className="absolute top-2/3 right-1/4 w-1.5 h-1.5 bg-teal-400/50 rounded-full animate-bounce opacity-60" style={{animationDelay: '1.5s', animationDuration: '4s'}}></div>
+        <div className="absolute top-1/2 left-1/4 w-1 h-1 bg-indigo-400/40 rounded-full animate-ping opacity-50" style={{animationDelay: '2.5s'}}></div>
+        
+        {/* Subtle grid pattern overlay */}
+        <div className="absolute inset-0 opacity-[0.02]" style={{backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(59,130,246,0.3) 1px, transparent 0)', backgroundSize: '40px 40px'}}></div>
       </div>
       
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">

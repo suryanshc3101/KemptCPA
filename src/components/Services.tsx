@@ -110,22 +110,27 @@ export default function Services() {
             <div 
               key={index}
               onClick={() => handleServiceClick(service)}
-              className="group relative rounded-2xl bg-white p-8 shadow-xl border border-slate-200 hover:shadow-2xl hover:border-blue-300 hover:scale-105 transition-all duration-500 overflow-hidden cursor-pointer"
+              className="group relative rounded-2xl bg-white p-8 shadow-xl border border-slate-200 hover:shadow-2xl hover:border-blue-300 hover:scale-105 hover:rotate-1 transition-all duration-500 overflow-hidden cursor-pointer transform-gpu"
             >
               {/* Enhanced hover effects */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-indigo-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 to-indigo-50/40 opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-2xl pointer-events-none group-hover:animate-pulse"></div>
               
-              {/* Animated background elements */}
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400/10 to-indigo-400/10 rounded-full -translate-y-10 translate-x-10 group-hover:translate-y-0 group-hover:translate-x-0 transition-transform duration-700"></div>
-              <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-br from-teal-400/10 to-emerald-400/10 rounded-full translate-y-8 -translate-x-8 group-hover:translate-y-0 group-hover:translate-x-0 transition-transform duration-700"></div>
+              {/* Advanced animated background elements */}
+              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-400/15 to-indigo-400/10 rounded-full -translate-y-12 translate-x-12 group-hover:translate-y-2 group-hover:translate-x-2 group-hover:rotate-45 transition-all duration-700 group-hover:animate-pulse"></div>
+              <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-br from-teal-400/12 to-emerald-400/8 rounded-full translate-y-10 -translate-x-10 group-hover:translate-y-2 group-hover:translate-x-2 group-hover:-rotate-45 transition-all duration-700 group-hover:animate-pulse"></div>
+              
+              {/* Magical particles */}
+              <div className="absolute top-4 left-4 w-1 h-1 bg-blue-400 rounded-full opacity-0 group-hover:opacity-70 group-hover:animate-ping transition-all duration-300"></div>
+              <div className="absolute bottom-4 right-4 w-1.5 h-1.5 bg-teal-400 rounded-full opacity-0 group-hover:opacity-60 group-hover:animate-bounce transition-all duration-300" style={{animationDelay: '0.2s'}}></div>
               
               {/* Professional accents */}
-              <div className="absolute top-3 right-3 w-2 h-2 bg-blue-400 rotate-45 opacity-0 group-hover:opacity-60 transition-all duration-300 group-hover:animate-pulse"></div>
-              <div className="absolute bottom-3 left-3 w-1.5 h-1.5 bg-indigo-500 rounded-full opacity-0 group-hover:opacity-70 transition-all duration-300 group-hover:animate-bounce"></div>
+              <div className="absolute top-3 right-3 w-2 h-2 bg-blue-400 rotate-45 opacity-0 group-hover:opacity-70 transition-all duration-300 group-hover:animate-pulse group-hover:rotate-90"></div>
+              <div className="absolute bottom-3 left-3 w-1.5 h-1.5 bg-indigo-500 rounded-full opacity-0 group-hover:opacity-80 transition-all duration-300 group-hover:animate-bounce group-hover:scale-150"></div>
               
               {/* Icon with enhanced animation */}
-              <div className={`relative mb-6 w-16 h-16 rounded-lg bg-gradient-to-br ${service.color} flex items-center justify-center shadow-md group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
-                <service.icon className="w-8 h-8 text-white group-hover:animate-pulse" />
+              <div className={`relative mb-6 w-16 h-16 rounded-lg bg-gradient-to-br ${service.color} flex items-center justify-center shadow-md group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-xl transition-all duration-300 group-hover:shadow-blue-400/30`}>
+                <service.icon className="w-8 h-8 text-white group-hover:animate-pulse group-hover:scale-110 transition-all duration-300" />
+                <div className="absolute inset-0 bg-white/20 rounded-lg opacity-0 group-hover:opacity-30 group-hover:animate-ping transition-all duration-300"></div>
               </div>
               
               <h3 className="relative text-xl font-bold text-slate-800 mb-3 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
@@ -136,13 +141,13 @@ export default function Services() {
               </p>
               
               {/* Enhanced click indicator */}
-              <div className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-gradient-to-r from-blue-500/10 to-indigo-500/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110">
-                <span className="text-blue-600 text-sm font-bold animate-bounce">→</span>
+              <div className="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-gradient-to-r from-blue-500/20 to-indigo-500/15 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
+                <span className="text-blue-600 text-lg font-bold animate-bounce group-hover:animate-pulse">→</span>
               </div>
               
               {/* Click instruction */}
-              <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-70 transition-opacity duration-300">
-                <span className="text-xs text-slate-500 bg-white/80 px-2 py-1 rounded-full">Click for details</span>
+              <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-80 transition-all duration-300 group-hover:scale-105">
+                <span className="text-xs text-slate-500 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full border border-slate-200 shadow-sm">Click for details</span>
               </div>
             </div>
           ))}

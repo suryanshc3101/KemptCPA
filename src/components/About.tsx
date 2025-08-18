@@ -49,6 +49,35 @@ export default function About() {
             I'm <strong>Kuldeep, CPA</strong>, Principal at <strong>Kempt CPA Professional Corporation</strong>. We serve individuals and businesses with straightforward, tech‑enabled accounting and proactive advice.
           </p>
           
+          <p className="text-lg text-slate-700 leading-relaxed mb-6">
+            With extensive experience in Canadian tax law, financial reporting, and business advisory services, I bring a strategic approach to every client engagement. My practice focuses on helping businesses navigate complex financial challenges while maintaining compliance with CRA requirements.
+          </p>
+          
+          <div className="mb-6 p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200">
+            <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
+              <Award className="w-5 h-5 text-blue-600" />
+              Professional Excellence
+            </h3>
+            <ul className="space-y-2 text-slate-700">
+              <li className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                <span>Chartered Professional Accountant (CPA Ontario)</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
+                <span>Specialized in Canadian tax planning and compliance</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
+                <span>Expert in QuickBooks, Xero, and Sage 50 implementation</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                <span>Proven track record in CRA representation and audit defense</span>
+              </li>
+            </ul>
+          </div>
+          
           <div className="space-y-4">
             <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-lg transition-shadow">
               <Briefcase className="w-6 h-6 text-orange-500" />
@@ -63,8 +92,10 @@ export default function About() {
           <div className="mt-8 p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50 border border-slate-200 hover:shadow-lg transition-all duration-300">
             <h3 className="font-bold text-slate-900 mb-2">✨ Why Choose Kempt CPA?</h3>
             <p className="text-slate-800 leading-relaxed font-medium">
-              We combine traditional CPA expertise with modern technology and a client-first approach. 
-              Every engagement is tailored to help your business thrive with personalized service and attention to detail.
+              We combine traditional CPA expertise with modern cloud-based technology and a client-first approach. 
+              Every engagement is tailored to your specific needs, ensuring you receive strategic insights that drive growth, 
+              maintain compliance, and optimize your financial position. Our proactive communication style means you'll always 
+              know where you stand financially and what steps to take next.
             </p>
           </div>
         </div>
