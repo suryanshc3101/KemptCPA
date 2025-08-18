@@ -12,6 +12,9 @@ export default function Header() {
         </div>
         <div className="flex items-center gap-4">
           <span className="text-sm font-semibold text-blue-600 tracking-wide uppercase hover:animate-pulse cursor-default">Professional CPA Services</span>
+          <div className="hidden md:flex items-center gap-2 text-slate-600">
+            <span className="text-sm">📞 +1 519 771 7862</span>
+          </div>
           <a href="#contact" className="text-slate-700 hover:text-blue-600 transition-all duration-300 hover:scale-105">
             info@kemptcpa.ca
           </a>

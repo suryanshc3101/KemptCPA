@@ -60,15 +60,10 @@ export default function Services() {
       <section id="services" className="relative py-20 bg-gradient-to-b from-white via-blue-50/40 to-slate-50/60 overflow-hidden">
       {/* Subtle background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Professional diagonal lines */}
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_47%,rgba(59,130,246,0.08)_49%,rgba(16,185,129,0.06)_51%,transparent_53%)] bg-[size:40px_40px]"></div>
-        
-        <div className="absolute top-1/4 left-0 w-96 h-96 bg-gradient-to-br from-blue-400/20 to-teal-400/15 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-br from-indigo-400/15 to-emerald-400/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
-        
-        {/* Professional geometric patterns */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gradient-to-br from-blue-500/60 to-teal-500/40 rotate-45 animate-pulse shadow-lg rounded-sm" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-gradient-to-br from-emerald-500/70 to-teal-500/50 rounded-full animate-pulse shadow-md" style={{animationDelay: '1.5s'}}></div>
+        {/* Professional subtle patterns */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.04),transparent_50%),radial-gradient(circle_at_70%_70%,rgba(16,185,129,0.03),transparent_50%)]"></div>
+        <div className="absolute top-1/4 left-0 w-80 h-80 bg-gradient-to-br from-blue-400/6 to-teal-400/4 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-gradient-to-br from-indigo-400/5 to-emerald-400/3 rounded-full blur-3xl animate-pulse" style={{animationDelay: '3s'}}></div>
       </div>
       
       <div className="max-w-6xl mx-auto px-4">

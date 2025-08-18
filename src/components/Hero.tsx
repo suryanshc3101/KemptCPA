@@ -6,14 +6,10 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-slate-50/50 to-indigo-50/30 min-h-screen flex items-center">
       {/* Subtle magical background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Floating orbs */}
-        <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-blue-400/20 rounded-full animate-bounce opacity-60" style={{animationDelay: '0s', animationDuration: '3s'}}></div>
-        <div className="absolute top-1/2 right-1/3 w-3 h-3 bg-teal-400/25 rounded-full animate-bounce opacity-50" style={{animationDelay: '1s', animationDuration: '4s'}}></div>
-        <div className="absolute bottom-1/3 left-1/2 w-2 h-2 bg-indigo-400/30 rounded-full animate-bounce opacity-40" style={{animationDelay: '2s', animationDuration: '5s'}}></div>
-        
-        {/* Gentle gradient waves */}
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-blue-50/10 to-transparent transform rotate-12 animate-pulse" style={{animationDuration: '8s'}}></div>
-        <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-l from-transparent via-teal-50/10 to-transparent transform -rotate-12 animate-pulse" style={{animationDuration: '6s', animationDelay: '2s'}}></div>
+        {/* Professional subtle patterns */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(59,130,246,0.03),transparent_50%),radial-gradient(circle_at_75%_75%,rgba(16,185,129,0.02),transparent_50%)]"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-400/8 to-indigo-400/6 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-teal-400/6 to-emerald-400/4 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
       </div>
       
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">

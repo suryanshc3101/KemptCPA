@@ -6,15 +6,10 @@ export default function About() {
     <section id="about" className="relative py-20 bg-gradient-to-br from-blue-50/60 via-slate-50/40 to-teal-50/30 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Professional background pattern */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.12),transparent_50%),radial-gradient(circle_at_70%_70%,rgba(16,185,129,0.08),transparent_50%)]"></div>
-        
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-400/15 to-indigo-400/12 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-teal-400/15 to-emerald-400/12 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
-        
-        {/* Additional magical elements */}
-        <div className="absolute top-1/4 right-1/3 w-8 h-8 bg-gradient-to-br from-blue-400/30 to-teal-400/20 rounded-full animate-bounce shadow-lg" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-1/3 left-1/4 w-6 h-6 bg-gradient-to-br from-emerald-400/40 to-teal-400/30 rounded-full animate-bounce shadow-md" style={{animationDelay: '2s'}}></div>
+        {/* Professional subtle background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.05),transparent_50%),radial-gradient(circle_at_70%_70%,rgba(16,185,129,0.04),transparent_50%)]"></div>
+        <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-br from-blue-400/8 to-indigo-400/6 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-br from-teal-400/6 to-emerald-400/4 rounded-full blur-3xl animate-pulse" style={{animationDelay: '3s'}}></div>
       </div>
       
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">

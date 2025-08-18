@@ -28,20 +28,11 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section className="relative py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
-      {/* Connecting lines background */}
+      {/* Professional background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-100/20 rounded-full blur-2xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-indigo-100/20 rounded-full blur-2xl animate-pulse" style={{animationDelay: '1s'}}></div>
-        <svg className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full" viewBox="0 0 800 400">
-          <defs>
-            <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#2563eb" stopOpacity="0.3" />
-              <stop offset="50%" stopColor="#3b82f6" stopOpacity="0.2" />
-              <stop offset="100%" stopColor="#1e40af" stopOpacity="0.3" />
-            </linearGradient>
-          </defs>
-          <path d="M150 200 Q400 150 650 200" stroke="url(#lineGradient)" strokeWidth="2" fill="none" className="animate-pulse" />
-        </svg>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.03),transparent_70%)]"></div>
+        <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-gradient-to-br from-blue-100/10 to-indigo-100/8 rounded-full blur-2xl animate-pulse"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-gradient-to-br from-purple-100/8 to-violet-100/6 rounded-full blur-2xl animate-pulse" style={{animationDelay: '2s'}}></div>
       </div>
       
       <div className="max-w-6xl mx-auto px-4">

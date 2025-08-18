@@ -6,11 +6,10 @@ export default function Footer() {
     <footer className="relative py-12 bg-gradient-to-br from-slate-900 via-blue-900/80 to-slate-900 text-slate-200 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Professional footer pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(30deg,transparent_35%,rgba(59,130,246,0.08)_48%,rgba(16,185,129,0.06)_52%,transparent_65%)] bg-[size:120px_120px]"></div>
-        
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-600/15 to-teal-600/12 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-r from-indigo-600/12 to-emerald-600/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        {/* Professional footer background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(59,130,246,0.06),transparent_50%),radial-gradient(circle_at_75%_75%,rgba(16,185,129,0.04),transparent_50%)]"></div>
+        <div className="absolute top-0 left-1/4 w-80 h-80 bg-gradient-to-r from-blue-600/8 to-teal-600/6 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-r from-indigo-600/6 to-emerald-600/4 rounded-full blur-3xl animate-pulse" style={{animationDelay: '3s'}}></div>
       </div>
       
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
@@ -39,6 +38,10 @@ export default function Footer() {
           </h4>
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2 hover:text-white transition-colors">
+              <Phone className="w-4 h-4 text-slate-400" />
+              <span>+1 519 771 7862</span>
+            </li>
+            <li className="flex items-center gap-2 hover:text-white transition-colors">
               <Mail className="w-4 h-4 text-slate-400" />
               <a href="mailto:info@kemptcpa.ca" className="hover:text-blue-300 transition-colors">
                 info@kemptcpa.ca
@@ -47,10 +50,6 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-slate-400" />
               <span>Services in Brantford, Ontario</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <Phone className="w-4 h-4 text-slate-400" />
-              <span>QuickBooks • Xero • Sage 50</span>
             </li>
           </ul>
         </div>

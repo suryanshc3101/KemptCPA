@@ -64,11 +64,10 @@ export default function Contact() {
     <section id="contact" className="relative py-20 bg-gradient-to-b from-slate-50/50 via-blue-50/30 to-indigo-50/20 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Professional background texture */}
-        <div className="absolute inset-0 bg-[conic-gradient(from_0deg_at_50%_50%,rgba(59,130,246,0.08),transparent_60deg,rgba(16,185,129,0.06),transparent_120deg,rgba(59,130,246,0.08),transparent)] bg-[size:150px_150px]"></div>
-        
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/12 to-teal-400/8 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-indigo-400/10 to-emerald-400/8 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        {/* Professional contact background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_40%,rgba(59,130,246,0.04),transparent_50%),radial-gradient(circle_at_60%_60%,rgba(16,185,129,0.03),transparent_50%)]"></div>
+        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-gradient-to-r from-blue-400/6 to-teal-400/4 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-gradient-to-r from-indigo-400/5 to-emerald-400/3 rounded-full blur-3xl animate-pulse" style={{animationDelay: '4s'}}></div>
       </div>
       
       <div className="max-w-3xl mx-auto px-4">
@@ -250,6 +249,10 @@ export default function Contact() {
             </p>
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-orange-600" />
+                <span className="text-orange-600 font-semibold">+1 519 771 7862</span>
+              </div>
+              <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-orange-600" />
                 <a href="mailto:info@kemptcpa.ca" className="text-orange-600 font-semibold hover:text-orange-700 transition-colors">
                   info@kemptcpa.ca
@@ -257,7 +260,7 @@ export default function Contact() {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-orange-600" />
-                <span className="text-slate-600">Toronto, Ontario, Canada</span>
+                <span className="text-slate-600">Brantford, Ontario, Canada</span>
               </div>
             </div>
           </div>
