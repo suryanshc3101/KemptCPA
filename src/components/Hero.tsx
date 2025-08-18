@@ -111,19 +111,12 @@ export default function Hero() {
                 {/* Bottom decorative line */}
                 <div className="mt-4 flex items-center justify-center">
                   <div className="w-16 h-0.5 bg-gradient-to-r from-blue-400 to-teal-400 rounded-full"></div>
-                  
-                  <a 
-                    href="#contact" 
-                    className="inline-flex items-center gap-2 px-6 py-3 mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-300"
-                  >
-                    <span>Book Free Consultation</span>
-                    <div className="w-2 h-2 bg-white rounded-full animate-bounce"></div>
-                  </a>
                 </div>
               </div>
+            </div>
             
             {/* Software Integration Partners */}
-            <div className="flex items-center justify-center mt-8">
+            <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
               <div className="flex items-center justify-center gap-6 p-4 bg-white/90 backdrop-blur-sm rounded-2xl border border-white/40 shadow-lg">
                 <div className="text-center">
                   <div className="w-12 h-12 mx-auto mb-2 bg-blue-600 rounded-lg flex items-center justify-center shadow-sm">
@@ -133,7 +126,7 @@ export default function Hero() {
                 </div>
                 <div className="w-px h-12 bg-slate-300"></div>
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-sm">
+                  <div className="w-12 h-12 mx-auto mb-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-sm">
                     <span className="text-white text-xs font-bold">Xero</span>
                   </div>
                   <span className="text-xs font-medium text-slate-600">Xero</span>
@@ -152,6 +145,4 @@ export default function Hero() {
       </div>
     </section>
   );
-}
-  )
 }
