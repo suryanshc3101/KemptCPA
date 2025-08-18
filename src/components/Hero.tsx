@@ -19,27 +19,6 @@ export default function Hero() {
               href="#contact" 
               className="rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-slate-700 text-white px-6 py-2 font-semibold hover:from-blue-700 hover:via-indigo-700 hover:to-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
-              ✨ Book 30 Minutes
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      {/* Floating orbs background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Professional grid pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_49%,rgba(59,130,246,0.08)_50%,transparent_51%),linear-gradient(0deg,transparent_49%,rgba(16,185,129,0.05)_50%,transparent_51%)] bg-[size:80px_80px]"></div>
-        
-        <div className="absolute top-20 left-10 w-80 h-80 bg-gradient-to-br from-blue-400/25 to-teal-400/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-br from-indigo-400/20 to-slate-400/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
-        <div className="absolute top-1/4 left-1/2 w-40 h-40 bg-gradient-to-br from-teal-400/20 to-emerald-400/15 rounded-full blur-2xl animate-pulse" style={{animationDelay: '2s'}}></div>
-        
-        {/* Professional geometric shapes */}
-        <div className="absolute top-1/3 right-1/4 w-6 h-6 bg-gradient-to-br from-blue-500/40 to-teal-500/30 rotate-45 animate-pulse shadow-xl rounded-sm" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute bottom-1/3 left-1/3 w-4 h-4 bg-gradient-to-br from-emerald-500/50 to-teal-500/40 rounded-full animate-pulse shadow-lg" style={{animationDelay: '1.5s'}}></div>
-        <div className="absolute top-1/2 left-1/4 w-3 h-3 bg-gradient-to-br from-indigo-500/60 to-blue-500/40 rounded-full animate-pulse shadow-md" style={{animationDelay: '2.5s'}}></div>
-      </div>
-      
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
         <div className="relative z-10">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent mb-6">
