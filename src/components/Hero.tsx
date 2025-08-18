@@ -121,6 +121,7 @@ export default function Hero() {
                   </a>
                 </div>
               </div>
+            </div>
             
             {/* Software Integration Partners */}
             <div className="flex items-center justify-center mt-8">
@@ -152,8 +153,4 @@ export default function Hero() {
       </div>
     </section>
   );
-}
-  )
-}
-  )
 }
