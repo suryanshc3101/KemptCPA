@@ -13,16 +13,33 @@ export default function Contact() {
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // You would typically send this to your backend or form service
+    setSubmitStatus('idle');
+    
+    // Simulate form submission - Replace with actual form service
+    // Example: Formspree, Netlify Forms, or your own backend
     setTimeout(() => {
       setIsSubmitting(false);
-    }, 2000);
+      setSubmitStatus('success');
+      
+      // Reset form after successful submission
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        countryCode: '+1',
+        business: '',
+        software: '',
+        message: ''
+      });
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000);
+    }, 1500);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -68,12 +85,21 @@ export default function Contact() {
           </p>
           
           {/* Form Service Integration Notice */}
-          <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-xl">
-            <p className="text-sm text-blue-800">
-              💡 <strong>Form Integration Suggestion:</strong> Connect this form with <strong>Formspree</strong> (formspree.io), 
-              <strong>Netlify Forms</strong>, or <strong>EmailJS</strong> to receive submissions directly to your email.
-            </p>
-          </div>
+          {submitStatus === 'success' && (
+            <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-xl">
+              <p className="text-sm text-green-800 font-medium">
+                ✅ <strong>Message sent successfully!</strong> We'll reply within 1 business day.
+              </p>
+            </div>
+          )}
+          
+          {submitStatus === 'error' && (
+            <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-xl">
+              <p className="text-sm text-red-800">
+                ❌ <strong>Error sending message.</strong> Please try again or email us directly at info@kemptcpa.ca
+              </p>
+            </div>
+          )}
         </div>
 
         <div className="relative mb-8">
@@ -238,23 +264,19 @@ export default function Contact() {
         </div>
         
         <div className="mt-8 text-center text-slate-500">
-          <p className="flex items-center justify-center gap-2">
-            <Sparkles className="w-4 h-4 text-blue-400" />
-            Schedule your free consultation: 
-            We're here to help your business succeed
-          </p>
-          
-          {/* Integration Instructions */}
-          <div className="mt-6 p-6 bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl border border-slate-200">
-            <h4 className="font-semibold text-slate-800 mb-2">📋 Form Integration Options:</h4>
-            <div className="text-sm text-slate-600 space-y-1">
-              <p><strong>Formspree:</strong> Easy setup, free tier available - formspree.io</p>
-              <p><strong>Netlify Forms:</strong> Built-in if hosting on Netlify - netlify.com/forms</p>
-              <p><strong>EmailJS:</strong> Send emails directly from frontend - emailjs.com</p>
-              <p><strong>Google Forms:</strong> Free alternative with Google Sheets integration</p>
+            <p className="flex items-center justify-center gap-2">
+              <Sparkles className="w-4 h-4 text-blue-400" />
+              Schedule your free consultation: 
+              We're here to help your business succeed
+            </p>
+            
+            {/* Production Note */}
+            <div className="mt-6 p-4 bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl border border-slate-200">
+              <p className="text-xs text-slate-600">
+                <strong>📋 For Production:</strong> Connect this form with Formspree, Netlify Forms, or EmailJS to receive submissions directly.
+              </p>
             </div>
           </div>
-        </div>
       </div>
     </section>
   );
