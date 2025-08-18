@@ -113,8 +113,6 @@ export default function Contact() {
             <p className="text-white text-sm font-medium">Schedule your free 30-minute consultation today</p>
           </div>
         </div>
-          {/* Background gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 via-teal-50/20 to-indigo-50/30 rounded-3xl pointer-events-none"></div>
           
         <form onSubmit={handleSubmit} className="relative grid gap-6 bg-gradient-to-br from-white to-slate-50 p-8 rounded-3xl border border-slate-200 shadow-2xl hover:shadow-3xl transition-shadow duration-500">
           {/* Background gradient overlay */}
@@ -163,7 +161,7 @@ export default function Contact() {
               <input 
                 name="phone" 
                 type="tel" 
-                placeholder="555-123-4567"
+                placeholder="519-771-7862"
                 value={formData.phone}
                 onChange={handleChange}
                 className="relative flex-1 rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300"
@@ -267,19 +265,19 @@ export default function Contact() {
         </div>
         
         <div className="mt-8 text-center text-slate-500">
-            <p className="flex items-center justify-center gap-2">
-              <Sparkles className="w-4 h-4 text-blue-400" />
-              Schedule your free consultation: 
-              We're here to help your business succeed
+          <p className="flex items-center justify-center gap-2">
+            <Sparkles className="w-4 h-4 text-blue-400" />
+            Schedule your free consultation: 
+            We're here to help your business succeed
+          </p>
+          
+          {/* Production Note */}
+          <div className="mt-6 p-4 bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl border border-slate-200">
+            <p className="text-xs text-slate-600">
+              <strong>📋 For Production:</strong> Connect this form with Formspree, Netlify Forms, or EmailJS to receive submissions directly.
             </p>
-            
-            {/* Production Note */}
-            <div className="mt-6 p-4 bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl border border-slate-200">
-              <p className="text-xs text-slate-600">
-                <strong>📋 For Production:</strong> Connect this form with Formspree, Netlify Forms, or EmailJS to receive submissions directly.
-              </p>
-            </div>
           </div>
+        </div>
       </div>
     </section>
   );
