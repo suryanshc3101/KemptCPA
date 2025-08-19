@@ -25,7 +25,7 @@ export default function About() {
       </div>
       
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
-        <div className="relative group order-2 md:order-1 animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+        <div className="relative group animate-fade-in-up" style={{animationDelay: '0.3s'}}>
           <div className="aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl border border-white/20 hover:shadow-3xl hover:scale-105 hover:rotate-1 transition-all duration-700 backdrop-blur-sm bg-gradient-to-br from-white/10 to-white/5">
             <img 
               src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800" 
@@ -54,124 +54,15 @@ export default function About() {
           </div>
         </div>
         
-        {/* Enhanced Professional Information Boxes */}
-        <div className="order-2 md:order-3 col-span-2">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-            {/* Enhanced Why Choose Kempt CPA box */}
-            <div className="group relative p-6 rounded-3xl bg-gradient-to-br from-white/95 via-blue-50/90 to-indigo-50/85 border-2 border-white/30 shadow-2xl hover:shadow-3xl hover:scale-105 hover:rotate-1 transition-all duration-500 backdrop-blur-lg min-h-[400px]">
-              {/* Magical background effects */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-400/5 via-indigo-400/3 to-purple-400/2 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400/10 to-indigo-400/8 rounded-full -translate-y-10 translate-x-10 group-hover:translate-y-2 group-hover:translate-x-2 transition-all duration-700"></div>
-              
-              {/* Content */}
-              <div className="relative z-10 h-full flex flex-col">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-300">
-                    <Award className="w-4 h-4 text-white" />
-                  </div>
-                  <h3 className="font-bold text-slate-900 text-lg group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
-                    ✨ Why Choose Kempt CPA?
-                  </h3>
-                </div>
-                
-                <div className="flex-1 space-y-3 overflow-y-auto">
-                  <div className="p-3 bg-white/60 backdrop-blur-sm rounded-xl border border-blue-200/50">
-                    <p className="text-slate-800 text-sm font-medium leading-relaxed">
-                      <strong className="text-blue-600">Expert CPA Services:</strong> Traditional expertise meets modern cloud technology
-                    </p>
-                  </div>
-                  
-                  <div className="p-3 bg-gradient-to-r from-blue-50/80 to-indigo-50/60 rounded-xl border border-indigo-200/50">
-                    <p className="text-slate-800 text-sm font-medium leading-relaxed">
-                      <strong className="text-indigo-600">Tailored Solutions:</strong> Every engagement customized to your specific needs
-                    </p>
-                  </div>
-                  
-                  <div className="p-3 bg-gradient-to-r from-indigo-50/80 to-purple-50/60 rounded-xl border border-purple-200/50">
-                    <p className="text-slate-800 text-sm font-medium leading-relaxed">
-                      <strong className="text-purple-600">Proactive Communication:</strong> Always know your financial position
-                    </p>
-                  </div>
-                  
-                  <div className="p-3 bg-gradient-to-r from-purple-50/80 to-teal-50/60 rounded-xl border border-teal-200/50">
-                    <p className="text-slate-800 text-sm font-medium leading-relaxed">
-                      <strong className="text-teal-600">Strategic Growth:</strong> Insights that drive business success
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Enhanced Professional Excellence box */}
-            <div className="group relative p-6 rounded-3xl bg-gradient-to-br from-white/95 via-indigo-50/90 to-blue-50/85 border-2 border-white/30 shadow-2xl hover:shadow-3xl hover:scale-105 hover:-rotate-1 transition-all duration-500 backdrop-blur-lg min-h-[400px]">
-              {/* Magical background effects */}
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-400/5 via-blue-400/3 to-teal-400/2 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-              <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-br from-teal-400/10 to-emerald-400/8 rounded-full translate-y-10 -translate-x-10 group-hover:translate-y-2 group-hover:translate-x-2 transition-all duration-700"></div>
-              
-              {/* Content */}
-              <div className="relative z-10 h-full flex flex-col">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-300">
-                    <Award className="w-4 h-4 text-white" />
-                  </div>
-                  <h3 className="font-bold text-slate-900 text-lg group-hover:bg-gradient-to-r group-hover:from-indigo-600 group-hover:to-blue-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
-                    Professional Excellence
-                  </h3>
-                </div>
-                
-                <div className="flex-1 space-y-2 overflow-y-auto">
-                  <div className="flex items-center gap-3 p-2 bg-white/60 backdrop-blur-sm rounded-lg border border-blue-200/30 group-hover:bg-blue-50/80 transition-colors duration-300">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                    <span className="text-slate-700 text-xs font-medium">CPA Ontario Certified Professional</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-3 p-2 bg-gradient-to-r from-teal-50/80 to-blue-50/60 rounded-lg border border-teal-200/30 group-hover:bg-teal-50/90 transition-colors duration-300">
-                    <div className="w-2 h-2 bg-teal-500 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                    <span className="text-slate-700 text-xs font-medium">Canadian Tax Planning Expert</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-3 p-2 bg-gradient-to-r from-indigo-50/80 to-purple-50/60 rounded-lg border border-indigo-200/30 group-hover:bg-indigo-50/90 transition-colors duration-300">
-                    <div className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-                    <span className="text-slate-700 text-xs font-medium">QuickBooks • Xero • Sage 50 Specialist</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-3 p-2 bg-gradient-to-r from-emerald-50/80 to-teal-50/60 rounded-lg border border-emerald-200/30 group-hover:bg-emerald-50/90 transition-colors duration-300">
-                    <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
-                    <span className="text-slate-700 text-xs font-medium">CRA Audit Defense & Representation</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-3 p-2 bg-gradient-to-r from-purple-50/80 to-indigo-50/60 rounded-lg border border-purple-200/30 group-hover:bg-purple-50/90 transition-colors duration-300">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
-                    <span className="text-slate-700 text-xs font-medium">Financial Reporting & Advisory</span>
-                  </div>
-                  
-                  <div className="flex items-center gap-3 p-2 bg-gradient-to-r from-blue-50/80 to-indigo-50/60 rounded-lg border border-blue-200/30 group-hover:bg-blue-50/90 transition-colors duration-300">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '2.5s'}}></div>
-                    <span className="text-slate-700 text-xs font-medium">GST/HST Compliance Management</span>
-                  </div>
-                  
-                  <div className="mt-2 p-2 bg-gradient-to-r from-yellow-50/80 to-amber-50/60 rounded-xl border-2 border-yellow-200/50">
-                    <div className="flex items-center justify-center gap-2">
-                      <Award className="w-4 h-4 text-yellow-600 animate-bounce" />
-                      <span className="text-yellow-800 text-xs font-bold">15+ Years Experience</span>
-                      <Award className="w-4 h-4 text-yellow-600 animate-bounce" style={{animationDelay: '0.5s'}} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Enhanced Text content */}
-        <div className="order-1 md:order-3 animate-fade-in-up">
+        {/* About Us Text content - Right of Image */}
+        <div className="animate-fade-in-up">
           <div className="p-8 rounded-3xl bg-gradient-to-br from-white/20 via-blue-50/15 to-indigo-50/10 backdrop-blur-lg border-2 border-white/20 shadow-2xl">
             <h2 className="flex items-center gap-3 text-2xl font-bold text-white mb-6">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg">
                 <Award className="w-5 h-5 text-white animate-pulse" />
               </div>
               <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
-                About Our Principal
+                About Us
               </span>
             </h2>
             
@@ -208,6 +99,115 @@ export default function About() {
                   <div>
                     <span className="font-bold text-teal-200 text-sm">Serving Ontario Businesses</span>
                     <p className="text-white/80 text-sm">Based in Brantford, Ontario</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Enhanced Professional Information Boxes - Below Main Content */}
+      <div className="max-w-6xl mx-auto px-4 mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
+          {/* Enhanced Why Choose Kempt CPA box */}
+          <div className="group relative p-8 rounded-3xl bg-gradient-to-br from-white/95 via-blue-50/90 to-indigo-50/85 border-2 border-white/30 shadow-2xl hover:shadow-3xl hover:scale-105 hover:rotate-1 transition-all duration-500 backdrop-blur-lg min-h-[400px]">
+            {/* Magical background effects */}
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-400/5 via-indigo-400/3 to-purple-400/2 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+            <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400/10 to-indigo-400/8 rounded-full -translate-y-10 translate-x-10 group-hover:translate-y-2 group-hover:translate-x-2 transition-all duration-700"></div>
+            
+            {/* Content */}
+            <div className="relative z-10 h-full flex flex-col">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-300">
+                  <Award className="w-5 h-5 text-white" />
+                </div>
+                <h3 className="font-bold text-slate-900 text-xl group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+                  ✨ Why Choose Kempt CPA?
+                </h3>
+              </div>
+              
+              <div className="flex-1 space-y-4">
+                <div className="p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-blue-200/50">
+                  <p className="text-slate-800 text-base font-semibold leading-relaxed font-serif">
+                    <strong className="text-blue-600">Expert CPA Services:</strong> Traditional expertise meets modern cloud technology
+                  </p>
+                </div>
+                
+                <div className="p-4 bg-gradient-to-r from-blue-50/80 to-indigo-50/60 rounded-xl border border-indigo-200/50">
+                  <p className="text-slate-800 text-base font-semibold leading-relaxed font-serif">
+                    <strong className="text-indigo-600">Tailored Solutions:</strong> Every engagement customized to your specific needs
+                  </p>
+                </div>
+                
+                <div className="p-4 bg-gradient-to-r from-indigo-50/80 to-purple-50/60 rounded-xl border border-purple-200/50">
+                  <p className="text-slate-800 text-base font-semibold leading-relaxed font-serif">
+                    <strong className="text-purple-600">Proactive Communication:</strong> Always know your financial position
+                  </p>
+                </div>
+                
+                <div className="p-4 bg-gradient-to-r from-purple-50/80 to-teal-50/60 rounded-xl border border-teal-200/50">
+                  <p className="text-slate-800 text-base font-semibold leading-relaxed font-serif">
+                    <strong className="text-teal-600">Strategic Growth:</strong> Insights that drive business success
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Enhanced Professional Excellence box */}
+          <div className="group relative p-8 rounded-3xl bg-gradient-to-br from-white/95 via-indigo-50/90 to-blue-50/85 border-2 border-white/30 shadow-2xl hover:shadow-3xl hover:scale-105 hover:-rotate-1 transition-all duration-500 backdrop-blur-lg min-h-[400px]">
+            {/* Magical background effects */}
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-400/5 via-blue-400/3 to-teal-400/2 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+            <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-br from-teal-400/10 to-emerald-400/8 rounded-full translate-y-10 -translate-x-10 group-hover:translate-y-2 group-hover:translate-x-2 transition-all duration-700"></div>
+            
+            {/* Content */}
+            <div className="relative z-10 h-full flex flex-col">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-300">
+                  <Award className="w-5 h-5 text-white" />
+                </div>
+                <h3 className="font-bold text-slate-900 text-xl group-hover:bg-gradient-to-r group-hover:from-indigo-600 group-hover:to-blue-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+                  Professional Excellence
+                </h3>
+              </div>
+              
+              <div className="flex-1 space-y-3">
+                <div className="flex items-center gap-3 p-3 bg-white/60 backdrop-blur-sm rounded-lg border border-blue-200/30 group-hover:bg-blue-50/80 transition-colors duration-300">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                  <span className="text-slate-700 text-sm font-semibold font-serif">CPA Ontario Certified Professional</span>
+                </div>
+                
+                <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-teal-50/80 to-blue-50/60 rounded-lg border border-teal-200/30 group-hover:bg-teal-50/90 transition-colors duration-300">
+                  <div className="w-2 h-2 bg-teal-500 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                  <span className="text-slate-700 text-sm font-semibold font-serif">Canadian Tax Planning Expert</span>
+                </div>
+                
+                <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-indigo-50/80 to-purple-50/60 rounded-lg border border-indigo-200/30 group-hover:bg-indigo-50/90 transition-colors duration-300">
+                  <div className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+                  <span className="text-slate-700 text-sm font-semibold font-serif">QuickBooks • Xero • Sage 50 Specialist</span>
+                </div>
+                
+                <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-emerald-50/80 to-teal-50/60 rounded-lg border border-emerald-200/30 group-hover:bg-emerald-50/90 transition-colors duration-300">
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
+                  <span className="text-slate-700 text-sm font-semibold font-serif">CRA Audit Defense & Representation</span>
+                </div>
+                
+                <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-purple-50/80 to-indigo-50/60 rounded-lg border border-purple-200/30 group-hover:bg-purple-50/90 transition-colors duration-300">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
+                  <span className="text-slate-700 text-sm font-semibold font-serif">Financial Reporting & Advisory</span>
+                </div>
+                
+                <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-blue-50/80 to-indigo-50/60 rounded-lg border border-blue-200/30 group-hover:bg-blue-50/90 transition-colors duration-300">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '2.5s'}}></div>
+                  <span className="text-slate-700 text-sm font-semibold font-serif">GST/HST Compliance Management</span>
+                </div>
+                
+                <div className="mt-4 p-3 bg-gradient-to-r from-yellow-50/80 to-amber-50/60 rounded-xl border-2 border-yellow-200/50">
+                  <div className="flex items-center justify-center gap-2">
+                    <Award className="w-5 h-5 text-yellow-600 animate-bounce" />
+                    <span className="text-yellow-800 text-sm font-bold font-serif">15+ Years Experience</span>
+                    <Award className="w-5 h-5 text-yellow-600 animate-bounce" style={{animationDelay: '0.5s'}} />
                   </div>
                 </div>
               </div>
