@@ -84,7 +84,7 @@ export default function About() {
             <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2 text-sm">
               <Award className="w-4 h-4 text-blue-600" />
             About
-          </h2>
+          </h3>
             <ul className="space-y-2 text-slate-700 text-xs flex-1 overflow-hidden">
               <li className="flex items-center gap-2">
             I'm <strong>Kuldeep, CPA</strong>, Principal at <strong>Kempt CPA Professional Corporation</strong>. We serve individuals and businesses with straightforward, tech‑enabled accounting and proactive advice.
