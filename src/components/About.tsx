@@ -50,7 +50,7 @@ export default function About() {
             </div>
             
             {/* Professional Excellence box */}
-            <div className="max-w-md aspect-square p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 hover:shadow-lg transition-all duration-300">
+            <div className="max-w-lg aspect-square p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 hover:shadow-lg transition-all duration-300">
               <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
                 <Award className="w-5 h-5 text-blue-600" />
                 Professional Excellence
