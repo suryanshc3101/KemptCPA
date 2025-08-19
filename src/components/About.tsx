@@ -33,28 +33,9 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
-        
-        <div className="relative order-1 md:order-2">
-          <div className="flex items-center gap-2 mb-4">
-            <Sparkles className="w-6 h-6 text-blue-500 animate-pulse" />
-            <span className="text-sm font-semibold text-blue-600 tracking-wide uppercase">About Our Principal</span>
-          </div>
           
-          <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent mb-6">
-            About
-          </h2>
-          
-          <p className="text-lg text-slate-700 leading-relaxed mb-6">
-            I'm <strong>Kuldeep, CPA</strong>, Principal at <strong>Kempt CPA Professional Corporation</strong>. We serve individuals and businesses with straightforward, tech‑enabled accounting and proactive advice.
-          </p>
-          
-          <p className="text-lg text-slate-700 leading-relaxed mb-6">
-            With extensive experience in Canadian tax law, financial reporting, and business advisory services, I bring a strategic approach to every client engagement. My practice focuses on helping businesses navigate complex financial challenges while maintaining compliance with CRA requirements.
-          </p>
-          
-          {/* Both boxes positioned on extreme left and right sides */}
-          <div className="flex justify-between gap-8 mb-6">
+          {/* Both boxes positioned under the image */}
+          <div className="flex justify-between gap-8 mt-6">
             {/* Why Choose Kempt CPA box */}
             <div className="max-w-md aspect-square p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50 border border-slate-200 hover:shadow-lg transition-all duration-300">
               <h3 className="font-bold text-slate-900 mb-2">✨ Why Choose Kempt CPA?</h3>
@@ -92,6 +73,25 @@ export default function About() {
               </ul>
             </div>
           </div>
+        </div>
+        
+        <div className="relative order-1 md:order-2">
+          <div className="flex items-center gap-2 mb-4">
+            <Sparkles className="w-6 h-6 text-blue-500 animate-pulse" />
+            <span className="text-sm font-semibold text-blue-600 tracking-wide uppercase">About Our Principal</span>
+          </div>
+          
+          <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent mb-6">
+            About
+          </h2>
+          
+          <p className="text-lg text-slate-700 leading-relaxed mb-6">
+            I'm <strong>Kuldeep, CPA</strong>, Principal at <strong>Kempt CPA Professional Corporation</strong>. We serve individuals and businesses with straightforward, tech‑enabled accounting and proactive advice.
+          </p>
+          
+          <p className="text-lg text-slate-700 leading-relaxed mb-6">
+            With extensive experience in Canadian tax law, financial reporting, and business advisory services, I bring a strategic approach to every client engagement. My practice focuses on helping businesses navigate complex financial challenges while maintaining compliance with CRA requirements.
+          </p>
           
           <div className="space-y-4">
             <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-lg transition-shadow">
