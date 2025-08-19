@@ -33,8 +33,10 @@ export default function About() {
               </div>
             </div>
           </div>
-          
-          {/* Both boxes positioned under the image */}
+        </div>
+        
+        {/* Information boxes positioned separately under the image */}
+        <div className="order-3 md:order-2">
           <div className="flex justify-between gap-8 mt-6">
             {/* Why Choose Kempt CPA box */}
             <div className="max-w-md aspect-square p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50 border border-slate-200 hover:shadow-lg transition-all duration-300">
@@ -74,8 +76,9 @@ export default function About() {
             </div>
           </div>
         </div>
+          
         
-        <div className="relative order-1 md:order-2">
+        <div className="relative order-1 md:order-3">
           <div className="flex items-center gap-2 mb-4">
             <Sparkles className="w-6 h-6 text-blue-500 animate-pulse" />
             <span className="text-sm font-semibold text-blue-600 tracking-wide uppercase">About Our Principal</span>
