@@ -39,9 +39,9 @@ export default function About() {
         <div className="order-3 md:order-2">
           <div className="flex justify-between gap-8 mt-6">
             {/* Why Choose Kempt CPA box */}
-            <div className="max-w-md aspect-square p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50 border border-slate-200 hover:shadow-lg transition-all duration-300">
-              <h3 className="font-bold text-slate-900 mb-2">✨ Why Choose Kempt CPA?</h3>
-              <p className="text-slate-800 leading-relaxed font-medium text-sm">
+            <div className="w-96 h-96 p-8 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50 border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col">
+              <h3 className="font-bold text-slate-900 mb-4 text-lg">✨ Why Choose Kempt CPA?</h3>
+              <p className="text-slate-800 leading-relaxed font-medium text-base flex-1 overflow-hidden">
                 We combine traditional CPA expertise with modern cloud-based technology and a client-first approach. 
                 Every engagement is tailored to your specific needs, ensuring you receive strategic insights that drive growth, 
                 maintain compliance, and optimize your financial position. Our proactive communication style means you'll always 
@@ -50,12 +50,12 @@ export default function About() {
             </div>
             
             {/* Professional Excellence box */}
-            <div className="max-w-lg aspect-square p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 hover:shadow-lg transition-all duration-300">
-              <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
+            <div className="w-96 h-96 p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 hover:shadow-lg transition-all duration-300 flex flex-col">
+              <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2 text-lg">
                 <Award className="w-5 h-5 text-blue-600" />
                 Professional Excellence
               </h3>
-              <ul className="space-y-2 text-slate-700 text-sm">
+              <ul className="space-y-3 text-slate-700 text-sm flex-1 overflow-hidden">
                 <li className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
                   <span>Chartered Professional Accountant (CPA Ontario)</span>
