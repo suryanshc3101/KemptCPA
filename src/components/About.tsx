@@ -53,8 +53,8 @@ export default function About() {
             With extensive experience in Canadian tax law, financial reporting, and business advisory services, I bring a strategic approach to every client engagement. My practice focuses on helping businesses navigate complex financial challenges while maintaining compliance with CRA requirements.
           </p>
           
-          {/* Both boxes side by side with matching sizes */}
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
+          {/* Both boxes positioned on extreme left and right sides */}
+          <div className="flex justify-between gap-8 mb-6">
             {/* Why Choose Kempt CPA box */}
             <div className="max-w-md aspect-square p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50 border border-slate-200 hover:shadow-lg transition-all duration-300">
               <h3 className="font-bold text-slate-900 mb-2">✨ Why Choose Kempt CPA?</h3>
