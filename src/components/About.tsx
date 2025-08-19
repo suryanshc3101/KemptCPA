@@ -74,35 +74,33 @@ export default function About() {
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-          
+          <div className="w-80 h-80 p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50 border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col">
+            <h3 className="font-bold text-slate-900 mb-3 text-sm">✨ Why Choose Kempt CPA?</h3>
+            <p className="text-slate-800 leading-snug font-medium text-xs flex-1 overflow-hidden">
         
-        <div className="relative order-1 md:order-3">
-          <div className="flex items-center gap-2 mb-4">
-            <Sparkles className="w-6 h-6 text-blue-500 animate-pulse" />
+              Every engagement is tailored to your specific needs, ensuring strategic insights that drive growth and maintain compliance.
             <span className="text-sm font-semibold text-blue-600 tracking-wide uppercase">About Our Principal</span>
-          </div>
-          
-          <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent mb-6">
+          <div className="w-80 h-80 p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 hover:shadow-lg transition-all duration-300 flex flex-col">
+            <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2 text-sm">
+              <Award className="w-4 h-4 text-blue-600" />
             About
           </h2>
-          
-          <p className="text-lg text-slate-700 leading-relaxed mb-6">
+            <ul className="space-y-2 text-slate-700 text-xs flex-1 overflow-hidden">
+              <li className="flex items-center gap-2">
             I'm <strong>Kuldeep, CPA</strong>, Principal at <strong>Kempt CPA Professional Corporation</strong>. We serve individuals and businesses with straightforward, tech‑enabled accounting and proactive advice.
-          </p>
+                <span className="leading-tight">Chartered Professional Accountant (CPA Ontario)</span>
           
-          <p className="text-lg text-slate-700 leading-relaxed mb-6">
+              <li className="flex items-center gap-2">
             With extensive experience in Canadian tax law, financial reporting, and business advisory services, I bring a strategic approach to every client engagement. My practice focuses on helping businesses navigate complex financial challenges while maintaining compliance with CRA requirements.
-          </p>
+                <span className="leading-tight">Canadian tax planning and compliance</span>
           
-          <div className="space-y-4">
+              <li className="flex items-center gap-2">
             <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-lg transition-shadow">
-              <Briefcase className="w-6 h-6 text-orange-500" />
+                <span className="leading-tight">QuickBooks, Xero, and Sage 50 expert</span>
               <span className="font-medium text-slate-700">QuickBooks • Xero • Sage 50</span>
-            </div>
+              <li className="flex items-center gap-2">
             <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-lg transition-shadow">
-              <MapPin className="w-6 h-6 text-teal-500" />
+                <span className="leading-tight">CRA representation and audit defense</span>
               <span className="font-medium text-slate-700">Services in Brantford, Ontario</span>
             </div>
           </div>
