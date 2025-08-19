@@ -55,13 +55,13 @@ export default function About() {
         </div>
         
         {/* Enhanced Professional Information Boxes */}
-        <div className="order-3 md:order-2">
-          <div className="flex justify-between gap-6 mt-8 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
+        <div className="order-2 md:order-3 col-span-2">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
             {/* Enhanced Why Choose Kempt CPA box */}
-            <div className="group relative w-80 h-80 p-6 rounded-3xl bg-gradient-to-br from-white/95 via-blue-50/90 to-indigo-50/85 border-2 border-white/30 shadow-2xl hover:shadow-3xl hover:scale-105 hover:rotate-1 transition-all duration-500 backdrop-blur-lg overflow-hidden">
+            <div className="group relative p-6 rounded-3xl bg-gradient-to-br from-white/95 via-blue-50/90 to-indigo-50/85 border-2 border-white/30 shadow-2xl hover:shadow-3xl hover:scale-105 hover:rotate-1 transition-all duration-500 backdrop-blur-lg min-h-[400px]">
               {/* Magical background effects */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-400/5 via-indigo-400/3 to-purple-400/2 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-400/10 to-indigo-400/8 rounded-full -translate-y-12 translate-x-12 group-hover:translate-y-2 group-hover:translate-x-2 transition-all duration-700"></div>
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400/10 to-indigo-400/8 rounded-full -translate-y-10 translate-x-10 group-hover:translate-y-2 group-hover:translate-x-2 transition-all duration-700"></div>
               
               {/* Content */}
               <div className="relative z-10 h-full flex flex-col">
@@ -74,7 +74,7 @@ export default function About() {
                   </h3>
                 </div>
                 
-                <div className="flex-1 space-y-3">
+                <div className="flex-1 space-y-3 overflow-y-auto">
                   <div className="p-3 bg-white/60 backdrop-blur-sm rounded-xl border border-blue-200/50">
                     <p className="text-slate-800 text-sm font-medium leading-relaxed">
                       <strong className="text-blue-600">Expert CPA Services:</strong> Traditional expertise meets modern cloud technology
@@ -103,10 +103,10 @@ export default function About() {
             </div>
             
             {/* Enhanced Professional Excellence box */}
-            <div className="group relative w-80 h-80 p-6 rounded-3xl bg-gradient-to-br from-white/95 via-indigo-50/90 to-blue-50/85 border-2 border-white/30 shadow-2xl hover:shadow-3xl hover:scale-105 hover:-rotate-1 transition-all duration-500 backdrop-blur-lg overflow-hidden">
+            <div className="group relative p-6 rounded-3xl bg-gradient-to-br from-white/95 via-indigo-50/90 to-blue-50/85 border-2 border-white/30 shadow-2xl hover:shadow-3xl hover:scale-105 hover:-rotate-1 transition-all duration-500 backdrop-blur-lg min-h-[400px]">
               {/* Magical background effects */}
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-400/5 via-blue-400/3 to-teal-400/2 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-br from-teal-400/10 to-emerald-400/8 rounded-full translate-y-12 -translate-x-12 group-hover:translate-y-2 group-hover:translate-x-2 transition-all duration-700"></div>
+              <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-br from-teal-400/10 to-emerald-400/8 rounded-full translate-y-10 -translate-x-10 group-hover:translate-y-2 group-hover:translate-x-2 transition-all duration-700"></div>
               
               {/* Content */}
               <div className="relative z-10 h-full flex flex-col">
@@ -119,7 +119,7 @@ export default function About() {
                   </h3>
                 </div>
                 
-                <div className="flex-1 space-y-2">
+                <div className="flex-1 space-y-2 overflow-y-auto">
                   <div className="flex items-center gap-3 p-2 bg-white/60 backdrop-blur-sm rounded-lg border border-blue-200/30 group-hover:bg-blue-50/80 transition-colors duration-300">
                     <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
                     <span className="text-slate-700 text-xs font-medium">CPA Ontario Certified Professional</span>
@@ -150,7 +150,7 @@ export default function About() {
                     <span className="text-slate-700 text-xs font-medium">GST/HST Compliance Management</span>
                   </div>
                   
-                  <div className="mt-3 p-3 bg-gradient-to-r from-yellow-50/80 to-amber-50/60 rounded-xl border-2 border-yellow-200/50">
+                  <div className="mt-2 p-2 bg-gradient-to-r from-yellow-50/80 to-amber-50/60 rounded-xl border-2 border-yellow-200/50">
                     <div className="flex items-center justify-center gap-2">
                       <Award className="w-4 h-4 text-yellow-600 animate-bounce" />
                       <span className="text-yellow-800 text-xs font-bold">15+ Years Experience</span>
@@ -158,6 +158,7 @@ export default function About() {
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -210,23 +211,6 @@ export default function About() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-            <p>
-              I'm <strong>Kuldeep, CPA</strong>, Principal at <strong>Kempt CPA Professional Corporation</strong>. 
-              We serve individuals and businesses with straightforward, tech‑enabled accounting and proactive advice.
-            </p>
-            <p>
-              With extensive experience in Canadian tax law, financial reporting, and business advisory services, 
-              I bring a strategic approach to every client engagement.
-            </p>
-            <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-lg transition-shadow">
-              <Briefcase className="w-5 h-5 text-blue-600" />
-              <span className="font-medium text-slate-700">QuickBooks • Xero • Sage 50</span>
-            </div>
-            <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-lg transition-shadow">
-              <MapPin className="w-5 h-5 text-teal-600" />
-              <span className="font-medium text-slate-700">Services in Brantford, Ontario</span>
             </div>
           </div>
         </div>
