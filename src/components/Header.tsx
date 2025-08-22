@@ -16,7 +16,7 @@ export default function Header() {
         <div className="flex items-center">
           <div className="flex items-center gap-2">
             <Sparkles className="w-6 h-6 text-blue-600 animate-sparkle" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-indigo-600 bg-clip-text text-transparent animate-text-shimmer cursor-default">
+            <span className="text-2xl font-bold bg-gradient-to-r from-blue-800 via-cyan-800 to-indigo-800 bg-clip-text text-transparent animate-text-shimmer cursor-default">
               KemptCPA
             </span>
           </div>
