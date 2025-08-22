@@ -5,7 +5,7 @@ const steps = [
   {
     number: "1",
     icon: Phone,
-    color: 'from-purple-500 to-violet-500',
+    color: 'from-cyan-500 to-blue-500',
     title: "Book a call",
     description: "Share your financial needs and goals with us."
   },
@@ -32,12 +32,12 @@ export default function HowItWorks() {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.03),transparent_70%)]"></div>
         <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-gradient-to-br from-blue-100/10 to-indigo-100/8 rounded-full blur-2xl animate-pulse"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-gradient-to-br from-purple-100/8 to-violet-100/6 rounded-full blur-2xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-gradient-to-br from-cyan-100/8 to-blue-100/6 rounded-full blur-2xl animate-pulse" style={{animationDelay: '2s'}}></div>
       </div>
       
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-slate-900 to-purple-800 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-slate-900 to-cyan-800 bg-clip-text text-transparent">
             How it works
           </h2>
           <p className="mt-4 text-xl text-slate-600 max-w-2xl mx-auto">

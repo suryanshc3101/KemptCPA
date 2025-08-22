@@ -12,14 +12,14 @@ export default function Hero() {
         {/* Enhanced magical orbs with advanced animations */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-400/15 to-indigo-400/12 rounded-full blur-3xl animate-magical-float"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-teal-400/15 to-emerald-400/10 rounded-full blur-3xl animate-magical-pulse" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-gradient-to-br from-purple-400/12 to-pink-400/8 rounded-full blur-3xl animate-magical-float" style={{animationDelay: '4s'}}></div>
+        <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-gradient-to-br from-cyan-400/12 to-blue-400/8 rounded-full blur-3xl animate-magical-float" style={{animationDelay: '4s'}}></div>
         
         {/* Advanced floating particles */}
         <div className="absolute top-1/4 left-1/3 w-3 h-3 bg-blue-400/80 rounded-full animate-sparkle opacity-70" style={{animationDelay: '0s'}}></div>
         <div className="absolute top-2/3 right-1/4 w-2 h-2 bg-teal-400/70 rounded-full animate-sparkle opacity-60" style={{animationDelay: '1.5s'}}></div>
         <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-indigo-400/60 rounded-full animate-sparkle opacity-50" style={{animationDelay: '2.5s'}}></div>
-        <div className="absolute bottom-1/4 right-1/2 w-2 h-2 bg-purple-400/70 rounded-full animate-sparkle opacity-65" style={{animationDelay: '3s'}}></div>
-        <div className="absolute top-3/4 left-2/3 w-1.5 h-1.5 bg-pink-400/60 rounded-full animate-sparkle opacity-55" style={{animationDelay: '4.5s'}}></div>
+        <div className="absolute bottom-1/4 right-1/2 w-2 h-2 bg-cyan-400/70 rounded-full animate-sparkle opacity-65" style={{animationDelay: '3s'}}></div>
+        <div className="absolute top-3/4 left-2/3 w-1.5 h-1.5 bg-blue-400/60 rounded-full animate-sparkle opacity-55" style={{animationDelay: '4.5s'}}></div>
         
         {/* Enhanced grid pattern overlay */}
         <div className="absolute inset-0 opacity-[0.03]" style={{backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(59,130,246,0.5) 1px, transparent 0)', backgroundSize: '40px 40px'}}></div>
@@ -50,12 +50,12 @@ export default function Hero() {
               </div>
               <span className="text-sm font-bold text-slate-800 group-hover:text-teal-700 transition-colors">Growth Focused</span>
             </div>
-            <div className="group flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-purple-200/50 hover:shadow-2xl magical-hover animate-magical-glow" style={{animationDelay: '1s'}}>
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-600 to-indigo-700 flex items-center justify-center shadow-md group-hover:rotate-12 group-hover:shadow-lg group-hover:shadow-purple-400/50 transition-all duration-500 animate-magical-pulse" style={{animationDelay: '2s'}}>
+            <div className="group flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-cyan-200/50 hover:shadow-2xl magical-hover animate-magical-glow" style={{animationDelay: '1s'}}>
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-600 to-indigo-700 flex items-center justify-center shadow-md group-hover:rotate-12 group-hover:shadow-lg group-hover:shadow-cyan-400/50 transition-all duration-500 animate-magical-pulse" style={{animationDelay: '2s'}}>
                 <Sparkles className="w-4 h-4 text-white animate-sparkle" />
                 <Star className="w-2 h-2 text-yellow-300 absolute -top-1 -right-1 animate-sparkle" style={{animationDelay: '1s'}} />
               </div>
-              <span className="text-sm font-bold text-slate-800 group-hover:text-purple-700 transition-colors">Tech-Enabled</span>
+              <span className="text-sm font-bold text-slate-800 group-hover:text-cyan-700 transition-colors">Tech-Enabled</span>
             </div>
           </div>
           
@@ -109,7 +109,7 @@ export default function Hero() {
                   <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-blue-400 to-transparent ml-4 animate-magical-gradient"></div>
                 </div>
                 
-                <h3 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent animate-text-shimmer">
+                <h3 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-white via-blue-200 to-cyan-200 bg-clip-text text-transparent animate-text-shimmer">
                   ✨ Professional CPA Services
                 </h3>
                 
@@ -123,7 +123,7 @@ export default function Hero() {
                 </div>
                 
                 <div className="flex items-center justify-center gap-3">
-                  <span className="px-4 py-2 glass-effect text-purple-200 rounded-full text-sm font-medium border border-purple-400/40 animate-magical-pulse" style={{animationDelay: '1s'}}>
+                  <span className="px-4 py-2 glass-effect text-cyan-200 rounded-full text-sm font-medium border border-cyan-400/40 animate-magical-pulse" style={{animationDelay: '1s'}}>
                     💡 Advisory
                   </span>
                   <span className="px-4 py-2 glass-effect text-emerald-200 rounded-full text-sm font-medium border border-emerald-400/40 animate-magical-pulse" style={{animationDelay: '1.5s'}}>
@@ -133,7 +133,7 @@ export default function Hero() {
                 
                 {/* Bottom decorative line */}
                 <div className="mt-8 flex items-center justify-center">
-                  <div className="w-20 h-1 bg-gradient-to-r from-blue-400 via-purple-500 to-teal-400 rounded-full animate-magical-gradient shadow-lg"></div>
+                  <div className="w-20 h-1 bg-gradient-to-r from-blue-400 via-cyan-500 to-teal-400 rounded-full animate-magical-gradient shadow-lg"></div>
                 </div>
               </div>
             </div>

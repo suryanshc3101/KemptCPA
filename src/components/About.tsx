@@ -12,12 +12,12 @@ export default function About() {
         {/* Enhanced magical orbs */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-400/20 to-indigo-400/15 rounded-full blur-3xl animate-pulse hover:animate-ping transition-all duration-1000"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-teal-400/18 to-emerald-400/12 rounded-full blur-3xl animate-pulse hover:scale-110 transition-all duration-1000" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-gradient-to-br from-purple-400/12 to-violet-400/8 rounded-full blur-3xl animate-pulse" style={{animationDelay: '4s'}}></div>
+        <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-gradient-to-br from-cyan-400/12 to-blue-400/8 rounded-full blur-3xl animate-pulse" style={{animationDelay: '4s'}}></div>
         
         {/* Floating magical particles */}
         <div className="absolute top-1/4 left-1/3 w-2 h-2 bg-blue-400/80 rounded-full animate-bounce opacity-70" style={{animationDelay: '0s', animationDuration: '3s'}}></div>
         <div className="absolute top-2/3 right-1/4 w-1.5 h-1.5 bg-teal-400/70 rounded-full animate-bounce opacity-60" style={{animationDelay: '1.5s', animationDuration: '4s'}}></div>
-        <div className="absolute top-1/2 left-1/4 w-1 h-1 bg-purple-400/60 rounded-full animate-ping opacity-50" style={{animationDelay: '2.5s'}}></div>
+        <div className="absolute top-1/2 left-1/4 w-1 h-1 bg-cyan-400/60 rounded-full animate-ping opacity-50" style={{animationDelay: '2.5s'}}></div>
         <div className="absolute bottom-1/3 right-1/3 w-1.5 h-1.5 bg-indigo-400/70 rounded-full animate-pulse opacity-60" style={{animationDelay: '3.5s'}}></div>
         
         {/* Advanced grid pattern */}
@@ -146,7 +146,7 @@ export default function About() {
                   </p>
                 </div>
                 
-                <div className="p-4 bg-gradient-to-r from-purple-50/80 to-teal-50/60 rounded-xl border border-teal-200/50">
+                <div className="p-4 bg-gradient-to-r from-cyan-50/80 to-teal-50/60 rounded-xl border border-teal-200/50">
                   <p className="text-slate-800 text-base font-semibold leading-relaxed font-serif">
                     <strong className="text-teal-600">Strategic Growth:</strong> Insights that drive business success
                   </p>
@@ -184,6 +184,7 @@ export default function About() {
                 </div>
                 
                 <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-indigo-50/80 to-purple-50/60 rounded-lg border border-indigo-200/30 group-hover:bg-indigo-50/90 transition-colors duration-300">
+                <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-indigo-50/80 to-cyan-50/60 rounded-lg border border-indigo-200/30 group-hover:bg-indigo-50/90 transition-colors duration-300">
                   <div className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
                   <span className="text-slate-700 text-sm font-semibold font-serif">QuickBooks • Xero • Sage 50 Specialist</span>
                 </div>
@@ -198,7 +199,7 @@ export default function About() {
                   <span className="text-slate-700 text-sm font-semibold font-serif">Financial Reporting & Advisory</span>
                 </div>
                 
-                <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-blue-50/80 to-indigo-50/60 rounded-lg border border-blue-200/30 group-hover:bg-blue-50/90 transition-colors duration-300">
+                <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-blue-50/80 to-cyan-50/60 rounded-lg border border-blue-200/30 group-hover:bg-blue-50/90 transition-colors duration-300">
                   <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '2.5s'}}></div>
                   <span className="text-slate-700 text-sm font-semibold font-serif">GST/HST Compliance Management</span>
                 </div>
