@@ -202,14 +202,6 @@ export default function About() {
                   <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '2.5s'}}></div>
                   <span className="text-slate-700 text-sm font-semibold font-serif">GST/HST Compliance Management</span>
                 </div>
-                
-                <div className="mt-4 p-3 bg-gradient-to-r from-yellow-50/80 to-amber-50/60 rounded-xl border-2 border-yellow-200/50">
-                  <div className="flex items-center justify-center gap-2">
-                    <Award className="w-5 h-5 text-yellow-600 animate-bounce" />
-                    <span className="text-yellow-800 text-sm font-bold font-serif">15+ Years Experience</span>
-                    <Award className="w-5 h-5 text-yellow-600 animate-bounce" style={{animationDelay: '0.5s'}} />
-                  </div>
-                </div>
               </div>
             </div>
           </div>
