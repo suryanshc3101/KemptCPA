@@ -1,36 +1,50 @@
 import React from 'react';
+import { Sparkles, Phone, Mail } from 'lucide-react';
 
 export default function Header() {
   return (
-    <div className="w-full bg-gradient-to-r from-white via-blue-50/30 to-slate-50 border-b border-blue-200/50 shadow-lg backdrop-blur-sm relative overflow-hidden">
+    <div className="w-full glass-effect border-b border-blue-200/50 shadow-2xl backdrop-blur-lg relative overflow-hidden animate-magical-gradient bg-gradient-to-r from-white via-blue-50/40 to-indigo-50/30">
       {/* Subtle magical header effects */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-400/8 via-transparent to-teal-400/6 animate-pulse opacity-60" style={{animationDuration: '4s'}}></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-400/10 via-purple-400/5 to-teal-400/8 animate-magical-gradient opacity-70"></div>
       
       {/* Advanced magical particles */}
-      <div className="absolute top-2 left-1/4 w-1 h-1 bg-blue-400/60 rounded-full animate-ping opacity-40" style={{animationDelay: '0s', animationDuration: '3s'}}></div>
-      <div className="absolute bottom-2 right-1/3 w-0.5 h-0.5 bg-teal-400/50 rounded-full animate-bounce opacity-50" style={{animationDelay: '1.5s', animationDuration: '4s'}}></div>
-      <div className="absolute top-1 right-1/4 w-0.5 h-0.5 bg-indigo-400/40 rounded-full animate-pulse opacity-30" style={{animationDelay: '2s'}}></div>
+      <div className="absolute top-2 left-1/4 w-1.5 h-1.5 bg-blue-400/80 rounded-full animate-sparkle opacity-60"></div>
+      <div className="absolute bottom-2 right-1/3 w-1 h-1 bg-teal-400/70 rounded-full animate-sparkle opacity-70" style={{animationDelay: '1.5s'}}></div>
+      <div className="absolute top-1 right-1/4 w-1 h-1 bg-purple-400/60 rounded-full animate-sparkle opacity-50" style={{animationDelay: '2s'}}></div>
       
-      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between relative z-10">
+      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between relative z-10">
         <div className="flex items-center">
-          <span className="text-xl font-bold text-slate-800 hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-600 hover:bg-clip-text hover:text-transparent hover:scale-105 transition-all duration-300 cursor-default">KemptCPA</span>
-        </div>
-        <div className="flex items-center gap-4">
-          <span className="text-sm font-semibold text-blue-600 tracking-wide uppercase hover:animate-pulse hover:text-indigo-600 transition-colors cursor-default">Professional CPA Services</span>
-          <div className="hidden md:flex items-center gap-2 text-slate-600">
-            <span className="text-sm hover:text-blue-600 transition-colors">📞 +1 519 771 7862</span>
+          <div className="flex items-center gap-2">
+            <Sparkles className="w-6 h-6 text-blue-600 animate-sparkle" />
+            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent animate-text-shimmer cursor-default">
+              KemptCPA
+            </span>
           </div>
-          <a href="#contact" className="text-slate-700 hover:text-blue-600 hover:bg-blue-50 px-2 py-1 rounded transition-all duration-300 hover:scale-105">
-            info@kemptcpa.ca
-          </a>
+        </div>
+        <div className="flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-2 glass-effect px-4 py-2 rounded-full animate-magical-pulse">
+            <span className="text-sm font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              ✨ Professional CPA Services
+            </span>
+          </div>
+          <div className="hidden md:flex items-center gap-4 text-slate-600">
+            <a href="tel:+15197717862" className="flex items-center gap-2 glass-effect px-3 py-2 rounded-lg magical-hover">
+              <Phone className="w-4 h-4 text-blue-600" />
+              <span className="text-sm font-medium">+1 519 771 7862</span>
+            </a>
+            <a href="mailto:info@kemptcpa.ca" className="flex items-center gap-2 glass-effect px-3 py-2 rounded-lg magical-hover">
+              <Mail className="w-4 h-4 text-blue-600" />
+              <span className="text-sm font-medium">info@kemptcpa.ca</span>
+            </a>
+          </div>
           <a 
             href="#contact" 
-            className="group relative rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-slate-700 text-white px-6 py-2 font-semibold hover:from-blue-700 hover:via-indigo-700 hover:to-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-blue-400/30 transform hover:scale-105 hover:rotate-1 overflow-hidden"
+            className="group relative rounded-2xl bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white px-8 py-3 font-bold magical-hover animate-magical-glow shadow-2xl overflow-hidden"
           >
-            <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
-            <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-30 group-hover:animate-pulse transition-all duration-300 rounded-xl"></div>
+            <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></span>
+            <div className="absolute inset-0 bg-white/15 opacity-0 group-hover:opacity-40 group-hover:animate-magical-pulse transition-all duration-500 rounded-2xl"></div>
             <span className="relative">
-            ✨ Book 30 Minutes
+              ✨ Book 30 Minutes
             </span>
           </a>
         </div>
