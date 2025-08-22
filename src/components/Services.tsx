@@ -61,10 +61,10 @@ export default function Services() {
       {/* Subtle background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Professional subtle patterns */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.06),transparent_50%),radial-gradient(circle_at_70%_70%,rgba(16,185,129,0.05),transparent_50%),radial-gradient(circle_at_50%_80%,rgba(139,92,246,0.04),transparent_60%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.06),transparent_50%),radial-gradient(circle_at_70%_70%,rgba(16,185,129,0.05),transparent_50%),radial-gradient(circle_at_50%_80%,rgba(6,182,212,0.04),transparent_60%)]"></div>
         <div className="absolute top-1/4 left-0 w-96 h-96 bg-gradient-to-br from-blue-400/8 to-teal-400/6 rounded-full blur-3xl animate-magical-float"></div>
         <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-br from-cyan-400/7 to-indigo-400/5 rounded-full blur-3xl animate-magical-pulse" style={{animationDelay: '3s'}}></div>
-        <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-gradient-to-br from-blue-400/6 to-orange-400/4 rounded-full blur-3xl animate-magical-float" style={{animationDelay: '6s'}}></div>
+        <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-gradient-to-br from-blue-400/6 to-cyan-400/4 rounded-full blur-3xl animate-magical-float" style={{animationDelay: '6s'}}></div>
         
         {/* Enhanced floating particles */}
         <div className="absolute top-1/4 left-1/3 w-2 h-2 bg-blue-400/70 rounded-full animate-sparkle" style={{animationDelay: '0s'}}></div>

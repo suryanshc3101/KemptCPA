@@ -11,8 +11,8 @@ export default function Hero() {
         
         {/* Enhanced magical orbs with advanced animations */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-400/15 to-indigo-400/12 rounded-full blur-3xl animate-magical-float"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-teal-400/15 to-emerald-400/10 rounded-full blur-3xl animate-magical-pulse" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-gradient-to-br from-cyan-400/12 to-blue-400/8 rounded-full blur-3xl animate-magical-float" style={{animationDelay: '4s'}}></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-teal-400/15 to-cyan-400/10 rounded-full blur-3xl animate-magical-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-gradient-to-br from-cyan-400/12 to-teal-400/8 rounded-full blur-3xl animate-magical-float" style={{animationDelay: '4s'}}></div>
         
         {/* Advanced floating particles */}
         <div className="absolute top-1/4 left-1/3 w-3 h-3 bg-blue-400/80 rounded-full animate-sparkle opacity-70" style={{animationDelay: '0s'}}></div>
@@ -97,7 +97,7 @@ export default function Hero() {
             <div className="absolute top-4 right-4 w-2 h-2 bg-white rounded-full animate-sparkle opacity-80"></div>
             <div className="absolute bottom-8 left-8 w-2 h-2 bg-blue-300 rounded-full animate-sparkle opacity-70" style={{animationDelay: '1s'}}></div>
             <div className="absolute top-1/3 left-1/4 w-1.5 h-1.5 bg-teal-300 rounded-full animate-sparkle opacity-60" style={{animationDelay: '2s'}}></div>
-            <div className="absolute top-2/3 right-1/3 w-1.5 h-1.5 bg-purple-300 rounded-full animate-sparkle opacity-65" style={{animationDelay: '3s'}}></div>
+            <div className="absolute top-2/3 right-1/3 w-1.5 h-1.5 bg-cyan-300 rounded-full animate-sparkle opacity-65" style={{animationDelay: '3s'}}></div>
             
             {/* Centered text with enhanced effects */}
             <div className="absolute inset-0 flex items-center justify-center animate-magical-float">
