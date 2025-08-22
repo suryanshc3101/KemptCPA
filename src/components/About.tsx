@@ -113,8 +113,8 @@ export default function About() {
           {/* Enhanced Why Choose Kempt CPA box */}
           <div className="group relative p-8 rounded-3xl bg-gradient-to-br from-white/95 via-blue-50/90 to-indigo-50/85 border-2 border-white/30 shadow-2xl hover:shadow-3xl hover:scale-105 hover:rotate-1 transition-all duration-500 backdrop-blur-lg min-h-[400px]">
             {/* Magical background effects */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-400/5 via-indigo-400/3 to-purple-400/2 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-            <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400/10 to-indigo-400/8 rounded-full -translate-y-10 translate-x-10 group-hover:translate-y-2 group-hover:translate-x-2 transition-all duration-700"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-400/5 via-indigo-400/3 to-cyan-400/2 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/10 to-indigo-400/8 rounded-full -translate-y-16 translate-x-16 group-hover:translate-y-4 group-hover:translate-x-4 group-hover:rotate-45 transition-all duration-700"></div>
             
             {/* Content */}
             <div className="relative z-10 h-full flex flex-col">
@@ -140,9 +140,9 @@ export default function About() {
                   </p>
                 </div>
                 
-                <div className="p-4 bg-gradient-to-r from-indigo-50/80 to-purple-50/60 rounded-xl border border-purple-200/50">
+                <div className="p-4 bg-gradient-to-r from-indigo-50/80 to-cyan-50/60 rounded-xl border border-cyan-200/50">
                   <p className="text-slate-800 text-base font-semibold leading-relaxed font-serif">
-                    <strong className="text-purple-600">Proactive Communication:</strong> Always know your financial position
+                    <strong className="text-cyan-600">Proactive Communication:</strong> Always know your financial position
                   </p>
                 </div>
                 
@@ -183,7 +183,6 @@ export default function About() {
                   <span className="text-slate-700 text-sm font-semibold font-serif">Canadian Tax Planning Expert</span>
                 </div>
                 
-                <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-indigo-50/80 to-purple-50/60 rounded-lg border border-indigo-200/30 group-hover:bg-indigo-50/90 transition-colors duration-300">
                 <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-indigo-50/80 to-cyan-50/60 rounded-lg border border-indigo-200/30 group-hover:bg-indigo-50/90 transition-colors duration-300">
                   <div className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
                   <span className="text-slate-700 text-sm font-semibold font-serif">QuickBooks • Xero • Sage 50 Specialist</span>
@@ -194,8 +193,8 @@ export default function About() {
                   <span className="text-slate-700 text-sm font-semibold font-serif">CRA Audit Defense & Representation</span>
                 </div>
                 
-                <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-purple-50/80 to-indigo-50/60 rounded-lg border border-purple-200/30 group-hover:bg-purple-50/90 transition-colors duration-300">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
+                <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-cyan-50/80 to-indigo-50/60 rounded-lg border border-cyan-200/30 group-hover:bg-cyan-50/90 transition-colors duration-300">
+                  <div className="w-2 h-2 bg-cyan-500 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
                   <span className="text-slate-700 text-sm font-semibold font-serif">Financial Reporting & Advisory</span>
                 </div>
                 
@@ -217,9 +216,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
-}
-  )
-}
-  )
+  );
 }
