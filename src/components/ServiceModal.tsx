@@ -21,12 +21,7 @@ const serviceDetails = {
       "Financial statement preparation and review",
       "Notice to reader engagements for banks and investors",
       "Compilation of financial statements",
-      "Management letter recommendations",
-      "Internal control assessments",
-      "Regulatory compliance support",
-      "Quarterly and annual financial reporting",
       "Bank covenant compliance monitoring",
-      "Investor relations support"
     ],
     benefits: [
       "Meet bank and investor requirements",
