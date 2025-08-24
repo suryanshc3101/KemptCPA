@@ -97,8 +97,8 @@ export default function About() {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <span className="font-bold text-teal-200 text-sm">Serving Remotely Canada Wide</span>
-                    <p className="text-white/80 text-sm">Based in Brantford</p>
+                    <span className="font-bold text-teal-200 text-sm">Serving Ontario Businesses</span>
+                    <p className="text-white/80 text-sm">Based in Brantford, Ontario</p>
                   </div>
                 </div>
               </div>
@@ -209,4 +209,6 @@ export default function About() {
       </div>
     </section>
   );
+}
+  )
 }
