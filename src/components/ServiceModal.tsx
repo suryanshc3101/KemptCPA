@@ -24,6 +24,7 @@ const serviceDetails = {
     ],
     benefits: [
       "Meet bank and investor requirements",
+      "Bank covenant compliance monitoring",
       "Professional presentation of financial information",
       "Enhanced credibility with stakeholders",
       "Improved internal controls and processes",
@@ -254,10 +255,18 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
           {/* Benefits */}
           {details.benefits && details.benefits.length > 0 && (
           <div>
-            <h3 className="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
-              <ArrowRight className="w-6 h-6 text-blue-500" />
-              Key Benefits
-            </h3>
+            {service.title !== "Assistance in finance audit, reviews and notice to reader engagements" && (
+              <h3 className="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <ArrowRight className="w-6 h-6 text-blue-500" />
+                Key Benefits
+              </h3>
+            )}
+            {service.title === "Assistance in finance audit, reviews and notice to reader engagements" && (
+              <h3 className="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <ArrowRight className="w-6 h-6 text-blue-500" />
+                Benefits
+              </h3>
+            )}
             <div className="grid md:grid-cols-2 gap-4">
               {details.benefits.map((benefit, index) => (
                 <div key={index} className="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border-l-4 border-blue-500">
