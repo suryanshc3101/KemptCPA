@@ -21,10 +21,10 @@ const serviceDetails = {
       "Financial statement preparation and review",
       "Notice to reader engagements for banks and investors",
       "Compilation of financial statements",
+      "Bank covenant compliance monitoring",
     ],
     benefits: [
       "Meet bank and investor requirements",
-      "Bank covenant compliance monitoring",
       "Professional presentation of financial information",
       "Enhanced credibility with stakeholders",
       "Improved internal controls and processes",
