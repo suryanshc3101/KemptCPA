@@ -79,7 +79,7 @@ export default function Hero() {
               💼 QuickBooks • Xero • Sage 50
             </span>
             <span className="px-4 py-2 glass-effect text-teal-700 rounded-full border border-teal-200 animate-magical-pulse" style={{animationDelay: '1s'}}>
-              📍 Brantford, Ontario
+              📍 Serving Canada Remotely
             </span>
           </div>
         </div>

@@ -6,7 +6,7 @@ const services = [
   {
     icon: ClipboardCheck,
     color: 'from-blue-600 to-indigo-600',
-    title: "Assistance in Finance audit reviews and Notice to reader engagements",
+    title: "Assistance in finance audit, reviews and notice to reader engagements",
     description: "Professional assistance with financial statement audits, reviews, and notice to reader engagements to meet your compliance requirements."
   },
   {

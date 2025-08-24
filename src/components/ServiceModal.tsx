@@ -14,14 +14,13 @@ interface ServiceModalProps {
 }
 
 const serviceDetails = {
-  "Assistance in Finance audit reviews and Notice to reader engagements": {
+  "Assistance in finance audit, reviews and notice to reader engagements": {
     overview: "Comprehensive financial statement preparation and assurance services designed to meet regulatory requirements and provide stakeholders with confidence in your financial reporting. Our experienced team ensures accuracy, compliance, and professional presentation of your financial information.",
     detailedDescription: "We provide thorough assistance with compilation engagements, review engagements, and notice to reader services. Our approach combines technical expertise with practical business insight to deliver meaningful financial statements that serve your business needs and satisfy regulatory requirements.",
     features: [
       "Financial statement preparation and review",
       "Notice to reader engagements for banks and investors",
       "Compilation of financial statements",
-      "Bank covenant compliance monitoring",
     ],
     benefits: [
       "Meet bank and investor requirements",
@@ -42,12 +41,7 @@ const serviceDetails = {
       "Corporate tax return (T2) preparation and filing",
       "Tax planning and optimization strategies",
       "CRA correspondence and representation",
-      "Installment payment planning",
-      "Multi-year tax planning",
       "Tax-efficient business structure advice",
-      "Capital gains and losses optimization",
-      "Scientific Research and Experimental Development (SR&ED) credits",
-      "Provincial tax credit identification"
     ],
     benefits: [
       "Maximize tax deductions and credits",
@@ -77,13 +71,8 @@ const serviceDetails = {
       "Xero cloud-based bookkeeping services",
       "Sage 50 accounting system management",
       "Monthly bank reconciliations",
-      "Accounts payable and receivable management",
       "Financial statement preparation",
       "Payroll processing and remittances",
-      "Inventory tracking and costing",
-      "Multi-location and multi-currency support",
-      "Custom reporting and dashboards",
-      "Integration with third-party applications"
     ],
     benefits: [
       "Real-time access to financial information",
@@ -115,11 +104,7 @@ const serviceDetails = {
       "Input tax credit optimization",
       "Multi-provincial compliance management",
       "GST/HST audit support and representation",
-      "Voluntary disclosure services",
-      "Place of supply determinations",
       "New housing rebate applications",
-      "Import/export GST/HST compliance",
-      "Digital services tax implications"
     ],
     benefits: [
       "Ensure compliance with provincial requirements",
@@ -129,16 +114,6 @@ const serviceDetails = {
       "Reduced administrative burden",
       "Expert guidance on complex transactions",
       "Peace of mind with professional oversight"
-    ],
-    process: [
-      "Assess registration requirements",
-      "Set up filing schedules and reminders",
-      "Monthly transaction review and classification",
-      "Prepare and file returns electronically",
-      "Input tax credit review and optimization",
-      "Monitor compliance and deadlines",
-      "Quarterly compliance health checks",
-      "Handle any CRA inquiries or audits"
     ],
     image: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1200"
   },
@@ -167,53 +142,11 @@ const serviceDetails = {
       "Access to experienced business advisors",
       "Objective third-party perspective"
     ],
-    process: [
-      "Business assessment and analysis",
-      "Identify opportunities and challenges",
-      "Strategic planning and goal setting",
-      "Develop strategic recommendations",
-      "Implementation support and guidance",
-      "Implement solutions and monitor progress",
-      "Regular performance reviews and adjustments",
-      "Ongoing support and adjustments"
-    ],
     image: "https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=1200"
   },
   "CRA Representation": {
     overview: "Expert representation and advocacy with the Canada Revenue Agency for audits, disputes, objections, and complex compliance matters. We protect your interests while working toward favorable resolutions that minimize financial impact and stress.",
     detailedDescription: "When dealing with the CRA, having professional representation can make all the difference. Our experienced team understands CRA procedures, knows your rights as a taxpayer, and has the expertise to navigate complex situations while protecting your interests throughout the process.",
-    features: [
-      "CRA audit representation and support",
-      "Notice of objection preparation and filing",
-      "Voluntary disclosure applications",
-      "Penalty and interest relief requests",
-      "Tax dispute resolution",
-      "Compliance agreement negotiations",
-      "Appeals to Tax Court of Canada",
-      "Payroll audit defense",
-      "GST/HST audit representation",
-      "Transfer pricing documentation",
-      "Criminal investigation support"
-    ],
-    benefits: [
-      "Professional advocacy with CRA",
-      "Reduced stress and time commitment",
-      "Better outcomes in disputes",
-      "Protection of your rights and interests",
-      "Expert knowledge of tax law and procedures",
-      "Minimized financial exposure",
-      "Confidential and privileged communications"
-    ],
-    process: [
-      "Review CRA correspondence and requirements",
-      "Develop comprehensive defense strategy",
-      "Prepare response strategy and documentation",
-      "Gather supporting evidence and documentation",
-      "Communicate directly with CRA on your behalf",
-      "Present case and negotiate with CRA officials",
-      "Negotiate settlements and agreements",
-      "Provide ongoing support and monitoring"
-    ],
     image: "https://images.pexels.com/photos/5668882/pexels-photo-5668882.jpeg?auto=compress&cs=tinysrgb&w=1200"
   }
 };
@@ -301,6 +234,7 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
           </div>
 
           {/* Features */}
+          {details.features && details.features.length > 0 && (
           <div>
             <h3 className="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
               <CheckCircle className="w-6 h-6 text-green-500" />
@@ -315,8 +249,10 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
               ))}
             </div>
           </div>
+          )}
 
           {/* Benefits */}
+          {details.benefits && details.benefits.length > 0 && (
           <div>
             <h3 className="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
               <ArrowRight className="w-6 h-6 text-blue-500" />
@@ -330,6 +266,7 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
               ))}
             </div>
           </div>
+          )}
 
 
           {/* CTA */}
