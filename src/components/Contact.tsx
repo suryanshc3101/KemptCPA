@@ -258,7 +258,7 @@ export default function Contact() {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-orange-600" />
-                <span className="text-slate-600">Brantford, Ontario, Canada</span>
+                <span className="text-slate-600">Brantford, Canada</span>
               </div>
             </div>
           </div>

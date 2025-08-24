@@ -90,7 +90,7 @@ export default function Footer() {
           <p>© 2025 Kempt CPA Professional Corporation. All rights reserved.</p>
           <div className="flex items-center gap-2">
             <Sparkles className="w-3 h-3 text-blue-400" />
-            <span>Proudly serving businesses in Brantford, Ontario</span>
+            <span>Proudly serving businesses across Canada</span>
           </div>
         </div>
       </div>
