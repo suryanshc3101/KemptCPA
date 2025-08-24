@@ -176,7 +176,7 @@ export default function About() {
                 <div className="flex items-center gap-3 p-3 bg-white/60 backdrop-blur-sm rounded-lg border border-blue-200/30 group-hover:bg-blue-50/80 transition-colors duration-300">
                   <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
                   <span className="text-slate-700 text-sm font-semibold font-serif">CPA Ontario Certified Professional</span>
-                <span className="text-slate-700 text-sm font-semibold font-serif">Designated CPA</span>
+                </div>
                 
                 <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-teal-50/80 to-blue-50/60 rounded-lg border border-teal-200/30 group-hover:bg-teal-50/90 transition-colors duration-300">
                   <div className="w-2 h-2 bg-teal-500 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
@@ -209,9 +209,5 @@ export default function About() {
       </div>
     </section>
   );
-}
-}
-  )
-}
   )
 }
