@@ -37,16 +37,6 @@ const serviceDetails = {
       "Streamlined audit preparation",
       "Professional liability coverage"
     ],
-    process: [
-      "Initial consultation to understand requirements",
-      "Engagement planning and risk assessment",
-      "Review of accounting records and supporting documentation",
-      "Testing procedures and analytical review",
-      "Preparation of financial statements",
-      "Quality review and technical compliance check",
-      "Management review and recommendations",
-      "Final reporting and delivery"
-    ],
     image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200"
   },
   "T1 & T2": {
@@ -346,20 +336,6 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
             </div>
           </div>
 
-          {/* Process */}
-          <div>
-            <h3 className="text-2xl font-bold text-slate-800 mb-4">Our Process</h3>
-            <div className="space-y-4">
-              {details.process.map((step, index) => (
-                <div key={index} className="flex items-start gap-4 p-4 bg-white border border-slate-200 rounded-xl hover:shadow-lg transition-shadow">
-                  <div className={`w-8 h-8 rounded-full bg-gradient-to-r ${service.color} text-white flex items-center justify-center font-bold text-sm flex-shrink-0`}>
-                    {index + 1}
-                  </div>
-                  <span className="text-slate-700 leading-relaxed">{step}</span>
-                </div>
-              ))}
-            </div>
-          </div>
 
           {/* CTA */}
           <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl p-8 text-center">
