@@ -252,6 +252,7 @@ export default function Contact() {
                 className="relative rounded-xl border-2 border-slate-200 px-3 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-300 bg-white hover:border-slate-300 text-sm disabled:opacity-50"
               >
                 <option value="+1">🇨🇦 +1</option>
+                <option value="+1">🇺🇸 +1</option>
                 <option value="+44">🇬🇧 +44</option>
                 <option value="+91">🇮🇳 +91</option>
                 <option value="+61">🇦🇺 +61</option>
@@ -321,12 +322,6 @@ export default function Contact() {
           </button>
           
           {/* HubSpot Integration Notice */}
-          <div className="relative text-center">
-            <p className="text-xs text-slate-500 flex items-center justify-center gap-1">
-              🔒 Secure direct submission to HubSpot • 
-              <span className="text-blue-600 font-medium">Portal: 342359030</span>
-            </p>
-          </div>
         </form>
 
         {/* Contact Information */}

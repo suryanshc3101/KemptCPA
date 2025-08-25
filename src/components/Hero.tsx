@@ -36,21 +36,21 @@ export default function Hero() {
           
           {/* Feature highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 animate-fade-in-up" style={{animationDelay: '0.5s'}}>
-            <div className="group flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-blue-200/50 hover:shadow-2xl magical-hover animate-magical-glow">
+            <div className="group flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-blue-200/50 hover:shadow-2xl animate-magical-glow">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-md group-hover:rotate-12 group-hover:shadow-lg group-hover:shadow-blue-400/50 transition-all duration-500 animate-magical-pulse">
                 <Shield className="w-4 h-4 text-white" />
                 <Star className="w-2 h-2 text-yellow-300 absolute -top-1 -right-1 animate-sparkle" />
               </div>
               <span className="text-sm font-bold text-slate-800 group-hover:text-blue-700 transition-colors">CRA Compliant</span>
             </div>
-            <div className="group flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-teal-200/50 hover:shadow-2xl magical-hover animate-magical-glow" style={{animationDelay: '0.5s'}}>
+            <div className="group flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-teal-200/50 hover:shadow-2xl animate-magical-glow" style={{animationDelay: '0.5s'}}>
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-teal-500 to-emerald-600 flex items-center justify-center shadow-md group-hover:rotate-12 group-hover:shadow-lg group-hover:shadow-teal-400/50 transition-all duration-500 animate-magical-pulse" style={{animationDelay: '1s'}}>
                 <TrendingUp className="w-4 h-4 text-white" />
                 <Star className="w-2 h-2 text-yellow-300 absolute -top-1 -right-1 animate-sparkle" style={{animationDelay: '0.5s'}} />
               </div>
               <span className="text-sm font-bold text-slate-800 group-hover:text-teal-700 transition-colors">Growth Focused</span>
             </div>
-            <div className="group flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-cyan-200/50 hover:shadow-2xl magical-hover animate-magical-glow" style={{animationDelay: '1s'}}>
+            <div className="group flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-cyan-200/50 hover:shadow-2xl animate-magical-glow" style={{animationDelay: '1s'}}>
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-600 to-indigo-700 flex items-center justify-center shadow-md group-hover:rotate-12 group-hover:shadow-lg group-hover:shadow-cyan-400/50 transition-all duration-500 animate-magical-pulse" style={{animationDelay: '2s'}}>
                 <Sparkles className="w-4 h-4 text-white animate-sparkle" />
                 <Star className="w-2 h-2 text-yellow-300 absolute -top-1 -right-1 animate-sparkle" style={{animationDelay: '1s'}} />
