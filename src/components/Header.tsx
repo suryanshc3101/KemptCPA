@@ -44,7 +44,7 @@ export default function Header() {
             <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></span>
             <div className="absolute inset-0 bg-white/15 opacity-0 group-hover:opacity-40 group-hover:animate-magical-pulse transition-all duration-500 rounded-2xl"></div>
             <span className="relative">
-              ✨ Book 30 Minutes
+              ✨ Contact Us
             </span>
           </a>
         </div>

@@ -3,10 +3,12 @@ import { Send, Calendar, Mail, MapPin, Sparkles, Phone } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
     email: '',
     phone: '',
     countryCode: '+1',
+    country: 'Canada',
     business: '',
     software: '',
     message: ''
@@ -28,10 +30,12 @@ export default function Contact() {
       
       // Reset form after successful submission
       setFormData({
-        name: '',
+        firstName: '',
+        lastName: '',
         email: '',
         phone: '',
         countryCode: '+1',
+        country: 'Canada',
         business: '',
         software: '',
         message: ''
@@ -51,13 +55,25 @@ export default function Contact() {
 
   const countryCodes = [
     { code: '+1', country: 'Canada/US', flag: '🇨🇦' },
+    { code: '+1', country: 'USA', flag: '🇺🇸' },
     { code: '+44', country: 'UK', flag: '🇬🇧' },
-    { code: '+91', country: 'India', flag: '🇮🇳' },
-    { code: '+61', country: 'Australia', flag: '🇦🇺' },
     { code: '+33', country: 'France', flag: '🇫🇷' },
     { code: '+49', country: 'Germany', flag: '🇩🇪' },
+    { code: '+91', country: 'India', flag: '🇮🇳' },
+    { code: '+61', country: 'Australia', flag: '🇦🇺' },
     { code: '+86', country: 'China', flag: '🇨🇳' },
     { code: '+81', country: 'Japan', flag: '🇯🇵' },
+    { code: '+39', country: 'Italy', flag: '🇮🇹' },
+    { code: '+34', country: 'Spain', flag: '🇪🇸' },
+    { code: '+31', country: 'Netherlands', flag: '🇳🇱' },
+    { code: '+46', country: 'Sweden', flag: '🇸🇪' },
+    { code: '+41', country: 'Switzerland', flag: '🇨🇭' }
+  ];
+
+  const countries = [
+    'Canada', 'United States', 'United Kingdom', 'France', 'Germany', 
+    'India', 'Australia', 'China', 'Japan', 'Italy', 'Spain', 
+    'Netherlands', 'Sweden', 'Switzerland', 'Mexico', 'Brazil'
   ];
 
   return (
@@ -77,7 +93,7 @@ export default function Contact() {
             <span className="text-sm font-semibold text-blue-600 tracking-wide uppercase">Get In Touch</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent mb-4">
-            Contact / Book 30 Minutes
+            Contact Us
           </h2>
           <p className="text-xl text-slate-600">
             We'll reply within 1 business day.
@@ -120,15 +136,28 @@ export default function Contact() {
           
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <label className="relative block text-sm font-semibold text-slate-700 mb-2">Name *</label>
+              <label className="relative block text-sm font-semibold text-slate-700 mb-2">First Name *</label>
               <input 
                 required 
-                name="name" 
-                value={formData.name}
+                name="firstName" 
+                value={formData.firstName}
                 onChange={handleChange}
                 className="relative w-full rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300"
               />
             </div>
+            <div>
+              <label className="relative block text-sm font-semibold text-slate-700 mb-2">Last Name *</label>
+              <input 
+                required 
+                name="lastName" 
+                value={formData.lastName}
+                onChange={handleChange}
+                className="relative w-full rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300"
+              />
+            </div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label className="relative block text-sm font-semibold text-slate-700 mb-2">Email *</label>
               <input 
@@ -139,6 +168,19 @@ export default function Contact() {
                 onChange={handleChange}
                 className="relative w-full rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300"
               />
+            </div>
+            <div>
+              <label className="relative block text-sm font-semibold text-slate-700 mb-2">Country</label>
+              <select 
+                name="country" 
+                value={formData.country}
+                onChange={(e) => setFormData({...formData, country: e.target.value})}
+                className="relative w-full rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300"
+              >
+                {countries.map((country) => (
+                  <option key={country} value={country}>{country}</option>
+                ))}
+              </select>
             </div>
           </div>
           
@@ -222,21 +264,15 @@ export default function Contact() {
         </form>
 
         <div className="mt-12 grid md:grid-cols-2 gap-6">
-          <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-dashed border-blue-200 hover:border-blue-300 transition-colors">
-            <Calendar className="w-8 h-8 text-blue-600 mb-3" />
-            <h3 className="font-bold text-slate-800 mb-2">30-Minute Discovery Call</h3>
+          <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-dashed border-blue-200 hover:border-blue-300 transition-colors text-center">
+            <Calendar className="w-8 h-8 text-blue-600 mb-3 mx-auto" />
+            <h3 className="font-bold text-slate-800 mb-2">Professional Consultation</h3>
             <p className="text-slate-600 mb-3">
-              Schedule your complimentary discovery call to discuss your needs:
+              Get expert advice tailored to your specific accounting and tax needs.
             </p>
-            <a 
-              className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors group" 
-              href="https://calendly.com/kemptcpa/30min" 
-              target="_blank" 
-              rel="noreferrer"
-            >
-              <Calendar className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              calendly.com/kemptcpa/30min
-            </a>
+            <p className="text-blue-600 font-semibold">
+              Contact us to schedule your consultation
+            </p>
           </div>
           
           <div className="p-6 rounded-2xl bg-gradient-to-br from-orange-50 to-amber-50 border-2 border-dashed border-orange-200 hover:border-orange-300 transition-colors">
@@ -267,7 +303,7 @@ export default function Contact() {
         <div className="mt-8 text-center text-slate-500">
           <p className="flex items-center justify-center gap-2">
             <Sparkles className="w-4 h-4 text-blue-400" />
-            Schedule your free consultation: 
+            Get professional accounting support: 
             We're here to help your business succeed
           </p>
         </div>

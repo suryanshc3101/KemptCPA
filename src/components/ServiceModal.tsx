@@ -282,7 +282,7 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
           <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl p-8 text-center">
             <h3 className="text-xl font-bold text-slate-800 mb-2">Ready to Get Started?</h3>
             <p className="text-slate-600 mb-4">
-              Book a free 30-minute consultation to discuss your specific needs for {service.title.toLowerCase()}.
+              Contact us to discuss your specific needs for {service.title.toLowerCase()}.
             </p>
             <button 
               onClick={() => {
@@ -293,7 +293,7 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
               className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r ${service.color} text-white font-semibold hover:scale-105 transition-transform shadow-lg`}
             >
               <ArrowRight className="w-5 h-5" />
-              Book Consultation
+              Get In Touch
             </button>
             <p className="text-xs text-slate-500 mt-2">Press ESC to close this window</p>
           </div>
