@@ -26,7 +26,7 @@ export default function Hero() {
       </div>
       
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
-        <div className="relative z-10 animate-fade-in-up magical-hover">
+        <div className="relative z-10 animate-fade-in-up">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent mb-6 animate-text-shimmer text-shimmer">
             Stress-free Canadian accounting, tax, and assurance — by a CPA you can trust.
           </h1>
