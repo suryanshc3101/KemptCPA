@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, Calendar, Mail, MapPin, Sparkles, Phone } from 'lucide-react';
+import { Send, Mail, MapPin, Sparkles, Phone } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -7,6 +7,7 @@ export default function Contact() {
     lastName: '',
     email: '',
     phone: '',
+    countryCode: '+1',
     company: '',
     message: ''
   });
@@ -55,7 +56,7 @@ export default function Contact() {
         },
         {
           name: "phone",
-          value: formData.phone
+          value: `${formData.countryCode} ${formData.phone}`.trim()
         },
         {
           name: "company",
@@ -92,6 +93,7 @@ export default function Contact() {
           lastName: '',
           email: '',
           phone: '',
+          countryCode: '+1',
           company: '',
           message: ''
         });
@@ -113,7 +115,7 @@ export default function Contact() {
     setIsSubmitting(false);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -136,7 +138,7 @@ export default function Contact() {
             <span className="text-sm font-semibold text-blue-600 tracking-wide uppercase">Get In Touch</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent mb-4">
-            Contact / Book 30 Minutes
+            Get In Touch
           </h2>
           <p className="text-xl text-slate-600">
             We'll reply within 1 business day.
@@ -157,19 +159,8 @@ export default function Contact() {
                 Your message has been successfully submitted to HubSpot!
               </p>
               <p className="text-sm text-green-600">
-                We'll reply within 1 business day. Want to talk sooner? Book a call below!
+                We'll reply within 1 business day.
               </p>
-              <div className="mt-4">
-                <a 
-                  href="https://calendly.com/kemptcpa/30min" 
-                  target="_blank" 
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors"
-                >
-                  <Calendar className="w-4 h-4" />
-                  Book 30-Min Call
-                </a>
-              </div>
             </div>
           )}
           
@@ -249,18 +240,36 @@ export default function Contact() {
             />
           </div>
           
-          {/* Phone */}
+          {/* Phone Number with Country Code */}
           <div>
-            <label className="relative block text-sm font-semibold text-slate-700 mb-2">Phone</label>
-            <input 
-              name="phone" 
-              type="tel" 
-              value={formData.phone}
-              onChange={handleChange}
-              disabled={isSubmitting}
-              className="relative w-full rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-300 bg-white hover:border-slate-300 disabled:opacity-50"
-              placeholder="+1 519-771-7862"
-            />
+            <label className="relative block text-sm font-semibold text-slate-700 mb-2">Phone Number</label>
+            <div className="flex gap-2">
+              <select 
+                name="countryCode" 
+                value={formData.countryCode}
+                onChange={handleChange}
+                disabled={isSubmitting}
+                className="relative rounded-xl border-2 border-slate-200 px-3 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-300 bg-white hover:border-slate-300 text-sm disabled:opacity-50"
+              >
+                <option value="+1">🇨🇦 +1</option>
+                <option value="+44">🇬🇧 +44</option>
+                <option value="+91">🇮🇳 +91</option>
+                <option value="+61">🇦🇺 +61</option>
+                <option value="+33">🇫🇷 +33</option>
+                <option value="+49">🇩🇪 +49</option>
+                <option value="+86">🇨🇳 +86</option>
+                <option value="+81">🇯🇵 +81</option>
+              </select>
+              <input 
+                name="phone" 
+                type="tel" 
+                placeholder="519-771-7862"
+                value={formData.phone}
+                onChange={handleChange}
+                disabled={isSubmitting}
+                className="relative flex-1 rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-300 bg-white hover:border-slate-300 disabled:opacity-50"
+              />
+            </div>
           </div>
           
           {/* Company */}
@@ -321,24 +330,7 @@ export default function Contact() {
         </form>
 
         {/* Contact Information */}
-        <div className="mt-12 grid md:grid-cols-2 gap-6">
-          <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-dashed border-blue-200 hover:border-blue-300 transition-colors">
-            <Calendar className="w-8 h-8 text-blue-600 mb-3" />
-            <h3 className="font-bold text-slate-800 mb-2">30-Minute Discovery Call</h3>
-            <p className="text-slate-600 mb-3">
-              Schedule your complimentary discovery call to discuss your needs:
-            </p>
-            <a 
-              className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors group" 
-              href="https://calendly.com/kemptcpa/30min" 
-              target="_blank" 
-              rel="noreferrer"
-            >
-              <Calendar className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              calendly.com/kemptcpa/30min
-            </a>
-          </div>
-          
+        <div className="mt-12 grid md:grid-cols-1 gap-6">
           <div className="p-6 rounded-2xl bg-gradient-to-br from-orange-50 to-amber-50 border-2 border-dashed border-orange-200 hover:border-orange-300 transition-colors">
             <Mail className="w-8 h-8 text-orange-600 mb-3" />
             <h3 className="font-bold text-slate-800 mb-2">Direct Contact</h3>
@@ -367,8 +359,7 @@ export default function Contact() {
         <div className="mt-8 text-center text-slate-500">
           <p className="flex items-center justify-center gap-2">
             <Sparkles className="w-4 h-4 text-blue-400" />
-            Schedule your free consultation: 
-            We're here to help your business succeed
+            Professional CPA services for your business success
           </p>
         </div>
       </div>
