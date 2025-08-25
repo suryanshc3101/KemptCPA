@@ -36,35 +36,34 @@ export default function Hero() {
           
           {/* Feature highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 animate-fade-in-up" style={{animationDelay: '0.5s'}}>
-            <div className="group flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-blue-200/50 hover:shadow-2xl animate-magical-glow">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-md group-hover:rotate-12 group-hover:shadow-lg group-hover:shadow-blue-400/50 transition-all duration-500 animate-magical-pulse">
+            <div className="flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-blue-200/50">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-md">
                 <Shield className="w-4 h-4 text-white" />
-                <Star className="w-2 h-2 text-yellow-300 absolute -top-1 -right-1 animate-sparkle" />
+                <Star className="w-2 h-2 text-yellow-300 absolute -top-1 -right-1" />
               </div>
-              <span className="text-sm font-bold text-slate-800 group-hover:text-blue-700 transition-colors">CRA Compliant</span>
+              <span className="text-sm font-bold text-slate-800">CRA Compliant</span>
             </div>
-            <div className="group flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-teal-200/50 hover:shadow-2xl animate-magical-glow" style={{animationDelay: '0.5s'}}>
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-teal-500 to-emerald-600 flex items-center justify-center shadow-md group-hover:rotate-12 group-hover:shadow-lg group-hover:shadow-teal-400/50 transition-all duration-500 animate-magical-pulse" style={{animationDelay: '1s'}}>
+            <div className="flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-teal-200/50">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-teal-500 to-emerald-600 flex items-center justify-center shadow-md">
                 <TrendingUp className="w-4 h-4 text-white" />
-                <Star className="w-2 h-2 text-yellow-300 absolute -top-1 -right-1 animate-sparkle" style={{animationDelay: '0.5s'}} />
+                <Star className="w-2 h-2 text-yellow-300 absolute -top-1 -right-1" />
               </div>
-              <span className="text-sm font-bold text-slate-800 group-hover:text-teal-700 transition-colors">Growth Focused</span>
+              <span className="text-sm font-bold text-slate-800">Growth Focused</span>
             </div>
-            <div className="group flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-cyan-200/50 hover:shadow-2xl animate-magical-glow" style={{animationDelay: '1s'}}>
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-600 to-indigo-700 flex items-center justify-center shadow-md group-hover:rotate-12 group-hover:shadow-lg group-hover:shadow-cyan-400/50 transition-all duration-500 animate-magical-pulse" style={{animationDelay: '2s'}}>
-                <Sparkles className="w-4 h-4 text-white animate-sparkle" />
-                <Star className="w-2 h-2 text-yellow-300 absolute -top-1 -right-1 animate-sparkle" style={{animationDelay: '1s'}} />
+            <div className="flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-cyan-200/50">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-600 to-indigo-700 flex items-center justify-center shadow-md">
+                <Sparkles className="w-4 h-4 text-white" />
+                <Star className="w-2 h-2 text-yellow-300 absolute -top-1 -right-1" />
               </div>
-              <span className="text-sm font-bold text-slate-800 group-hover:text-cyan-700 transition-colors">Tech-Enabled</span>
+              <span className="text-sm font-bold text-slate-800">Tech-Enabled</span>
             </div>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up" style={{animationDelay: '0.7s'}}>
             <a 
               href="#services" 
-              className="group px-8 py-4 rounded-xl glass-effect font-semibold magical-hover text-center text-slate-700 relative overflow-hidden animate-magical-glow bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xl"
+              className="group px-8 py-4 rounded-xl glass-effect font-semibold text-center text-slate-700 relative overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xl hover:shadow-2xl transition-shadow duration-300"
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></span>
               <span className="relative">
                 ✨ View Services
               </span>
@@ -72,13 +71,13 @@ export default function Hero() {
           </div>
           
           <div className="flex flex-wrap gap-4 text-sm text-gray-500 animate-fade-in-up" style={{animationDelay: '0.9s'}}>
-            <span className="px-4 py-2 glass-effect text-blue-700 rounded-full border border-blue-200 animate-magical-pulse">
+            <span className="px-4 py-2 glass-effect text-blue-700 rounded-full border border-blue-200">
               🏆 CPA Ontario
             </span>
-            <span className="px-4 py-2 glass-effect text-slate-700 rounded-full border border-slate-200 animate-magical-pulse" style={{animationDelay: '0.5s'}}>
+            <span className="px-4 py-2 glass-effect text-slate-700 rounded-full border border-slate-200">
               💼 QuickBooks • Xero • Sage 50
             </span>
-            <span className="px-4 py-2 glass-effect text-teal-700 rounded-full border border-teal-200 animate-magical-pulse" style={{animationDelay: '1s'}}>
+            <span className="px-4 py-2 glass-effect text-teal-700 rounded-full border border-teal-200">
               📍 Serving Canada Remotely
             </span>
           </div>
