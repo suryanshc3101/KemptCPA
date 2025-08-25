@@ -1,86 +1,138 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Send, Calendar, Mail, MapPin, Sparkles, Phone } from 'lucide-react';
 
+// Declare HubSpot types
+declare global {
+  interface Window {
+    hbspt: any;
+  }
+}
+
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    countryCode: '+1',
-    country: 'Canada',
-    business: '',
-    software: '',
-    message: ''
-  });
-  
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [isHubSpotLoaded, setIsHubSpotLoaded] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
+  useEffect(() => {
+    // Load HubSpot script from your specific region
+    const script = document.createElement('script');
+    script.src = '//js-na3.hsforms.net/forms/embed/v2.js';
+    script.async = true;
+    script.onload = () => {
+      setIsHubSpotLoaded(true);
+      // Initialize HubSpot form once script is loaded
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          region: "na3", // Your HubSpot region
+          portalId: "342359030", // Your HubSpot Portal ID
+          formId: "6c4d0711-4a4c-4bcc-8336-c314e195b12f", // Your HubSpot Form ID
+          target: '#hubspot-form-container',
+          css: '', // We'll style it with Tailwind
+          onFormReady: function(form: any) {
+            console.log('HubSpot form is ready');
+            // Customize form styling after it loads
+            const formElement = form[0];
+            if (formElement) {
+              // Style the form container
+              formElement.style.maxWidth = '100%';
+              
+              // Add Tailwind classes to HubSpot form elements
+              const fieldsets = formElement.querySelectorAll('.hs_firstname, .hs_lastname, .hs_email, .hs_phone, .hs_company, .hs_message');
+              fieldsets.forEach((fieldset: HTMLElement) => {
+                fieldset.style.marginBottom = '1rem';
+                fieldset.style.width = '100%';
+              });
+              
+              const inputs = formElement.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], textarea, select');
+              inputs.forEach((input: HTMLElement) => {
+                input.className = 'w-full rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-300 bg-white hover:border-slate-300 text-slate-900';
+                input.style.fontSize = '16px'; // Prevent zoom on mobile
+              });
+              
+              const labels = formElement.querySelectorAll('label');
+              labels.forEach((label: HTMLElement) => {
+                label.className = 'block text-sm font-semibold text-slate-700 mb-2';
+              });
+              
+              // Style the submit button with your design
+              const submitButton = formElement.querySelector('input[type="submit"]');
+              if (submitButton) {
+                submitButton.className = 'group relative rounded-xl bg-gradient-to-r from-blue-600 to-slate-700 text-white px-8 py-4 font-semibold hover:from-blue-700 hover:to-slate-800 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer w-full';
+                submitButton.value = '✨ Send Message';
+              }
+              
+              // Hide HubSpot branding if needed (optional)
+              const branding = formElement.querySelector('.hs-form-booleancheckbox-display');
+              if (branding) {
+                branding.style.display = 'none';
+              }
+              
+              // Style error messages
+              const errorMessages = formElement.querySelectorAll('.hs-error-msg');
+              errorMessages.forEach((error: HTMLElement) => {
+                error.style.color = '#dc2626';
+                error.style.fontSize = '14px';
+                error.style.marginTop = '4px';
+              });
+            }
+          },
+          onFormSubmit: function() {
+            console.log('Form is being submitted to HubSpot');
+            // Show loading state
+            const submitButton = document.querySelector('#hubspot-form-container input[type="submit"]') as HTMLInputElement;
+            if (submitButton) {
+              submitButton.value = 'Sending...';
+              submitButton.disabled = true;
+            }
+          },
+          onFormSubmitted: function() {
+            console.log('Form successfully submitted to HubSpot');
+            setIsFormSubmitted(true);
+            // Show success message
+            const successDiv = document.getElementById('hubspot-success-message');
+            if (successDiv) {
+              successDiv.style.display = 'block';
+            }
+            // Hide the form
+            const formContainer = document.getElementById('hubspot-form-container');
+            if (formContainer) {
+              formContainer.style.display = 'none';
+            }
+          },
+          onFormError: function() {
+            console.error('Form submission error');
+            // Reset submit button
+            const submitButton = document.querySelector('#hubspot-form-container input[type="submit"]') as HTMLInputElement;
+            if (submitButton) {
+              submitButton.value = '✨ Send Message';
+              submitButton.disabled = false;
+            }
+          }
+        });
+      }
+    };
     
-    // Simulate form submission - Replace with actual form service
-    // Example: Formspree, Netlify Forms, or your own backend
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      
-      // Reset form after successful submission
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        countryCode: '+1',
-        country: 'Canada',
-        business: '',
-        software: '',
-        message: ''
-      });
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => setSubmitStatus('idle'), 5000);
-    }, 1500);
-  };
+    // Add script only if it doesn't already exist
+    const existingScript = document.querySelector('script[src="//js-na3.hsforms.net/forms/embed/v2.js"]');
+    if (!existingScript) {
+      document.head.appendChild(script);
+    } else {
+      // If script already exists, initialize form directly
+      setIsHubSpotLoaded(true);
+      if (window.hbspt) {
+        // Form initialization code here (same as above)
+      }
+    }
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const countryCodes = [
-    { code: '+1', country: 'Canada/US', flag: '🇨🇦' },
-    { code: '+1', country: 'USA', flag: '🇺🇸' },
-    { code: '+44', country: 'UK', flag: '🇬🇧' },
-    { code: '+33', country: 'France', flag: '🇫🇷' },
-    { code: '+49', country: 'Germany', flag: '🇩🇪' },
-    { code: '+91', country: 'India', flag: '🇮🇳' },
-    { code: '+61', country: 'Australia', flag: '🇦🇺' },
-    { code: '+86', country: 'China', flag: '🇨🇳' },
-    { code: '+81', country: 'Japan', flag: '🇯🇵' },
-    { code: '+39', country: 'Italy', flag: '🇮🇹' },
-    { code: '+34', country: 'Spain', flag: '🇪🇸' },
-    { code: '+31', country: 'Netherlands', flag: '🇳🇱' },
-    { code: '+46', country: 'Sweden', flag: '🇸🇪' },
-    { code: '+41', country: 'Switzerland', flag: '🇨🇭' }
-  ];
-
-  const countries = [
-    'Canada', 'United States', 'United Kingdom', 'France', 'Germany', 
-    'India', 'Australia', 'China', 'Japan', 'Italy', 'Spain', 
-    'Netherlands', 'Sweden', 'Switzerland', 'Mexico', 'Brazil'
-  ];
+    // Cleanup
+    return () => {
+      // Don't remove script on cleanup to avoid issues with navigation
+    };
+  }, []);
 
   return (
     <section id="contact" className="relative py-20 bg-gradient-to-b from-slate-50/50 via-blue-50/30 to-indigo-50/20 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Professional contact background */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_40%,rgba(59,130,246,0.04),transparent_50%),radial-gradient(circle_at_60%_60%,rgba(16,185,129,0.03),transparent_50%)]"></div>
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-gradient-to-r from-blue-400/6 to-cyan-400/4 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-gradient-to-r from-indigo-400/5 to-emerald-400/3 rounded-full blur-3xl animate-pulse" style={{animationDelay: '4s'}}></div>
@@ -93,28 +145,11 @@ export default function Contact() {
             <span className="text-sm font-semibold text-blue-600 tracking-wide uppercase">Get In Touch</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent mb-4">
-            Contact Us
+            Contact / Book 30 Minutes
           </h2>
           <p className="text-xl text-slate-600">
             We'll reply within 1 business day.
           </p>
-          
-          {/* Form Service Integration Notice */}
-          {submitStatus === 'success' && (
-            <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-xl">
-              <p className="text-sm text-green-800 font-medium">
-                ✅ <strong>Message sent successfully!</strong> We'll reply within 1 business day.
-              </p>
-            </div>
-          )}
-          
-          {submitStatus === 'error' && (
-            <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-xl">
-              <p className="text-sm text-red-800">
-                ❌ <strong>Error sending message.</strong> Please try again or email us directly at info@kemptcpa.ca
-              </p>
-            </div>
-          )}
         </div>
 
         <div className="relative mb-8">
@@ -129,150 +164,68 @@ export default function Contact() {
             <p className="text-white text-sm font-medium">Schedule your free 30-minute consultation today</p>
           </div>
         </div>
-          
-        <form onSubmit={handleSubmit} className="relative grid gap-6 bg-gradient-to-br from-white to-slate-50 p-8 rounded-3xl border border-slate-200 shadow-2xl hover:shadow-3xl transition-shadow duration-500">
+
+        {/* HubSpot Form Container */}
+        <div className="relative bg-gradient-to-br from-white to-slate-50 p-8 rounded-3xl border border-slate-200 shadow-2xl hover:shadow-3xl transition-shadow duration-500">
           {/* Background gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 via-teal-50/20 to-indigo-50/30 rounded-3xl pointer-events-none"></div>
           
-          <div className="grid md:grid-cols-2 gap-4">
-            <div>
-              <label className="relative block text-sm font-semibold text-slate-700 mb-2">First Name *</label>
-              <input 
-                required 
-                name="firstName" 
-                value={formData.firstName}
-                onChange={handleChange}
-                className="relative w-full rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300"
-              />
+          {/* Loading state */}
+          {!isHubSpotLoaded && (
+            <div className="relative text-center py-12">
+              <div className="w-8 h-8 border-2 border-blue-600/30 border-t-blue-600 rounded-full animate-spin mx-auto mb-4"></div>
+              <p className="text-slate-600 font-medium">Loading contact form...</p>
             </div>
-            <div>
-              <label className="relative block text-sm font-semibold text-slate-700 mb-2">Last Name *</label>
-              <input 
-                required 
-                name="lastName" 
-                value={formData.lastName}
-                onChange={handleChange}
-                className="relative w-full rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300"
-              />
-            </div>
-          </div>
+          )}
           
-          <div className="grid md:grid-cols-2 gap-4">
-            <div>
-              <label className="relative block text-sm font-semibold text-slate-700 mb-2">Email *</label>
-              <input 
-                required 
-                name="email" 
-                type="email" 
-                value={formData.email}
-                onChange={handleChange}
-                className="relative w-full rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300"
-              />
+          {/* HubSpot Form */}
+          <div id="hubspot-form-container" className="relative" style={{ minHeight: isHubSpotLoaded ? 'auto' : '400px' }}></div>
+          
+          {/* Success Message */}
+          <div id="hubspot-success-message" style={{display: 'none'}} className="relative text-center py-12">
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
             </div>
-            <div>
-              <label className="relative block text-sm font-semibold text-slate-700 mb-2">Country</label>
-              <select 
-                name="country" 
-                value={formData.country}
-                onChange={(e) => setFormData({...formData, country: e.target.value})}
-                className="relative w-full rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300"
+            <h3 className="text-2xl font-bold text-slate-900 mb-2">Thank You!</h3>
+            <p className="text-lg text-slate-600 mb-4">
+              Your message has been sent successfully.
+            </p>
+            <p className="text-sm text-slate-500">
+              We'll reply within 1 business day.
+            </p>
+            <div className="mt-6">
+              <a 
+                href="https://calendly.com/kemptcpa/30min" 
+                target="_blank" 
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:scale-105 transition-transform shadow-lg"
               >
-                {countries.map((country) => (
-                  <option key={country} value={country}>{country}</option>
-                ))}
-              </select>
+                <Calendar className="w-5 h-5" />
+                Book Your 30-Minute Call
+              </a>
             </div>
           </div>
-          
-          {/* Phone Number with Country Code */}
-          <div>
-            <label className="relative block text-sm font-semibold text-slate-700 mb-2">Phone Number</label>
-            <div className="flex gap-2">
-              <select 
-                name="countryCode" 
-                value={formData.countryCode}
-                onChange={(e) => setFormData({...formData, countryCode: e.target.value})}
-                className="relative rounded-xl border-2 border-slate-200 px-3 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300 text-sm"
-              >
-                {countryCodes.map((country) => (
-                  <option key={country.code} value={country.code}>
-                    {country.flag} {country.code}
-                  </option>
-                ))}
-              </select>
-              <input 
-                name="phone" 
-                type="tel" 
-                placeholder="519-771-7862"
-                value={formData.phone}
-                onChange={handleChange}
-                className="relative flex-1 rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300"
-              />
-            </div>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-4">
-            <div>
-              <label className="relative block text-sm font-semibold text-slate-700 mb-2">Business Name</label>
-              <input 
-                name="business" 
-                value={formData.business}
-                onChange={handleChange}
-                className="relative w-full rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300"
-              />
-            </div>
-            <div>
-              <label className="relative block text-sm font-semibold text-slate-700 mb-2">Current Software</label>
-              <input 
-                name="software" 
-                placeholder="QBO / Xero / Other" 
-                value={formData.software}
-                onChange={handleChange}
-                className="relative w-full rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300"
-              />
-            </div>
-          </div>
-          <div>
-            <label className="relative block text-sm font-semibold text-slate-700 mb-2">Message</label>
-            <textarea 
-              name="message" 
-              rows={4} 
-              value={formData.message}
-              onChange={handleChange}
-              className="relative w-full rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 outline-none transition-all duration-300 bg-white hover:border-slate-300 resize-none"
-            />
-          </div>
-          <button 
-            type="submit" 
-            disabled={isSubmitting}
-            className="relative group rounded-xl bg-gradient-to-r from-blue-600 to-slate-700 text-white px-8 py-4 font-semibold hover:from-blue-700 hover:to-slate-800 transition-all duration-300 hover:scale-105 hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
-          >
-            <span className="flex items-center justify-center gap-2">
-              {isSubmitting ? (
-                <>
-                  <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                  Sending...
-                </>
-              ) : (
-                <>
-                  <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  Send Message
-                </>
-              )}
-            </span>
-          </button>
-        </form>
+        </div>
 
+        {/* Contact Information */}
         <div className="mt-12 grid md:grid-cols-2 gap-6">
-          <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-dashed border-blue-200 hover:border-blue-300 transition-colors text-center">
-            <Calendar className="w-8 h-8 text-blue-600 mb-3 mx-auto" />
-            <h3 className="font-bold text-slate-800 mb-2">Professional Consultation</h3>
+          <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-dashed border-blue-200 hover:border-blue-300 transition-colors">
+            <Calendar className="w-8 h-8 text-blue-600 mb-3" />
+            <h3 className="font-bold text-slate-800 mb-2">30-Minute Discovery Call</h3>
             <p className="text-slate-600 mb-3">
-              Get expert advice tailored to your specific accounting and tax needs.
+              Schedule your complimentary discovery call to discuss your needs:
             </p>
-            <p className="text-blue-600 font-semibold">
-              Contact us to schedule your consultation
-            </p>
+            <a 
+              className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors group" 
+              href="https://calendly.com/kemptcpa/30min" 
+              target="_blank" 
+              rel="noreferrer"
+            >
+              <Calendar className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              calendly.com/kemptcpa/30min
+            </a>
           </div>
           
           <div className="p-6 rounded-2xl bg-gradient-to-br from-orange-50 to-amber-50 border-2 border-dashed border-orange-200 hover:border-orange-300 transition-colors">
@@ -303,7 +256,7 @@ export default function Contact() {
         <div className="mt-8 text-center text-slate-500">
           <p className="flex items-center justify-center gap-2">
             <Sparkles className="w-4 h-4 text-blue-400" />
-            Get professional accounting support: 
+            Schedule your free consultation: 
             We're here to help your business succeed
           </p>
         </div>
