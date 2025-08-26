@@ -30,9 +30,6 @@ export default function Hero() {
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent mb-6 animate-text-shimmer text-shimmer">
             Expert Canadian Tax Professional
           </h1>
-          <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-8 animate-fade-in" style={{animationDelay: '0.3s'}}>
-            Kempt CPA Professional Corporation provides expert T1/T2 tax preparation, QuickBooks/Xero/Sage 50 bookkeeping, GST/HST compliance, CRA representation, and strategic business advisory services. Serving Canadian individuals and businesses remotely with professional excellence.
-          </p>
           
           {/* Feature highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 animate-fade-in-up" style={{animationDelay: '0.5s'}}>
