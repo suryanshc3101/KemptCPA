@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <!-- Brand/Business Name Pages -->
+  <url>
+    <loc>https://kemptcpa.ca/</loc>
+    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Kempt CPA Professional Corporation</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2024-12-30T00:00:00+00:00</news:publication_date>
+      <news:title>KemptCPA - Professional Canadian CPA Services</news:title>
+      <news:keywords>Kempt CPA Professional Corporation, KemptCPA, Canadian CPA, Professional Accountant, Brantford CPA</news:keywords>
+    </news:news>
+    <image:image>
+      <image:loc>https://images.pexels.com/photos/6289065/pexels-photo-6289065.jpeg</image:loc>
+      <image:title>Kempt CPA Professional Corporation - KemptCPA Services</image:title>
+      <image:caption>Professional Canadian CPA services by Kempt CPA Professional Corporation</image:caption>
+    </image:image>
+  </url>
   <url>
     <loc>https://kemptcpa.ca/</loc>
     <lastmod>2024-12-30T00:00:00+00:00</lastmod>
