@@ -27,7 +27,7 @@ export default function Hero() {
       
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
         <div className="relative z-10 animate-fade-in-up">
-          <!-- Brand Recognition Enhancement -->
+          {/* Brand Recognition Enhancement */}
           <div className="mb-4 text-center">
             <span className="inline-block px-6 py-2 bg-gradient-to-r from-blue-100 to-indigo-100 rounded-full text-blue-800 font-bold text-sm border-2 border-blue-200 shadow-lg animate-pulse">
               🏢 Kempt CPA Professional Corporation
