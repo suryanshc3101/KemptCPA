@@ -135,9 +135,16 @@ export default function Services() {
             <div 
               key={index}
               onClick={() => handleServiceClick(service)}
-              className="group relative rounded-3xl glass-effect p-10 shadow-2xl border-2 border-white/30 magical-hover cursor-pointer transform-gpu animate-magical-glow overflow-hidden"
+              className="group relative rounded-3xl glass-effect p-10 shadow-2xl border-2 border-blue-200/40 hover:border-blue-400/60 magical-hover cursor-pointer transform-gpu animate-magical-glow overflow-hidden transition-all duration-300"
               style={{animationDelay: `${index * 0.2}s`}}
             >
+              {/* Clear clickable indicator */}
+              <div className="absolute top-4 right-4 opacity-60 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center border border-blue-500/30">
+                  <span className="text-blue-600 text-sm">→</span>
+                </div>
+              </div>
+
               {/* Enhanced hover effects */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50/60 to-cyan-50/40 opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-3xl pointer-events-none animate-magical-gradient"></div>
               
@@ -164,20 +171,16 @@ export default function Services() {
               <h3 className="relative text-2xl font-bold text-slate-900 mb-4 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:via-cyan-600 group-hover:to-indigo-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-500 leading-tight">
                 {service.title}
               </h3>
-              <p className="relative text-base text-slate-600 leading-relaxed group-hover:text-slate-800 transition-colors font-medium">
+              <p className="relative text-base text-slate-600 leading-relaxed group-hover:text-slate-800 transition-colors font-medium mb-4">
                 {service.description}
               </p>
               
-              {/* Enhanced click indicator */}
-              <div className="absolute bottom-6 right-6 w-14 h-14 rounded-full glass-effect flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 magical-hover animate-magical-glow">
-                <span className="text-blue-600 text-xl font-bold animate-sparkle">✨</span>
-              </div>
-              
-              {/* Click instruction */}
-              <div className="absolute top-6 left-6 opacity-0 group-hover:opacity-90 transition-all duration-500">
-                <span className="text-xs font-bold text-blue-600 glass-effect px-4 py-2 rounded-full border border-blue-200/50 shadow-lg animate-magical-pulse">
-                  ✨ Click for details
-                </span>
+              {/* Clear "Click for details" indicator */}
+              <div className="relative">
+                <div className="flex items-center gap-2 text-blue-600 font-semibold text-sm group-hover:text-blue-700 transition-colors">
+                  <span>Click for details</span>
+                  <span className="transform group-hover:translate-x-1 transition-transform duration-300">→</span>
+                </div>
               </div>
             </div>
           ))}

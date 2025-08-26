@@ -28,7 +28,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
         <div className="relative z-10 animate-fade-in-up">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent mb-6 animate-text-shimmer text-shimmer">
-            Expert Canadian Tax Professional
+            Expert Canadian CPA Services: Tax Preparation, Bookkeeping & Business Advisory
           </h1>
           
           {/* Feature highlights */}
@@ -59,10 +59,18 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up" style={{animationDelay: '0.7s'}}>
             <a 
               href="#services" 
-              className="group px-8 py-4 rounded-xl glass-effect font-semibold text-center text-slate-700 relative overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              className="group px-8 py-4 rounded-xl font-semibold text-center relative overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               <span className="relative">
                 ✨ View Services
+              </span>
+            </a>
+            <a 
+              href="#contact" 
+              className="group px-8 py-4 rounded-xl font-semibold text-center border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300"
+            >
+              <span className="relative">
+                📞 Get Free Consultation
               </span>
             </a>
           </div>
