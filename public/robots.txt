@@ -1,18 +1,49 @@
 User-agent: *
 Allow: /
 
+# Enhanced SEO directives
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
 # Sitemaps
 Sitemap: https://kemptcpa.ca/sitemap.xml
 
-# Specific directives
+# Specific directives for better crawling
 Crawl-delay: 1
 
-# Block access to admin/private areas (if any)
+# Block access to admin/private areas
 Disallow: /admin/
 Disallow: /private/
+Disallow: /temp/
+Disallow: /cache/
 Disallow: *.pdf$
 
-# Allow important pages
+# Allow important pages and directories
 Allow: /services
 Allow: /about
 Allow: /contact
+Allow: /images/
+Allow: *.css$
+Allow: *.js$
+Allow: *.png$
+Allow: *.jpg$
+Allow: *.jpeg$
+Allow: *.gif$
+Allow: *.webp$
+
+# Host declaration for clarity
+Host: https://kemptcpa.ca

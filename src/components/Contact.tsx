@@ -124,6 +124,14 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative py-20 bg-gradient-to-b from-slate-50/50 via-blue-50/30 to-indigo-50/20 overflow-hidden">
+      {/* SEO Enhancement - Contact Information Schema */}
+      <div itemScope itemType="https://schema.org/ContactPoint" className="sr-only">
+        <span itemProp="telephone">+1-519-771-7862</span>
+        <span itemProp="email">info@kemptcpa.ca</span>
+        <span itemProp="contactType">customer service</span>
+        <span itemProp="areaServed">Canada</span>
+        <span itemProp="availableLanguage">English</span>
+      </div>
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_40%,rgba(59,130,246,0.04),transparent_50%),radial-gradient(circle_at_60%_60%,rgba(16,185,129,0.03),transparent_50%)]"></div>

@@ -14,11 +14,13 @@ export default function Header() {
       
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between relative z-10">
         <div className="flex items-center">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" itemScope itemType="https://schema.org/Organization">
             <Sparkles className="w-6 h-6 text-blue-600 animate-sparkle" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-800 via-cyan-800 to-indigo-800 bg-clip-text text-transparent animate-text-shimmer cursor-default">
+            <span itemProp="name" className="text-2xl font-bold bg-gradient-to-r from-blue-800 via-cyan-800 to-indigo-800 bg-clip-text text-transparent animate-text-shimmer cursor-default">
               KemptCPA
             </span>
+            <meta itemProp="url" content="https://kemptcpa.ca" />
+            <meta itemProp="logo" content="https://kemptcpa.ca/logo.png" />
           </div>
         </div>
         <div className="flex items-center gap-6">

@@ -11,10 +11,15 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="bg-white text-slate-900 antialiased">
+    <div className="bg-white text-slate-900 antialiased" itemScope itemType="https://schema.org/WebPage">
+      <meta itemProp="name" content="Kempt CPA Professional Corporation - Canadian CPA Services" />
+      <meta itemProp="description" content="Professional Canadian CPA services including T1/T2 tax preparation, QuickBooks/Xero bookkeeping, GST/HST filings, and business advisory." />
+      <meta itemProp="url" content="https://kemptcpa.ca" />
       <Header />
-      <Hero />
-      <Services />
+      <main role="main">
+        <Hero />
+        <Services />
+      </main>
       <HowItWorks />
       <About />
       <Testimonials />

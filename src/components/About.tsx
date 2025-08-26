@@ -4,6 +4,19 @@ import { Award, MapPin, Briefcase, Sparkles } from 'lucide-react';
 export default function About() {
   return (
     <section id="about" className="relative py-24 bg-gradient-to-br from-slate-900 via-blue-950/90 to-indigo-950/80 overflow-hidden">
+      {/* SEO Enhancement */}
+      <div itemScope itemType="https://schema.org/Person" className="sr-only">
+        <span itemProp="name">Kuldeep</span>
+        <span itemProp="jobTitle">Chartered Professional Accountant</span>
+        <span itemProp="worksFor" itemScope itemType="https://schema.org/Organization">
+          <span itemProp="name">Kempt CPA Professional Corporation</span>
+        </span>
+        <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+          <span itemProp="addressLocality">Brantford</span>
+          <span itemProp="addressRegion">Ontario</span>
+          <span itemProp="addressCountry">Canada</span>
+        </span>
+      </div>
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Magical professional background */}

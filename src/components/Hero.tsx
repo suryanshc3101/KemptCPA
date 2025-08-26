@@ -28,10 +28,10 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
         <div className="relative z-10 animate-fade-in-up">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent mb-6 animate-text-shimmer text-shimmer">
-            Stress-free Canadian accounting, tax, and assurance — by a CPA you can trust.
+            Expert Canadian CPA Services: Tax Preparation, Bookkeeping & Business Advisory
           </h1>
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-8 animate-fade-in" style={{animationDelay: '0.3s'}}>
-            Kempt CPA Professional Corporation helps individuals and businesses stay compliant, keep clean books, and plan ahead with QuickBooks, Xero, and Sage 50.
+            Kempt CPA Professional Corporation provides expert T1/T2 tax preparation, QuickBooks/Xero/Sage 50 bookkeeping, GST/HST compliance, CRA representation, and strategic business advisory services. Serving Canadian individuals and businesses remotely with professional excellence.
           </p>
           
           {/* Feature highlights */}

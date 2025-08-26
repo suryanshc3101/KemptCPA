@@ -74,9 +74,17 @@ export default function Services() {
       
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          {/* Breadcrumb for SEO */}
-          <nav className="text-sm text-slate-500 mb-4" aria-label="Breadcrumb">
-            <span>Home</span> / <span className="text-blue-600 font-medium">Services</span>
+          {/* Enhanced Breadcrumb for SEO */}
+          <nav className="text-sm text-slate-500 mb-4" aria-label="Breadcrumb" itemScope itemType="https://schema.org/BreadcrumbList">
+            <span itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <a href="/" itemProp="item"><span itemProp="name">Home</span></a>
+              <meta itemProp="position" content="1" />
+            </span>
+            <span> / </span>
+            <span itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <span itemProp="name" className="text-blue-600 font-medium">Professional CPA Services</span>
+              <meta itemProp="position" content="2" />
+            </span>
           </nav>
           <div className="flex items-center justify-center gap-3 mb-6">
             <Star className="w-6 h-6 text-blue-500 animate-sparkle" />
