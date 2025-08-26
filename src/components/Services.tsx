@@ -54,8 +54,6 @@ export default function Services() {
     setIsModalOpen(false);
     setSelectedService(null);
   };
-      <Testimonials />
-      <FAQ />
 
   return (
     <>
