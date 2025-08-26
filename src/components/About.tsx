@@ -29,7 +29,7 @@ export default function About() {
           <div className="aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl border border-white/20 hover:shadow-3xl hover:scale-105 hover:rotate-1 transition-all duration-700 backdrop-blur-sm bg-gradient-to-br from-white/10 to-white/5">
             <img 
               src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800" 
-              alt="Professional male CPA in business attire reviewing financial documents and tax forms"
+              alt="Kuldeep CPA - Professional male Canadian CPA in business attire reviewing financial documents and tax forms for Kempt CPA Professional Corporation"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/30"></div>

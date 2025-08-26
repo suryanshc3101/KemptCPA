@@ -182,7 +182,7 @@ export default function Contact() {
         <div className="relative mb-8">
           <img 
             src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200" 
-            alt="Professional business consultation meeting with CPA discussing financial statements and tax planning"
+            alt="Professional business consultation meeting with Canadian CPA discussing financial statements, tax planning, and QuickBooks setup - Kempt CPA services"
             className="w-full h-48 object-cover rounded-2xl shadow-lg"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/20 rounded-2xl"></div>

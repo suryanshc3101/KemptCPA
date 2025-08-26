@@ -87,7 +87,7 @@ export default function Hero() {
           <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl group animate-magical-glow">
             <img 
               src="https://images.pexels.com/photos/6289065/pexels-photo-6289065.jpeg?auto=compress&cs=tinysrgb&w=800" 
-              alt="Professional CPA working on tax returns and financial statements at desk with calculator"
+              alt="Professional Canadian CPA working on tax returns and financial statements using QuickBooks and calculator - Kempt CPA Professional Corporation"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-purple-900/40 to-blue-900/20"></div>

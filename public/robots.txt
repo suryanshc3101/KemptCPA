@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://kemptcpa.ca/sitemap.xml
+
+# Specific directives
+Crawl-delay: 1
+
+# Block access to admin/private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: *.pdf$
+
+# Allow important pages
+Allow: /services
+Allow: /about
+Allow: /contact

@@ -58,19 +58,19 @@ export default function Footer() {
           <h4 className="font-bold text-white mb-4">Quick Links</h4>
           <ul className="space-y-3 text-sm">
             <li>
-              <a href="#services" className="hover:text-blue-300 transition-colors flex items-center gap-2">
+              <a href="#services" className="hover:text-blue-300 transition-colors flex items-center gap-2" title="Professional CPA Services">
                 <span className="w-1 h-1 bg-blue-400 rounded-full"></span>
                 Services
               </a>
             </li>
             <li>
-              <a href="#about" className="hover:text-teal-300 transition-colors flex items-center gap-2">
+              <a href="#about" className="hover:text-teal-300 transition-colors flex items-center gap-2" title="About Kempt CPA">
                 <span className="w-1 h-1 bg-teal-400 rounded-full"></span>
                 About
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-indigo-300 transition-colors flex items-center gap-2">
+              <a href="#contact" className="hover:text-indigo-300 transition-colors flex items-center gap-2" title="Contact Canadian CPA">
                 <span className="w-1 h-1 bg-indigo-400 rounded-full"></span>
                 Contact
               </a>
@@ -90,7 +90,7 @@ export default function Footer() {
           <p>© 2025 Kempt CPA Professional Corporation. All rights reserved.</p>
           <div className="flex items-center gap-2">
             <Sparkles className="w-3 h-3 text-blue-400" />
-            <span>Proudly serving businesses across Canada</span>
+            <span>Professional Canadian CPA services nationwide</span>
           </div>
         </div>
       </div>

@@ -54,6 +54,8 @@ export default function Services() {
     setIsModalOpen(false);
     setSelectedService(null);
   };
+      <Testimonials />
+      <FAQ />
 
   return (
     <>
@@ -74,6 +76,10 @@ export default function Services() {
       
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
+          {/* Breadcrumb for SEO */}
+          <nav className="text-sm text-slate-500 mb-4" aria-label="Breadcrumb">
+            <span>Home</span> / <span className="text-blue-600 font-medium">Services</span>
+          </nav>
           <div className="flex items-center justify-center gap-3 mb-6">
             <Star className="w-6 h-6 text-blue-500 animate-sparkle" />
             <span className="text-sm font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-indigo-600 bg-clip-text text-transparent tracking-wide uppercase animate-text-shimmer">
@@ -85,7 +91,7 @@ export default function Services() {
             Services
           </h2>
           <p className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto font-medium leading-relaxed">
-            CRA Representation • GST/HST Filings • Accounting • Taxes • Business Advisory
+            Professional CPA Services: Tax Preparation (T1/T2) • QuickBooks/Xero Bookkeeping • GST/HST Filings • CRA Representation • Business Advisory Services
           </p>
           
           {/* Software Partners */}
