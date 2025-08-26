@@ -129,7 +129,7 @@ export default function Hero() {
                 <Award className="w-5 h-5" />
                 Free Consultation
                 <CheckCircle className="w-4 h-4" />
-              </div>
+              </span>
             </a>
           </div>
           
