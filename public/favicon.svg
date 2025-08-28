@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Dark blue square with soft rounded corners -->
+  <rect width="32" height="32" rx="6" ry="6" fill="#1e40af" stroke="#1d4ed8" stroke-width="0.5"/>
+  
+  <!-- Letter K in white -->
+  <path d="M8 6 L12 6 L12 14 L18 6 L23 6 L16.5 15 L23.5 26 L18.5 26 L13.5 18 L12 20 L12 26 L8 26 Z" 
+        fill="white" 
+        stroke="white" 
+        stroke-width="0.2"/>
+  
+  <!-- Subtle gradient overlay for depth -->
+  <defs>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.1);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0);stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="6" ry="6" fill="url(#shine)"/>
+</svg>
