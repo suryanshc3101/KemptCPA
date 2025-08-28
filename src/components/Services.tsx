@@ -12,8 +12,8 @@ const services = [
   {
     icon: Users,
     color: 'from-slate-600 to-blue-600',
-    title: "T1, T2 & T3",
-    description: "T1 (Personal), T2 (Corporate) & T3 (Tax Return) preparation and filing, ensuring compliance with CRA requirements and maximizing deductions."
+    title: "T1 (Personal), T2 (Corporate) & T3 (Tax Return)",
+    description: "Complete tax return preparation and filing for individuals, corporations, and trusts, ensuring compliance with CRA requirements and maximizing deductions."
   },
   {
     icon: Calculator,
