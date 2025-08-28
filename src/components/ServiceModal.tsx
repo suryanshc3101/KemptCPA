@@ -34,7 +34,7 @@ const serviceDetails = {
     image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200"
   },
   "T1, T2 & T3": {
-    overview: "Expert personal (T1), corporate (T2) and T3 (Trust) tax return preparation and strategic tax planning services. We ensure full compliance with Canada Revenue Agency requirements while maximizing available deductions and credits to minimize your tax liability.",
+    overview: "Expert personal (T1), corporate (T2) and T3 tax return preparation and strategic tax planning services. We ensure full compliance with Canada Revenue Agency requirements while maximizing available deductions and credits to minimize your tax liability.",
     detailedDescription: "Our tax services go beyond basic compliance. We provide proactive tax planning, identify opportunities for tax savings, and ensure your returns are prepared accurately and filed on time. With extensive knowledge of Canadian tax law, we help individuals and corporations navigate complex tax situations.",
     features: [
       "Personal tax return (T1) preparation and filing",
