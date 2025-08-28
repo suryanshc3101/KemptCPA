@@ -176,12 +176,12 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
 
   return (
     <div 
-      className="fixed inset-0 z-50 overflow-y-auto bg-black/70 backdrop-blur-sm flex items-center justify-center p-4"
+      className="fixed inset-0 z-50 overflow-y-auto bg-black/70 backdrop-blur-sm flex items-start sm:items-center justify-center p-2 sm:p-4"
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
-      <div className="relative max-w-4xl w-full max-h-[90vh] overflow-y-auto bg-white rounded-3xl shadow-2xl">
+      <div className="relative max-w-4xl w-full max-h-[95vh] sm:max-h-[90vh] overflow-y-auto bg-white rounded-2xl sm:rounded-3xl shadow-2xl my-2 sm:my-0">
         {/* Header */}
-        <div className={`relative p-8 bg-gradient-to-r ${service.color} text-white rounded-t-3xl overflow-hidden`}>
+        <div className={`relative p-4 sm:p-6 lg:p-8 bg-gradient-to-r ${service.color} text-white rounded-t-2xl sm:rounded-t-3xl overflow-hidden`}>
           {/* Background image for financial services */}
           <div className="absolute inset-0 opacity-20">
             <img 
@@ -193,59 +193,59 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
           
           <button 
             onClick={onClose}
-            className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-colors group"
+            className="absolute top-3 right-3 sm:top-6 sm:right-6 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-colors group"
             title="Press ESC to close"
           >
-            <X className="w-6 h-6 group-hover:rotate-90 transition-transform" />
+            <X className="w-4 h-4 sm:w-6 sm:h-6 group-hover:rotate-90 transition-transform" />
           </button>
           
           <div className="flex items-center gap-4 mb-4">
-            <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
-              <service.icon className="w-8 h-8 text-white" />
+            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
+              <service.icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
             </div>
-            <h2 className="text-3xl font-bold">{service.title}</h2>
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold leading-tight">{service.title}</h2>
           </div>
           
-          <p className="text-xl text-white/90 leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed">
             {details.overview}
           </p>
           
           {/* Add detailed description */}
           <div className="mt-4 p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
-            <p className="text-white font-medium leading-relaxed">
+            <p className="text-sm sm:text-base text-white font-medium leading-relaxed">
               {details.detailedDescription}
             </p>
           </div>
         </div>
 
         {/* Content */}
-        <div className="p-8 space-y-8">
+        <div className="p-4 sm:p-6 lg:p-8 space-y-6 lg:space-y-8">
           {/* Service Image */}
           <div className="relative">
             <img 
               src={details.image} 
               alt={service.title}
-              className="w-full h-48 object-cover rounded-2xl shadow-lg"
+              className="w-full h-32 sm:h-40 lg:h-48 object-cover rounded-xl sm:rounded-2xl shadow-lg"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-2xl"></div>
-            <div className="absolute bottom-4 left-6">
-              <p className="text-white font-bold text-lg">{service.title}</p>
-              <p className="text-white text-sm font-medium">Professional CPA Services</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-xl sm:rounded-2xl"></div>
+            <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-6">
+              <p className="text-white font-bold text-sm sm:text-base lg:text-lg">{service.title}</p>
+              <p className="text-white text-xs sm:text-sm font-medium">Professional CPA Services</p>
             </div>
           </div>
 
           {/* Features */}
           {details.features && details.features.length > 0 && (
           <div>
-            <h3 className="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
-              <CheckCircle className="w-6 h-6 text-green-500" />
+            <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+              <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-green-500" />
               What's Included
             </h3>
-            <div className="grid md:grid-cols-2 gap-3">
+            <div className="grid sm:grid-cols-2 gap-3">
               {details.features.map((feature, index) => (
                 <div key={index} className="flex items-center gap-3 p-3 bg-slate-50 rounded-lg">
                   <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
-                  <span className="text-slate-700">{feature}</span>
+                  <span className="text-sm sm:text-base text-slate-700">{feature}</span>
                 </div>
               ))}
             </div>
@@ -256,21 +256,21 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
           {details.benefits && details.benefits.length > 0 && (
           <div>
             {service.title !== "Assistance in finance audit, reviews and notice to reader engagements" && (
-              <h3 className="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
-                <ArrowRight className="w-6 h-6 text-blue-500" />
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-blue-500" />
                 Key Benefits
               </h3>
             )}
             {service.title === "Assistance in finance audit, reviews and notice to reader engagements" && (
-              <h3 className="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
-                <ArrowRight className="w-6 h-6 text-blue-500" />
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-blue-500" />
                 Benefits
               </h3>
             )}
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
               {details.benefits.map((benefit, index) => (
                 <div key={index} className="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border-l-4 border-blue-500">
-                  <span className="text-slate-700 font-medium">{benefit}</span>
+                  <span className="text-sm sm:text-base text-slate-700 font-medium">{benefit}</span>
                 </div>
               ))}
             </div>
@@ -279,9 +279,9 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
 
 
           {/* CTA */}
-          <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl p-8 text-center">
-            <h3 className="text-xl font-bold text-slate-800 mb-2">Ready to Get Started?</h3>
-            <p className="text-slate-600 mb-4">
+          <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 text-center">
+            <h3 className="text-lg sm:text-xl font-bold text-slate-800 mb-2">Ready to Get Started?</h3>
+            <p className="text-sm sm:text-base text-slate-600 mb-4">
               Contact us to discuss your specific needs for {service.title.toLowerCase()}.
             </p>
             <button 
@@ -290,12 +290,12 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
                 // Scroll to contact section
                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r ${service.color} text-white font-semibold hover:scale-105 transition-transform shadow-lg`}
+              className={`inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base rounded-lg sm:rounded-xl bg-gradient-to-r ${service.color} text-white font-semibold hover:scale-105 transition-transform shadow-lg`}
             >
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
               Get In Touch
             </button>
-            <p className="text-xs text-slate-500 mt-2">Press ESC to close this window</p>
+            <p className="text-xs text-slate-500 mt-2">Tap outside or press ESC to close</p>
           </div>
         </div>
       </div>

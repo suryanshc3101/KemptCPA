@@ -206,7 +206,7 @@ export default function Contact() {
           <div className="absolute inset-0 bg-gradient-to-br from-blue-50/40 via-teal-50/20 to-indigo-50/30 rounded-3xl pointer-events-none"></div>
           
           {/* Name Fields - Split to match HubSpot */}
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <label className="relative block text-sm font-semibold text-slate-700 mb-2">First Name *</label>
               <input 
@@ -251,13 +251,13 @@ export default function Contact() {
           {/* Phone Number with Country Code */}
           <div>
             <label className="relative block text-sm font-semibold text-slate-700 mb-2">Phone Number</label>
-            <div className="flex gap-2">
+            <div className="flex gap-2 flex-col sm:flex-row">
               <select 
                 name="countryCode" 
                 value={formData.countryCode}
                 onChange={handleChange}
                 disabled={isSubmitting}
-                className="relative rounded-xl border-2 border-slate-200 px-3 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-300 bg-white hover:border-slate-300 text-sm disabled:opacity-50"
+                className="relative rounded-xl border-2 border-slate-200 px-3 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-300 bg-white hover:border-slate-300 text-sm disabled:opacity-50 sm:w-auto w-full"
               >
                 <option value="+1">🇨🇦 +1</option>
                 <option value="+1">🇺🇸 +1</option>
@@ -272,11 +272,11 @@ export default function Contact() {
               <input 
                 name="phone" 
                 type="tel" 
-                placeholder="519-771-7862"
+                placeholder="(519) 771-7862"
                 value={formData.phone}
                 onChange={handleChange}
                 disabled={isSubmitting}
-                className="relative flex-1 rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-300 bg-white hover:border-slate-300 disabled:opacity-50"
+                className="relative flex-1 rounded-xl border-2 border-slate-200 px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-300 bg-white hover:border-slate-300 disabled:opacity-50 w-full sm:w-auto"
               />
             </div>
           </div>
@@ -312,7 +312,7 @@ export default function Contact() {
           <button 
             type="submit" 
             disabled={isSubmitting}
-            className="relative group rounded-xl bg-gradient-to-r from-blue-600 to-slate-700 text-white px-8 py-4 font-semibold hover:from-blue-700 hover:to-slate-800 transition-all duration-300 hover:scale-105 hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+            className="relative group rounded-xl bg-gradient-to-r from-blue-600 to-slate-700 text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold hover:from-blue-700 hover:to-slate-800 transition-all duration-300 hover:scale-105 hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 w-full sm:w-auto"
           >
             <span className="flex items-center justify-center gap-2">
               {isSubmitting ? (
@@ -333,7 +333,7 @@ export default function Contact() {
         </form>
 
         {/* Contact Information */}
-        <div className="mt-12 grid md:grid-cols-1 gap-6">
+        <div className="mt-12 grid gap-6">
           <div className="p-6 rounded-2xl bg-gradient-to-br from-orange-50 to-amber-50 border-2 border-dashed border-orange-200 hover:border-orange-300 transition-colors">
             <Mail className="w-8 h-8 text-orange-600 mb-3" />
             <h3 className="font-bold text-slate-800 mb-2">Direct Contact</h3>

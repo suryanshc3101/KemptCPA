@@ -84,19 +84,19 @@ export default function Services() {
           <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent mb-6 animate-text-shimmer">
             Services
           </h2>
-          <p className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto font-medium leading-relaxed">
+          <p className="text-lg sm:text-xl lg:text-2xl text-slate-600 max-w-4xl mx-auto font-medium leading-relaxed">
             Professional CPA Services: Tax Preparation (T1/T2) • QuickBooks/Xero Bookkeeping • GST/HST Filings • CRA Representation • Business Advisory Services
           </p>
           
           {/* Software Partners */}
           <div className="mt-10 flex justify-center">
-            <div className="flex items-center gap-10 p-6 glass-effect rounded-3xl shadow-2xl border border-white/30 animate-magical-glow">
+            <div className="flex items-center gap-4 sm:gap-6 lg:gap-10 p-4 sm:p-6 glass-effect rounded-2xl sm:rounded-3xl shadow-2xl border border-white/30 animate-magical-glow overflow-x-auto">
               <div className="flex items-center gap-4 magical-hover animate-magical-pulse">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg">
                   <span className="text-white text-xs font-bold">QB</span>
                   <Zap className="w-3 h-3 text-yellow-300 absolute -top-1 -right-1 animate-sparkle" />
                 </div>
-                <span className="text-base font-bold text-slate-800">QuickBooks</span>
+                <span className="text-sm sm:text-base font-bold text-slate-800 whitespace-nowrap">QuickBooks</span>
               </div>
               <div className="w-px h-8 bg-gradient-to-b from-transparent via-slate-400 to-transparent"></div>
               <div className="flex items-center gap-4 magical-hover animate-magical-pulse" style={{animationDelay: '0.5s'}}>
@@ -104,7 +104,7 @@ export default function Services() {
                   <span className="text-white text-xs font-bold">Xero</span>
                   <Zap className="w-3 h-3 text-yellow-300 absolute -top-1 -right-1 animate-sparkle" style={{animationDelay: '0.3s'}} />
                 </div>
-                <span className="text-base font-bold text-slate-800">Xero</span>
+                <span className="text-sm sm:text-base font-bold text-slate-800 whitespace-nowrap">Xero</span>
               </div>
               <div className="w-px h-8 bg-gradient-to-b from-transparent via-slate-400 to-transparent"></div>
               <div className="flex items-center gap-4 magical-hover animate-magical-pulse" style={{animationDelay: '1s'}}>
@@ -112,18 +112,18 @@ export default function Services() {
                   <span className="text-white text-xs font-bold">S50</span>
                   <Zap className="w-3 h-3 text-yellow-300 absolute -top-1 -right-1 animate-sparkle" style={{animationDelay: '0.6s'}} />
                 </div>
-                <span className="text-base font-bold text-slate-800">Sage 50</span>
+                <span className="text-sm sm:text-base font-bold text-slate-800 whitespace-nowrap">Sage 50</span>
               </div>
             </div>
           </div>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
           {services.map((service, index) => (
             <div 
               key={index}
               onClick={() => handleServiceClick(service)}
-              className="group relative rounded-3xl glass-effect p-10 shadow-2xl border-2 border-blue-200/40 hover:border-blue-400/60 magical-hover cursor-pointer transform-gpu animate-magical-glow overflow-hidden transition-all duration-300"
+              className="group relative rounded-2xl sm:rounded-3xl glass-effect p-6 sm:p-8 lg:p-10 shadow-2xl border-2 border-blue-200/40 hover:border-blue-400/60 magical-hover cursor-pointer transform-gpu animate-magical-glow overflow-hidden transition-all duration-300"
               style={{animationDelay: `${index * 0.2}s`}}
             >
               {/* Clear clickable indicator */}
@@ -152,20 +152,20 @@ export default function Services() {
               {/* Icon with enhanced animation */}
               <div className={`relative mb-8 w-20 h-20 rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center shadow-xl magical-hover animate-magical-pulse`}>
                 <service.icon className="w-10 h-10 text-white animate-magical-float" />
-                <Star className="w-4 h-4 text-yellow-300 absolute -top-2 -right-2 animate-sparkle" />
+                <Star className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-300 absolute -top-2 -right-2 animate-sparkle" />
                 <div className="absolute inset-0 bg-white/30 rounded-2xl opacity-0 group-hover:opacity-50 animate-magical-pulse transition-all duration-500"></div>
               </div>
               
-              <h3 className="relative text-2xl font-bold text-slate-900 mb-4 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:via-cyan-600 group-hover:to-indigo-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-500 leading-tight">
+              <h3 className="relative text-lg sm:text-xl lg:text-2xl font-bold text-slate-900 mb-4 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:via-cyan-600 group-hover:to-indigo-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-500 leading-tight">
                 {service.title}
               </h3>
-              <p className="relative text-base text-slate-600 leading-relaxed group-hover:text-slate-800 transition-colors font-medium mb-4">
+              <p className="relative text-sm sm:text-base text-slate-600 leading-relaxed group-hover:text-slate-800 transition-colors font-medium mb-4">
                 {service.description}
               </p>
               
               {/* Clear "Click for details" indicator */}
               <div className="relative">
-                <div className="flex items-center gap-2 text-blue-600 font-semibold text-sm group-hover:text-blue-700 transition-colors">
+                <div className="flex items-center gap-2 text-blue-600 font-semibold text-xs sm:text-sm group-hover:text-blue-700 transition-colors">
                   <span>Click for details</span>
                   <span className="transform group-hover:translate-x-1 transition-transform duration-300">→</span>
                 </div>

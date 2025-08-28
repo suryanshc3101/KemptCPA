@@ -27,39 +27,39 @@ export default function Hero() {
       
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
         <div className="relative z-10 animate-fade-in-up">
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent mb-6 animate-text-shimmer text-shimmer">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent mb-6 animate-text-shimmer text-shimmer">
             Expert Canadian CPA Services: Tax Preparation, Bookkeeping & Business Advisory
           </h1>
           
           {/* Feature highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 animate-fade-in-up" style={{animationDelay: '0.5s'}}>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 animate-fade-in-up" style={{animationDelay: '0.5s'}}>
             <div className="flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-blue-200/50">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-md">
                 <Shield className="w-4 h-4 text-white" />
                 <Star className="w-2 h-2 text-yellow-300 absolute -top-1 -right-1" />
               </div>
-              <span className="text-sm font-bold text-slate-800">CRA Compliant</span>
+              <span className="text-xs sm:text-sm font-bold text-slate-800">CRA Compliant</span>
             </div>
             <div className="flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-teal-200/50">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-teal-500 to-emerald-600 flex items-center justify-center shadow-md">
                 <TrendingUp className="w-4 h-4 text-white" />
                 <Star className="w-2 h-2 text-yellow-300 absolute -top-1 -right-1" />
               </div>
-              <span className="text-sm font-bold text-slate-800">Growth Focused</span>
+              <span className="text-xs sm:text-sm font-bold text-slate-800">Growth Focused</span>
             </div>
             <div className="flex items-center gap-3 p-4 glass-effect rounded-xl shadow-lg border-2 border-cyan-200/50">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-600 to-indigo-700 flex items-center justify-center shadow-md">
                 <Sparkles className="w-4 h-4 text-white" />
                 <Star className="w-2 h-2 text-yellow-300 absolute -top-1 -right-1" />
               </div>
-              <span className="text-sm font-bold text-slate-800">Tech-Enabled</span>
+              <span className="text-xs sm:text-sm font-bold text-slate-800">Tech-Enabled</span>
             </div>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up" style={{animationDelay: '0.7s'}}>
             <a 
               href="#services" 
-              className="group px-8 py-4 rounded-xl font-semibold text-center relative overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="group px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base font-semibold text-center relative overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               <span className="relative">
                 ✨ View Services
@@ -67,7 +67,7 @@ export default function Hero() {
             </a>
             <a 
               href="#contact" 
-              className="group px-8 py-4 rounded-xl font-semibold text-center border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300"
+              className="group px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base font-semibold text-center border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300"
             >
               <span className="relative">
                 📞 Get Free Consultation
@@ -75,11 +75,11 @@ export default function Hero() {
             </a>
           </div>
           
-          <div className="flex flex-wrap gap-4 text-sm text-gray-500 animate-fade-in-up" style={{animationDelay: '0.9s'}}>
-            <span className="px-4 py-2 glass-effect text-blue-700 rounded-full border border-blue-200">
+          <div className="flex flex-wrap gap-2 sm:gap-4 text-xs sm:text-sm text-gray-500 animate-fade-in-up" style={{animationDelay: '0.9s'}}>
+            <span className="px-3 sm:px-4 py-2 glass-effect text-blue-700 rounded-full border border-blue-200">
               🏆 CPA Ontario
             </span>
-            <span className="px-4 py-2 glass-effect text-slate-700 rounded-full border border-slate-200">
+            <span className="px-3 sm:px-4 py-2 glass-effect text-slate-700 rounded-full border border-slate-200">
               💼 QuickBooks • Xero • Sage 50
             </span>
             <span className="px-4 py-2 glass-effect text-teal-700 rounded-full border border-teal-200">
@@ -144,26 +144,26 @@ export default function Hero() {
             
             {/* Software Integration Partners */}
             <div className="absolute bottom-6 left-6 right-6">
-              <div className="flex items-center justify-center gap-8 p-5 glass-effect-dark rounded-2xl border border-white/30 animate-magical-glow">
+              <div className="flex items-center justify-center gap-4 sm:gap-6 lg:gap-8 p-3 sm:p-5 glass-effect-dark rounded-2xl border border-white/30 animate-magical-glow">
                 <div className="flex items-center gap-3 magical-hover animate-magical-pulse">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center shadow-lg">
+                  <div className="w-8 sm:w-10 h-8 sm:h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center shadow-lg">
                     <span className="text-white text-xs font-bold">QB</span>
                   </div>
-                  <span className="text-white text-sm font-medium">QuickBooks</span>
+                  <span className="text-white text-xs sm:text-sm font-medium hidden sm:inline">QuickBooks</span>
                 </div>
                 <div className="w-px h-8 bg-gradient-to-b from-transparent via-white/40 to-transparent"></div>
                 <div className="flex items-center gap-3 magical-hover animate-magical-pulse" style={{animationDelay: '0.5s'}}>
-                  <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
+                  <div className="w-8 sm:w-10 h-8 sm:h-10 bg-gradient-to-br from-indigo-600 to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
                     <span className="text-white text-xs font-bold">X</span>
                   </div>
-                  <span className="text-white text-sm font-medium">Xero</span>
+                  <span className="text-white text-xs sm:text-sm font-medium hidden sm:inline">Xero</span>
                 </div>
                 <div className="w-px h-8 bg-gradient-to-b from-transparent via-white/40 to-transparent"></div>
                 <div className="flex items-center gap-3 magical-hover animate-magical-pulse" style={{animationDelay: '1s'}}>
-                  <div className="w-10 h-10 bg-gradient-to-br from-emerald-600 to-green-600 rounded-lg flex items-center justify-center shadow-lg">
+                  <div className="w-8 sm:w-10 h-8 sm:h-10 bg-gradient-to-br from-emerald-600 to-green-600 rounded-lg flex items-center justify-center shadow-lg">
                     <span className="text-white text-xs font-bold">S50</span>
                   </div>
-                  <span className="text-white text-sm font-medium">Sage 50</span>
+                  <span className="text-white text-xs sm:text-sm font-medium hidden sm:inline">Sage 50</span>
                 </div>
               </div>
             </div>

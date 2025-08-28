@@ -16,16 +16,16 @@ export default function Footer() {
         <div className="relative">
           <div className="flex items-center gap-2 mb-4">
             <Sparkles className="w-6 h-6 text-blue-400 animate-pulse" />
-            <h3 className="font-bold text-xl bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent" itemProp="name" itemScope itemType="https://schema.org/Organization">
+            <h3 className="font-bold text-lg sm:text-xl bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent" itemProp="name" itemScope itemType="https://schema.org/Organization">
               Kempt CPA Professional Corporation
             </h3>
             <meta itemProp="alternateName" content="KemptCPA" />
             <meta itemProp="url" content="https://kemptcpa.ca" />
           </div>
-          <p className="text-slate-300 leading-relaxed">
+          <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
             Helping individuals and businesses stay compliant and grow with clean books, smart tax planning, and reliable support.
           </p>
-          <div className="mt-4 flex gap-2">
+          <div className="mt-4 flex flex-wrap gap-2">
             <span className="px-3 py-1 text-xs bg-blue-500/20 text-blue-200 rounded-full border border-blue-500/30">
               CPA Ontario
             </span>

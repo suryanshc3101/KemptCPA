@@ -37,22 +37,22 @@ export default function HowItWorks() {
       
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-slate-900 to-cyan-800 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-slate-900 to-cyan-800 bg-clip-text text-transparent">
             How it works
           </h2>
-          <p className="mt-4 text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
             Simple, transparent process to get your business on track
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {steps.map((step, index) => (
             <div 
               key={index}
-              className="group relative rounded-3xl p-8 border-2 border-slate-200 hover:border-transparent hover:bg-white hover:shadow-2xl transition-all duration-500 text-center"
+              className="group relative rounded-2xl sm:rounded-3xl p-6 sm:p-8 border-2 border-slate-200 hover:border-transparent hover:bg-white hover:shadow-2xl transition-all duration-500 text-center"
             >
               {/* Background gradient on hover */}
-              <div className={`absolute inset-0 rounded-3xl bg-gradient-to-br ${step.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+              <div className={`absolute inset-0 rounded-2xl sm:rounded-3xl bg-gradient-to-br ${step.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
               
               {/* Step number with icon overlay - Fixed alignment */}
               <div className={`relative mx-auto mb-6 w-16 h-16 rounded-full bg-gradient-to-br ${step.color} text-white flex items-center justify-center font-bold text-xl shadow-lg group-hover:scale-110 transition-transform duration-300`}>
@@ -62,15 +62,15 @@ export default function HowItWorks() {
                 </div>
               </div>
               
-              <h3 className="relative text-xl font-bold text-slate-800 mb-3 group-hover:text-slate-900 transition-colors">
+              <h3 className="relative text-lg sm:text-xl font-bold text-slate-800 mb-3 group-hover:text-slate-900 transition-colors">
                 {step.title}
               </h3>
-              <p className="relative text-slate-600 leading-relaxed group-hover:text-slate-700 transition-colors">
+              <p className="relative text-sm sm:text-base text-slate-600 leading-relaxed group-hover:text-slate-700 transition-colors">
                 {step.description}
               </p>
               
               {/* Connection arrow for desktop */}
-              {index < steps.length - 1 && (
+              {index < steps.length - 1 && index !== 1 && (
                 <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
                   <div className="w-8 h-0.5 bg-gradient-to-r from-slate-300 to-transparent"></div>
                 </div>
