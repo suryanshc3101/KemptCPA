@@ -6,14 +6,14 @@ const services = [
   {
     icon: ClipboardCheck,
     color: 'from-blue-600 to-indigo-600',
-    title: "Assistance in finance audit, reviews and notice to reader engagements",
-    description: "Professional assistance with financial statement audits, reviews, and notice to reader engagements to meet your compliance requirements."
+    title: "Assistance in audit, reviews and notice to reader engagements",
+    description: "Professional assistance with audit, reviews, and notice to reader engagements to meet your compliance requirements."
   },
   {
     icon: Users,
     color: 'from-slate-600 to-blue-600',
-    title: "T1 & T2",
-    description: "Personal and corporate tax return preparation and filing, ensuring compliance with CRA requirements and maximizing deductions."
+    title: "T1, T2 & T3",
+    description: "T1 (Personal), T2 (Corporate) & T3 (Tax Return) preparation and filing, ensuring compliance with CRA requirements and maximizing deductions."
   },
   {
     icon: Calculator,

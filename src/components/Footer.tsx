@@ -51,7 +51,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-slate-400" />
-              <span>Services in Brantford, Ontario</span>
+              <span>Services in Brantford and nearby areas</span>
             </li>
           </ul>
         </div>

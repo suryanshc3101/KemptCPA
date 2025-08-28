@@ -14,11 +14,11 @@ interface ServiceModalProps {
 }
 
 const serviceDetails = {
-  "Assistance in finance audit, reviews and notice to reader engagements": {
+  "Assistance in audit, reviews and notice to reader engagements": {
     overview: "Comprehensive financial statement preparation and assurance services designed to meet regulatory requirements and provide stakeholders with confidence in your financial reporting. Our experienced team ensures accuracy, compliance, and professional presentation of your financial information.",
-    detailedDescription: "We provide thorough assistance with compilation engagements, review engagements, and notice to reader services. Our approach combines technical expertise with practical business insight to deliver meaningful financial statements that serve your business needs and satisfy regulatory requirements.",
+    detailedDescription: "We provide thorough assistance with compilation audit, review audit, and notice to reader services. Our approach combines technical expertise with practical business insight to deliver meaningful audit that serve your business needs and satisfy regulatory requirements.",
     features: [
-      "Financial statement preparation and review",
+      "Audit preparation and review",
       "Notice to reader engagements for banks and investors",
       "Compilation of financial statements",
       "Bank covenant compliance monitoring",
@@ -30,16 +30,16 @@ const serviceDetails = {
       "Improved internal controls and processes",
       "Risk mitigation and compliance assurance",
       "Streamlined audit preparation",
-      "Professional liability coverage"
     ],
     image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200"
   },
-  "T1 & T2": {
-    overview: "Expert personal (T1) and corporate (T2) tax return preparation and strategic tax planning services. We ensure full compliance with Canada Revenue Agency requirements while maximizing available deductions and credits to minimize your tax liability.",
+  "T1, T2 & T3": {
+    overview: "Expert personal (T1), corporate (T2) and T3 tax return preparation and strategic tax planning services. We ensure full compliance with Canada Revenue Agency requirements while maximizing available deductions and credits to minimize your tax liability.",
     detailedDescription: "Our tax services go beyond basic compliance. We provide proactive tax planning, identify opportunities for tax savings, and ensure your returns are prepared accurately and filed on time. With extensive knowledge of Canadian tax law, we help individuals and corporations navigate complex tax situations.",
     features: [
       "Personal tax return (T1) preparation and filing",
       "Corporate tax return (T2) preparation and filing",
+      "T3 tax return filing and preparation",
       "Tax planning and optimization strategies",
       "CRA correspondence and representation",
       "Tax-efficient business structure advice",
@@ -128,20 +128,6 @@ const serviceDetails = {
       "Growth strategy development",
       "Cost reduction and efficiency improvements",
       "Acquisition and merger support",
-      "Key performance indicator (KPI) development",
-      "Pricing strategy optimization",
-      "Financial modeling and scenario planning",
-      "Succession planning and exit strategies",
-      "Risk management and mitigation"
-    ],
-    benefits: [
-      "Make informed business decisions",
-      "Improve profitability and cash flow",
-      "Identify growth opportunities",
-      "Optimize business operations",
-      "Reduce financial risk exposure",
-      "Access to experienced business advisors",
-      "Objective third-party perspective"
     ],
     image: "https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=1200"
   },
@@ -255,13 +241,13 @@ export default function ServiceModal({ isOpen, onClose, service }: ServiceModalP
           {/* Benefits */}
           {details.benefits && details.benefits.length > 0 && (
           <div>
-            {service.title !== "Assistance in finance audit, reviews and notice to reader engagements" && (
+            {service.title !== "Assistance in audit, reviews and notice to reader engagements" && (
               <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
                 <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-blue-500" />
                 Key Benefits
               </h3>
             )}
-            {service.title === "Assistance in finance audit, reviews and notice to reader engagements" && (
+            {service.title === "Assistance in audit, reviews and notice to reader engagements" && (
               <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
                 <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-blue-500" />
                 Benefits
