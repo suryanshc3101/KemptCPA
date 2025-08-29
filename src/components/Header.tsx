@@ -1,63 +1,127 @@
 import React from 'react';
-import { Sparkles, Phone, Mail } from 'lucide-react';
+import { Sparkles, TrendingUp, Shield, Building2, Star } from 'lucide-react';
 
-export default function Header() {
+export default function Hero() {
   return (
-    <div className="w-full glass-effect border-b border-blue-200/50 shadow-2xl backdrop-blur-lg relative overflow-hidden animate-magical-gradient bg-gradient-to-r from-white via-blue-50/40 to-indigo-50/30">
-      {/* Subtle magical header effects */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-400/10 via-cyan-400/5 to-teal-400/8 animate-magical-gradient opacity-70"></div>
+    <section className="bg-blue-50 min-h-screen flex items-center">
       
-      {/* Advanced magical particles */}
-      <div className="absolute top-2 left-1/4 w-1.5 h-1.5 bg-blue-400/80 rounded-full animate-sparkle opacity-60"></div>
-      <div className="absolute bottom-2 right-1/3 w-1 h-1 bg-teal-400/70 rounded-full animate-sparkle opacity-70" style={{animationDelay: '1.5s'}}></div>
-      <div className="absolute top-1 right-1/4 w-1 h-1 bg-cyan-400/60 rounded-full animate-sparkle opacity-50" style={{animationDelay: '2s'}}></div>
-      
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-4 relative z-10">
-        <div className="flex items-center">
-          <div className="flex items-center gap-2 min-w-0" itemScope itemType="https://schema.org/Organization">
-            <Sparkles className="w-6 h-6 text-blue-600 animate-sparkle" />
-            <div className="flex flex-col min-w-0">
-              <span itemProp="name" className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-800 via-cyan-800 to-indigo-800 bg-clip-text text-transparent animate-text-shimmer cursor-default" title="Kempt CPA Professional Corporation">
-                KemptCPA
-              </span>
-              <span className="text-xs text-slate-600 font-medium italic whitespace-nowrap">
-                Keeping your finances neat, precise and stress free
-              </span>
+      <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+        <div className="animate-fade-in-up">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-slate-900 mb-6">
+            Expert Canadian CPA Services: Tax Preparation, Bookkeeping & Business Advisory
+          </h1>
+          
+          {/* Feature highlights */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+            <div className="flex items-center gap-3 p-4 bg-white rounded-lg shadow-md border border-blue-200">
+              <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center shadow-md">
+                <Shield className="w-4 h-4 text-white" />
+              </div>
+              <span className="text-xs sm:text-sm font-bold text-slate-800">CRA Compliant</span>
             </div>
-            <meta itemProp="url" content="https://kemptcpa.ca" />
-            <meta itemProp="alternateName" content="Kempt CPA Professional Corporation" />
-            <meta itemProp="logo" content="https://kemptcpa.ca/logo.png" />
+            <div className="flex items-center gap-3 p-4 bg-white rounded-lg shadow-md border border-teal-200">
+              <div className="w-10 h-10 rounded-lg bg-teal-600 flex items-center justify-center shadow-md">
+                <TrendingUp className="w-4 h-4 text-white" />
+              </div>
+              <span className="text-xs sm:text-sm font-bold text-slate-800">Growth Focused</span>
+            </div>
+            <div className="flex items-center gap-3 p-4 bg-white rounded-lg shadow-md border border-cyan-200">
+              <div className="w-10 h-10 rounded-lg bg-cyan-600 flex items-center justify-center shadow-md">
+                <Sparkles className="w-4 h-4 text-white" />
+              </div>
+              <span className="text-xs sm:text-sm font-bold text-slate-800">Tech-Enabled</span>
+            </div>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <a 
+              href="#services" 
+              className="px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-semibold text-center bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition-colors duration-300"
+            >
+              View Services
+            </a>
+            <a 
+              href="#contact" 
+              className="px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-semibold text-center border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300"
+            >
+              Get Free Consultation
+            </a>
+          </div>
+          
+          <div className="flex flex-wrap gap-2 sm:gap-4 text-xs sm:text-sm">
+            <span className="px-3 sm:px-4 py-2 bg-blue-100 text-blue-700 rounded-lg border border-blue-200">
+              CPA Ontario
+            </span>
+            <span className="px-3 sm:px-4 py-2 bg-gray-100 text-slate-700 rounded-lg border border-gray-200">
+              QuickBooks • Xero • Sage 50
+            </span>
+            <span className="px-4 py-2 bg-teal-100 text-teal-700 rounded-lg border border-teal-200">
+              Serving Canada Remotely
+            </span>
           </div>
         </div>
-        <div className="flex items-center gap-2 sm:gap-4 lg:gap-6 flex-shrink-0">
-          <div className="hidden 2xl:flex items-center gap-2 glass-effect px-4 py-2 rounded-full animate-magical-pulse">
-            <span className="text-sm font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent whitespace-nowrap">
-              ✨ Professional CPA Services
-            </span>
+        
+        <div className="animate-fade-in-up">
+          <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-xl">
+            <img 
+              src="https://images.pexels.com/photos/6289065/pexels-photo-6289065.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Professional Canadian CPA working on tax returns and financial statements using QuickBooks and calculator - Kempt CPA Professional Corporation"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            
+            {/* Centered text */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center px-6 py-8 bg-black/60 rounded-xl border border-white/30 shadow-xl">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+                  Professional CPA Services
+                </h3>
+                
+                <div className="flex flex-wrap items-center justify-center gap-2 mb-4">
+                  <span className="px-3 py-1 bg-blue-600/80 text-white rounded-lg text-sm font-medium">
+                    Tax
+                  </span>
+                  <span className="px-3 py-1 bg-teal-600/80 text-white rounded-lg text-sm font-medium">
+                    Bookkeeping
+                  </span>
+                  <span className="px-3 py-1 bg-cyan-600/80 text-white rounded-lg text-sm font-medium">
+                    Advisory
+                  </span>
+                  <span className="px-3 py-1 bg-emerald-600/80 text-white rounded-lg text-sm font-medium">
+                    CRA Rep
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+            {/* Software Integration Partners */}
+            <div className="absolute bottom-6 left-6 right-6">
+              <div className="flex items-center justify-center gap-4 sm:gap-6 lg:gap-8 p-3 sm:p-5 glass-effect-dark rounded-2xl border border-white/30 animate-magical-glow">
+                <div className="flex items-center gap-3 magical-hover animate-magical-pulse">
+                  <div className="w-8 sm:w-10 h-8 sm:h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center shadow-lg">
+                    <span className="text-white text-xs font-bold">QB</span>
+                  </div>
+                  <span className="text-white text-xs sm:text-sm font-medium hidden sm:inline">QuickBooks</span>
+                </div>
+                <div className="w-px h-8 bg-gradient-to-b from-transparent via-white/40 to-transparent"></div>
+                <div className="flex items-center gap-3 magical-hover animate-magical-pulse" style={{animationDelay: '0.5s'}}>
+                  <div className="w-8 sm:w-10 h-8 sm:h-10 bg-gradient-to-br from-indigo-600 to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
+                    <span className="text-white text-xs font-bold">X</span>
+                  </div>
+                  <span className="text-white text-xs sm:text-sm font-medium hidden sm:inline">Xero</span>
+                </div>
+                <div className="w-px h-8 bg-gradient-to-b from-transparent via-white/40 to-transparent"></div>
+                <div className="flex items-center gap-3 magical-hover animate-magical-pulse" style={{animationDelay: '1s'}}>
+                  <div className="w-8 sm:w-10 h-8 sm:h-10 bg-gradient-to-br from-emerald-600 to-green-600 rounded-lg flex items-center justify-center shadow-lg">
+                    <span className="text-white text-xs font-bold">S50</span>
+                  </div>
+                  <span className="text-white text-xs sm:text-sm font-medium hidden sm:inline">Sage 50</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="hidden lg:flex items-center gap-2 xl:gap-4 text-slate-600 flex-shrink-0">
-            <a href="tel:+15197717862" className="flex items-center gap-1 xl:gap-2 glass-effect px-2 xl:px-3 py-2 rounded-lg magical-hover whitespace-nowrap">
-              <Phone className="w-4 h-4 text-blue-600" />
-              <span className="text-xs xl:text-sm font-medium">+1 519 771 7862</span>
-            </a>
-            <a href="mailto:info@kemptcpa.ca" className="flex items-center gap-1 xl:gap-2 glass-effect px-2 xl:px-3 py-2 rounded-lg magical-hover whitespace-nowrap">
-              <Mail className="w-4 h-4 text-blue-600" />
-              <span className="text-xs xl:text-sm font-medium">info@kemptcpa.ca</span>
-            </a>
-          </div>
-          <a 
-            href="#contact" 
-            className="group relative rounded-xl sm:rounded-2xl bg-gradient-to-r from-blue-600 via-cyan-600 to-indigo-600 text-white px-4 sm:px-6 lg:px-8 py-2 sm:py-3 text-sm sm:text-base font-bold magical-hover animate-magical-glow shadow-2xl overflow-hidden flex-shrink-0"
-          >
-            <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></span>
-            <div className="absolute inset-0 bg-white/15 opacity-0 group-hover:opacity-40 group-hover:animate-magical-pulse transition-all duration-500 rounded-xl sm:rounded-2xl"></div>
-            <span className="relative whitespace-nowrap">
-              <span className="hidden sm:inline">✨ Contact Us</span>
-              <span className="sm:hidden">Contact</span>
-            </span>
-          </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
