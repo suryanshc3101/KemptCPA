@@ -92,27 +92,32 @@ export default function Hero() {
                   </span>
                 </div>
                 
-                <div className="flex items-center justify-center gap-3 sm:gap-4 p-3 bg-black/80 rounded-xl border border-white/30 shadow-lg">
-                  <div className="flex items-center gap-2">
-                    <div className="w-8 sm:w-10 h-8 sm:h-10 bg-blue-600 rounded-lg flex items-center justify-center shadow-md">
-                      <span className="text-white text-xs font-bold">QB</span>
-                    </div>
-                    <span className="text-white text-xs sm:text-sm font-medium hidden sm:inline">QuickBooks</span>
+                {/* Bottom decorative line */}
+                <div className="mt-8 flex items-center justify-center">
+            {/* Software Integration Partners */}
+            <div className="absolute bottom-6 left-6 right-6">
+              <div className="flex items-center justify-center gap-4 sm:gap-6 lg:gap-8 p-3 sm:p-5 glass-effect-dark rounded-2xl border border-white/30 animate-magical-glow">
+                <div className="flex items-center gap-3 magical-hover animate-magical-pulse">
+              <div className="flex items-center justify-center gap-3 sm:gap-4 p-3 bg-black/80 rounded-xl border border-white/30 shadow-lg">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 sm:w-10 h-8 sm:h-10 bg-blue-600 rounded-lg flex items-center justify-center shadow-md">
+                    <span className="text-white text-xs font-bold">QB</span>
                   </div>
-                  <div className="w-px h-8 bg-white/40"></div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-8 sm:w-10 h-8 sm:h-10 bg-indigo-600 rounded-lg flex items-center justify-center shadow-md">
-                      <span className="text-white text-xs font-bold">X</span>
-                    </div>
-                    <span className="text-white text-xs sm:text-sm font-medium hidden sm:inline">Xero</span>
+                  <span className="text-white text-xs sm:text-sm font-medium hidden sm:inline">QuickBooks</span>
+                </div>
+                <div className="w-px h-8 bg-white/40"></div>
+                <div className="flex items-center gap-2">
+                  <div className="w-8 sm:w-10 h-8 sm:h-10 bg-indigo-600 rounded-lg flex items-center justify-center shadow-md">
+                    <span className="text-white text-xs font-bold">X</span>
                   </div>
-                  <div className="w-px h-8 bg-white/40"></div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-8 sm:w-10 h-8 sm:h-10 bg-emerald-600 rounded-lg flex items-center justify-center shadow-md">
-                      <span className="text-white text-xs font-bold">S50</span>
-                    </div>
-                    <span className="text-white text-xs sm:text-sm font-medium hidden sm:inline">Sage 50</span>
+                  <span className="text-white text-xs sm:text-sm font-medium hidden sm:inline">Xero</span>
+                </div>
+                <div className="w-px h-8 bg-white/40"></div>
+                <div className="flex items-center gap-2">
+                  <div className="w-8 sm:w-10 h-8 sm:h-10 bg-emerald-600 rounded-lg flex items-center justify-center shadow-md">
+                    <span className="text-white text-xs font-bold">S50</span>
                   </div>
+                  <span className="text-white text-xs sm:text-sm font-medium hidden sm:inline">Sage 50</span>
                 </div>
               </div>
             </div>
@@ -121,4 +126,6 @@ export default function Hero() {
       </div>
     </section>
   );
+}
+  )
 }
