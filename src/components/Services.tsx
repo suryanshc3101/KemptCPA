@@ -123,7 +123,7 @@ export default function Services() {
             <div 
               key={index}
               onClick={() => handleServiceClick(service)}
-              className="group relative rounded-2xl sm:rounded-3xl glass-effect p-6 sm:p-8 lg:p-10 shadow-2xl border-2 border-blue-200/40 hover:border-blue-400/60 magical-hover cursor-pointer transform-gpu animate-magical-glow overflow-hidden transition-all duration-300"
+              className="group relative rounded-2xl sm:rounded-3xl glass-effect p-4 sm:p-6 lg:p-8 shadow-2xl border-2 border-blue-200/40 hover:border-blue-400/60 magical-hover cursor-pointer transform-gpu animate-magical-glow overflow-visible transition-all duration-300 min-h-[280px] sm:min-h-[320px]"
               style={{animationDelay: `${index * 0.2}s`}}
             >
               {/* Clear clickable indicator */}
@@ -134,7 +134,7 @@ export default function Services() {
               </div>
 
               {/* Enhanced hover effects */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/60 to-cyan-50/40 opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-3xl pointer-events-none animate-magical-gradient"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/60 to-cyan-50/40 opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-2xl sm:rounded-3xl pointer-events-none animate-magical-gradient"></div>
               
               {/* Advanced animated background elements */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-cyan-400/15 rounded-full -translate-y-16 translate-x-16 group-hover:translate-y-4 group-hover:translate-x-4 group-hover:rotate-45 transition-all duration-700 animate-magical-float"></div>
@@ -150,13 +150,12 @@ export default function Services() {
               <div className="absolute bottom-4 left-4 w-2 h-2 bg-gradient-to-br from-teal-500 to-emerald-500 rounded-full opacity-0 group-hover:opacity-90 transition-all duration-300 animate-sparkle group-hover:scale-150"></div>
               
               {/* Icon with enhanced animation */}
-              <div className={`relative mb-8 w-20 h-20 rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center shadow-xl magical-hover animate-magical-pulse`}>
-                <service.icon className="w-10 h-10 text-white animate-magical-float" />
-                <Star className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-300 absolute -top-2 -right-2 animate-sparkle" />
+              <div className={`relative mb-4 sm:mb-6 lg:mb-8 w-16 h-16 sm:w-18 sm:h-18 lg:w-20 lg:h-20 rounded-xl sm:rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center shadow-xl magical-hover animate-magical-pulse flex-shrink-0`}>
+                <service.icon className="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 text-white animate-magical-float" />
+                <Star className="w-3 h-3 text-yellow-300 absolute -top-1 -right-1 sm:-top-2 sm:-right-2 animate-sparkle" />
                 <div className="absolute inset-0 bg-white/30 rounded-2xl opacity-0 group-hover:opacity-50 animate-magical-pulse transition-all duration-500"></div>
               </div>
               
-              <h3 className="relative text-lg sm:text-xl lg:text-2xl font-bold text-slate-900 mb-4 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:via-cyan-600 group-hover:to-indigo-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-500 leading-tight">
                 {service.title}
               </h3>
               <p className="relative text-sm sm:text-base text-slate-600 leading-relaxed group-hover:text-slate-800 transition-colors font-medium mb-4">
