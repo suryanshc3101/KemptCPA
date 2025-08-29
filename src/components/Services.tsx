@@ -57,116 +57,81 @@ export default function Services() {
 
   return (
     <>
-      <section id="services" className="relative py-24 bg-gradient-to-b from-white via-blue-50/40 to-indigo-50/30 overflow-hidden animate-magical-gradient">
-      {/* Subtle background decoration */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Professional subtle patterns */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.06),transparent_50%),radial-gradient(circle_at_70%_70%,rgba(16,185,129,0.05),transparent_50%),radial-gradient(circle_at_50%_80%,rgba(6,182,212,0.04),transparent_60%)]"></div>
-        <div className="absolute top-1/4 left-0 w-96 h-96 bg-gradient-to-br from-blue-400/8 to-teal-400/6 rounded-full blur-3xl animate-magical-float"></div>
-        <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-br from-cyan-400/7 to-indigo-400/5 rounded-full blur-3xl animate-magical-pulse" style={{animationDelay: '3s'}}></div>
-        <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-gradient-to-br from-blue-400/6 to-cyan-400/4 rounded-full blur-3xl animate-magical-float" style={{animationDelay: '6s'}}></div>
-        
-        {/* Enhanced floating particles */}
-        <div className="absolute top-1/4 left-1/3 w-2 h-2 bg-blue-400/70 rounded-full animate-sparkle" style={{animationDelay: '0s'}}></div>
-        <div className="absolute top-2/3 right-1/4 w-1.5 h-1.5 bg-cyan-400/60 rounded-full animate-sparkle" style={{animationDelay: '2s'}}></div>
-        <div className="absolute bottom-1/3 left-1/4 w-1.5 h-1.5 bg-teal-400/65 rounded-full animate-sparkle" style={{animationDelay: '4s'}}></div>
-      </div>
+      <section id="services" className="py-16 bg-white">
       
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <Star className="w-6 h-6 text-blue-500 animate-sparkle" />
-            <span className="text-sm font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-indigo-600 bg-clip-text text-transparent tracking-wide uppercase animate-text-shimmer">
-              ✨ Professional Services
+          <div className="mb-6">
+            <span className="text-sm font-bold text-blue-600 tracking-wide uppercase">
+              Professional Services
             </span>
-            <Star className="w-6 h-6 text-cyan-500 animate-sparkle" style={{animationDelay: '1s'}} />
           </div>
-          <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent mb-6 animate-text-shimmer">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
             Services
           </h2>
-          <p className="text-lg sm:text-xl lg:text-2xl text-slate-600 max-w-4xl mx-auto font-medium leading-relaxed">
+          <p className="text-base md:text-lg text-slate-600 max-w-4xl mx-auto font-medium leading-relaxed">
             Professional CPA Services: Tax Preparation (T1/T2) • QuickBooks/Xero Bookkeeping • GST/HST Filings • CRA Representation • Business Advisory Services
           </p>
           
           {/* Software Partners */}
           <div className="mt-10 flex justify-center">
-            <div className="flex items-center gap-4 sm:gap-6 lg:gap-10 p-4 sm:p-6 glass-effect rounded-2xl sm:rounded-3xl shadow-2xl border border-white/30 animate-magical-glow overflow-x-auto">
-              <div className="flex items-center gap-4 magical-hover animate-magical-pulse">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg">
+            <div className="flex items-center gap-4 sm:gap-6 lg:gap-10 p-4 sm:p-6 bg-gray-50 rounded-xl border border-gray-200 shadow-lg overflow-x-auto">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center shadow-md">
                   <span className="text-white text-xs font-bold">QB</span>
-                  <Zap className="w-3 h-3 text-yellow-300 absolute -top-1 -right-1 animate-sparkle" />
                 </div>
-                <span className="text-sm sm:text-base font-bold text-slate-800 whitespace-nowrap">QuickBooks</span>
+                <span className="text-sm font-bold text-slate-800">QuickBooks</span>
               </div>
-              <div className="w-px h-8 bg-gradient-to-b from-transparent via-slate-400 to-transparent"></div>
-              <div className="flex items-center gap-4 magical-hover animate-magical-pulse" style={{animationDelay: '0.5s'}}>
-                <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-cyan-600 rounded-xl flex items-center justify-center shadow-lg">
+              <div className="w-px h-6 bg-gray-300"></div>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center shadow-md">
                   <span className="text-white text-xs font-bold">Xero</span>
-                  <Zap className="w-3 h-3 text-yellow-300 absolute -top-1 -right-1 animate-sparkle" style={{animationDelay: '0.3s'}} />
                 </div>
-                <span className="text-sm sm:text-base font-bold text-slate-800 whitespace-nowrap">Xero</span>
+                <span className="text-sm font-bold text-slate-800">Xero</span>
               </div>
-              <div className="w-px h-8 bg-gradient-to-b from-transparent via-slate-400 to-transparent"></div>
-              <div className="flex items-center gap-4 magical-hover animate-magical-pulse" style={{animationDelay: '1s'}}>
-                <div className="w-12 h-12 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-xl flex items-center justify-center shadow-lg">
+              <div className="w-px h-6 bg-gray-300"></div>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center shadow-md">
                   <span className="text-white text-xs font-bold">S50</span>
-                  <Zap className="w-3 h-3 text-yellow-300 absolute -top-1 -right-1 animate-sparkle" style={{animationDelay: '0.6s'}} />
                 </div>
-                <span className="text-sm sm:text-base font-bold text-slate-800 whitespace-nowrap">Sage 50</span>
+                <span className="text-sm font-bold text-slate-800">Sage 50</span>
               </div>
             </div>
           </div>
         </div>
         
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div 
               key={index}
               onClick={() => handleServiceClick(service)}
-              className="group relative rounded-2xl sm:rounded-3xl glass-effect p-4 sm:p-6 lg:p-8 shadow-2xl border-2 border-blue-200/40 hover:border-blue-400/60 magical-hover cursor-pointer transform-gpu animate-magical-glow overflow-visible transition-all duration-300 min-h-[280px] sm:min-h-[320px]"
-              style={{animationDelay: `${index * 0.2}s`}}
+              className="relative bg-white rounded-lg border-2 border-blue-200 hover:border-blue-400 hover:shadow-lg cursor-pointer transition-all duration-300 p-6 min-h-[280px]"
             >
-              {/* Clear clickable indicator */}
-              <div className="absolute top-4 right-4 opacity-60 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center border border-blue-500/30">
+              {/* Clickable indicator */}
+              <div className="absolute top-4 right-4">
+                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center border border-blue-300">
                   <span className="text-blue-600 text-sm">→</span>
                 </div>
               </div>
 
-              {/* Enhanced hover effects */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/60 to-cyan-50/40 opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-2xl sm:rounded-3xl pointer-events-none animate-magical-gradient"></div>
-              
-              {/* Advanced animated background elements */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-cyan-400/15 rounded-full -translate-y-16 translate-x-16 group-hover:translate-y-4 group-hover:translate-x-4 group-hover:rotate-45 transition-all duration-700 animate-magical-float"></div>
-              <div className="absolute bottom-0 left-0 w-28 h-28 bg-gradient-to-br from-teal-400/18 to-emerald-400/12 rounded-full translate-y-14 -translate-x-14 group-hover:translate-y-4 group-hover:translate-x-4 group-hover:-rotate-45 transition-all duration-700 animate-magical-pulse"></div>
-              
-              {/* Magical particles */}
-              <div className="absolute top-6 left-6 w-2 h-2 bg-blue-400 rounded-full opacity-0 group-hover:opacity-80 group-hover:animate-sparkle transition-all duration-300"></div>
-              <div className="absolute bottom-6 right-6 w-2 h-2 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-70 group-hover:animate-sparkle transition-all duration-300" style={{animationDelay: '0.5s'}}></div>
-              <div className="absolute top-1/2 right-6 w-1.5 h-1.5 bg-teal-400 rounded-full opacity-0 group-hover:opacity-75 group-hover:animate-sparkle transition-all duration-300" style={{animationDelay: '1s'}}></div>
-              
-              {/* Professional accents */}
-              <div className="absolute top-4 right-4 w-3 h-3 bg-gradient-to-br from-blue-400 to-cyan-500 rotate-45 opacity-0 group-hover:opacity-80 transition-all duration-300 animate-sparkle group-hover:rotate-180"></div>
-              <div className="absolute bottom-4 left-4 w-2 h-2 bg-gradient-to-br from-teal-500 to-emerald-500 rounded-full opacity-0 group-hover:opacity-90 transition-all duration-300 animate-sparkle group-hover:scale-150"></div>
-              
-              {/* Icon with enhanced animation */}
-              <div className={`relative mb-4 sm:mb-6 lg:mb-8 w-16 h-16 sm:w-18 sm:h-18 lg:w-20 lg:h-20 rounded-xl sm:rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center shadow-xl magical-hover animate-magical-pulse flex-shrink-0`}>
-                <service.icon className="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 text-white animate-magical-float" />
-                <Star className="w-3 h-3 text-yellow-300 absolute -top-1 -right-1 sm:-top-2 sm:-right-2 animate-sparkle" />
-                <div className="absolute inset-0 bg-white/30 rounded-2xl opacity-0 group-hover:opacity-50 animate-magical-pulse transition-all duration-500"></div>
+              {/* Simple icon */}
+              <div className={`mb-6 w-16 h-16 rounded-lg bg-blue-600 flex items-center justify-center shadow-lg`}>
+                <service.icon className="w-8 h-8 text-white" />
               </div>
               
-                {service.title}
+              {/* Title */}
+              <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-4 leading-tight">
               </h3>
-              <p className="relative text-sm sm:text-base text-slate-600 leading-relaxed group-hover:text-slate-800 transition-colors font-medium mb-4">
+              
+              {/* Description */}
+              <p className="text-sm md:text-base text-slate-600 leading-relaxed font-medium mb-6 flex-grow">
                 {service.description}
               </p>
               
-              {/* Clear "Click for details" indicator */}
-              <div className="relative">
-                <div className="flex items-center gap-2 text-blue-600 font-semibold text-xs sm:text-sm group-hover:text-blue-700 transition-colors">
-                  <span>Click for details</span>
-                  <span className="transform group-hover:translate-x-1 transition-transform duration-300">→</span>
+              {/* Click indicator */}
+              <div className="mt-auto">
+                <div className="flex items-center gap-2 text-blue-600 font-semibold text-sm">
+                  <span>Click for details →</span>
                 </div>
               </div>
             </div>
