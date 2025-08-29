@@ -2,6 +2,7 @@
 import React from 'react';
 
 export default function Hero() {
+              }
   return (
     <section className="bg-blue-50 min-h-screen flex items-center">
       
@@ -79,3 +80,4 @@ export default function Hero() {
                   </div>
             <div className="flex items-center gap-3 p-4 bg-white rounded-lg shadow-md border border-cyan-200">
     </section>
+  )
