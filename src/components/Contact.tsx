@@ -157,7 +157,7 @@ export default function Contact() {
               <MapPin className="w-8 h-8 text-blue-900 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Location</h3>
               <p className="text-professional">Brantford, Canada</p>
-              <p className="text-sm text-professional mt-1">Remote services available</p>
+              <p className="text-sm text-professional mt-1">Services in Brantford and nearby areas</p>
             </div>
 
             <div className="professional-card text-center">

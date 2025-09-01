@@ -11,7 +11,7 @@ export default function Footer() {
             <h3 className="text-2xl font-bold mb-4">Kempt CPA</h3>
             <p className="text-blue-100 mb-4 leading-relaxed">
               Professional Corporation providing comprehensive CPA services to individuals 
-              and businesses across Canada. Trusted expertise in tax preparation, 
+              and businesses in Canada. Trusted expertise in tax preparation, 
               bookkeeping, and business advisory.
             </p>
             <div className="flex items-center space-x-4">

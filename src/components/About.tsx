@@ -53,8 +53,8 @@ export default function About() {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Serving Canada</h4>
-                    <p className="text-sm text-professional">Remote services available nationwide</p>
+                    <h4 className="font-semibold text-gray-900">Serving Brantford Area</h4>
+                    <p className="text-sm text-professional">Local expertise with personalized service</p>
                   </div>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* Professional Image */}
+          {/* Professional Business Background Image */}
           <div className="relative">
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
               <img 

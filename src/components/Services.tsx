@@ -1,77 +1,123 @@
 import React from 'react';
-import { FileText, Calculator, Shield, TrendingUp, Users, ClipboardCheck } from 'lucide-react';
+import { FileText, Calculator, ClipboardCheck, Shield, TrendingUp } from 'lucide-react';
 
 const services = [
   {
     icon: FileText,
     title: "Tax Preparation (T1/T2/T3)",
-    description: "Complete tax return preparation and filing for individuals, corporations, and trusts. Ensure compliance with CRA requirements while maximizing deductions and credits.",
+    description: "Expert personal (T1), corporate (T2) and T3 tax return preparation and strategic tax planning services. We ensure full compliance with Canada Revenue Agency requirements while maximizing available deductions and credits to minimize your tax liability.",
+    detailedDescription: "Our tax services go beyond basic compliance. We provide proactive tax planning, identify opportunities for tax savings, and ensure your returns are prepared accurately and filed on time. With extensive knowledge of Canadian tax law, we help individuals and corporations navigate complex tax situations.",
+    image: "https://images.pexels.com/photos/8919544/pexels-photo-8919544.jpeg?auto=compress&cs=tinysrgb&w=1200",
     features: [
-      "Personal tax returns (T1)",
-      "Corporate tax returns (T2)", 
-      "Trust tax returns (T3)",
-      "Tax planning strategies",
-      "CRA correspondence handling"
+      "Personal tax return (T1) preparation and filing",
+      "Corporate tax return (T2) preparation and filing", 
+      "T3 tax return filing and preparation",
+      "Tax planning and optimization strategies",
+      "CRA correspondence and representation",
+      "Tax-efficient business structure advice"
+    ],
+    benefits: [
+      "Maximize tax deductions and credits",
+      "Ensure compliance with tax regulations",
+      "Professional CRA representation",
+      "Strategic tax planning for future years",
+      "Reduced audit risk through accurate preparation",
+      "Time savings and peace of mind",
+      "Year-round tax support and advice"
     ]
   },
   {
     icon: Calculator,
     title: "QuickBooks/Xero Bookkeeping",
-    description: "Professional bookkeeping services using industry-leading software. Monthly reconciliations, financial reporting, and real-time access to your financial information.",
+    description: "Professional bookkeeping services utilizing industry-leading software platforms including QuickBooks Online/Desktop and Xero. We maintain accurate, up-to-date financial records while providing real-time insights into your business performance.",
+    detailedDescription: "Our bookkeeping services are designed to give you complete visibility into your business finances. We handle everything from daily transaction recording to monthly financial statements, ensuring your books are always accurate, compliant, and ready for tax time or business decisions.",
+    image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1200",
     features: [
-      "QuickBooks Online & Desktop setup",
-      "Xero cloud bookkeeping",
+      "QuickBooks Online and Desktop setup and maintenance",
+      "Xero cloud-based bookkeeping services",
       "Monthly bank reconciliations",
       "Financial statement preparation",
-      "Payroll processing"
+      "Payroll processing and remittances",
+      "Accounts payable and receivable management"
+    ],
+    benefits: [
+      "Real-time access to financial information",
+      "Automated reporting and insights",
+      "Improved cash flow management",
+      "Time savings for business owners",
+      "Reduced errors through automation",
+      "Better business decision making",
+      "Scalable systems that grow with your business"
     ]
   },
   {
     icon: ClipboardCheck,
     title: "GST/HST Filings",
-    description: "Complete GST/HST registration, filing, and compliance management across all provinces. Optimize input tax credits and ensure timely submissions.",
+    description: "Comprehensive GST/HST services covering registration, filing, compliance, and optimization across all Canadian provinces and territories. We ensure full compliance while maximizing input tax credit recoveries and minimizing your administrative burden.",
+    detailedDescription: "Navigate the complexities of Canadian GST/HST with confidence. Our services cover everything from initial registration to ongoing compliance, helping businesses of all sizes meet their obligations while optimizing their tax position through strategic planning and accurate reporting.",
+    image: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1200",
     features: [
       "GST/HST registration assistance",
-      "Monthly, quarterly, annual filing",
+      "Monthly, quarterly, and annual filing",
       "Input tax credit optimization",
-      "Multi-provincial compliance",
-      "Audit support and representation"
+      "Multi-provincial compliance management",
+      "GST/HST audit support and representation",
+      "New housing rebate applications"
+    ],
+    benefits: [
+      "Ensure compliance with provincial requirements",
+      "Maximize input tax credit recoveries",
+      "Professional audit representation",
+      "Timely filing to avoid penalties",
+      "Reduced administrative burden",
+      "Expert guidance on complex transactions",
+      "Peace of mind with professional oversight"
     ]
   },
   {
     icon: Shield,
     title: "CRA Representation",
-    description: "Professional representation for audits, disputes, and compliance matters. Expert communication with Canada Revenue Agency on your behalf.",
+    description: "Expert representation and advocacy with the Canada Revenue Agency for audits, disputes, objections, and complex compliance matters. We protect your interests while working toward favorable resolutions that minimize financial impact and stress.",
+    detailedDescription: "When dealing with the CRA, having professional representation can make all the difference. Our experienced team understands CRA procedures, knows your rights as a taxpayer, and has the expertise to navigate complex situations while protecting your interests throughout the process.",
+    image: "https://images.pexels.com/photos/5668882/pexels-photo-5668882.jpeg?auto=compress&cs=tinysrgb&w=1200",
     features: [
       "Audit defense and representation",
       "Dispute resolution",
       "CRA correspondence management",
       "Voluntary disclosures",
-      "Penalty and interest negotiations"
+      "Penalty and interest negotiations",
+      "Appeals and objections"
+    ],
+    benefits: [
+      "Professional advocacy with CRA",
+      "Reduced stress and time commitment",
+      "Expert knowledge of CRA procedures",
+      "Protection of taxpayer rights",
+      "Favorable resolution strategies",
+      "Confidential professional representation"
     ]
   },
   {
     icon: TrendingUp,
     title: "Business Advisory Services",
-    description: "Strategic business advice, financial planning, and growth strategies. Cash flow management, budgeting, and performance analysis to drive success.",
+    description: "Strategic business advisory services designed to accelerate growth, improve profitability, and build sustainable competitive advantages. We combine financial expertise with practical business experience to guide your decision-making and strategic planning.",
+    detailedDescription: "Our business advisory services go beyond traditional accounting to provide strategic insights that drive business success. We work closely with business owners to understand their goals, identify opportunities, and implement strategies that deliver measurable results.",
+    image: "https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=1200",
     features: [
       "Financial planning and budgeting",
-      "Cash flow forecasting",
+      "Cash flow forecasting and management",
       "Business performance analysis",
       "Growth strategy development",
-      "Cost reduction recommendations"
-    ]
-  },
-  {
-    icon: Users,
-    title: "Financial Statement Preparation",
-    description: "Professional compilation, review, and audit services. Notice to reader engagements for banks and investors with full compliance assurance.",
-    features: [
-      "Compilation engagements",
-      "Review engagements", 
-      "Notice to reader services",
-      "Bank covenant compliance",
-      "Investor reporting"
+      "Cost reduction and efficiency improvements",
+      "Acquisition and merger support"
+    ],
+    benefits: [
+      "Strategic business planning",
+      "Improved financial performance",
+      "Data-driven decision making",
+      "Risk management strategies",
+      "Growth acceleration",
+      "Competitive advantage development"
     ]
   }
 ];
@@ -90,32 +136,54 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="space-y-8">
           {services.map((service, index) => (
-            <div key={index} className="professional-card">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mr-4">
-                  <service.icon className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
-              </div>
+            <div key={index} className="service-card">
+              {/* Service Image */}
+              <img 
+                src={service.image} 
+                alt={service.title}
+                className="service-image"
+              />
               
-              <p className="text-professional mb-6">
-                {service.description}
-              </p>
+              {/* Service Content */}
+              <div className="service-content">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mr-4">
+                    <service.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="service-title">{service.title}</h3>
+                </div>
+                
+                {/* Overview */}
+                <p className="service-description">
+                  {service.description}
+                </p>
+                
+                {/* Detailed Description */}
+                <p className="service-description">
+                  {service.detailedDescription}
+                </p>
 
-              <div className="space-y-2">
-                <h4 className="font-semibold text-gray-900 text-sm uppercase tracking-wide">
-                  What's Included:
-                </h4>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-900 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-sm text-professional">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                {/* Features */}
+                <div className="service-features">
+                  <h4>What's Included:</h4>
+                  <ul>
+                    {service.features.map((feature, idx) => (
+                      <li key={idx}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Benefits */}
+                <div className="service-benefits">
+                  <h4>Key Benefits:</h4>
+                  <ul>
+                    {service.benefits.map((benefit, idx) => (
+                      <li key={idx}>{benefit}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           ))}

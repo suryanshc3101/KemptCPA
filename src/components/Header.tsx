@@ -5,14 +5,14 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-6">
           {/* Logo and Brand */}
-          <div className="flex items-center">
-            <div className="text-2xl font-bold text-blue-900">
+          <div className="flex flex-col">
+            <div className="text-3xl font-bold text-blue-900">
               Kempt CPA
             </div>
-            <div className="hidden md:block ml-4 text-sm text-gray-600">
-              Professional Corporation
+            <div className="text-sm text-gray-600 mt-1">
+              Keeping your finances neat, precise and stress free
             </div>
           </div>
 

@@ -24,16 +24,11 @@ export default function Hero() {
                 </a>
               </div>
               
-              {/* Professional Credentials */}
+              {/* Service Area */}
               <div className="mt-8 flex items-center space-x-6">
                 <div className="text-sm">
-                  <div className="font-semibold">CPA Ontario</div>
-                  <div className="text-blue-200">Licensed Professional</div>
-                </div>
-                <div className="h-8 w-px bg-blue-300"></div>
-                <div className="text-sm">
-                  <div className="font-semibold">Serving Canada</div>
-                  <div className="text-blue-200">Remote Services Available</div>
+                  <div className="font-semibold">Services in Brantford</div>
+                  <div className="text-blue-200">and nearby areas</div>
                 </div>
               </div>
             </div>
