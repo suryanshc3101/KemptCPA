@@ -159,19 +159,6 @@ export default function Contact() {
               <p className="text-professional">Brantford, Canada</p>
               <p className="text-sm text-professional mt-1">Services in Brantford and nearby areas</p>
             </div>
-
-            <div className="professional-card text-center">
-              <Calendar className="w-8 h-8 text-blue-900 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Online Scheduling</h3>
-              <a 
-                href="https://calendly.com/kemptcpa/30min" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-900 hover:text-blue-700 font-medium"
-              >
-                Schedule consultation
-              </a>
-            </div>
           </div>
 
           {/* Contact Form */}
