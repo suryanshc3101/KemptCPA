@@ -40,16 +40,6 @@ export default function About() {
 
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center">
-                    <Briefcase className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Software Integration Expert</h4>
-                    <p className="text-sm text-professional">QuickBooks • Xero • Sage 50 Specialist</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center">
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -71,7 +61,7 @@ export default function About() {
           <div className="relative">
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="https://images.pexels.com/photos/3184340/pexels-photo-3184340.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                src="https://images.pexels.com/photos/7681091/pexels-photo-7681091.jpeg?auto=compress&cs=tinysrgb&w=1200" 
                 alt="Professional business consultation meeting with CPA discussing financial strategies and business growth"
                 className="w-full h-96 object-cover"
               />
@@ -85,10 +75,6 @@ export default function About() {
                     <div className="flex items-center space-x-1">
                       <Award className="w-4 h-4 text-yellow-400" />
                       <span className="text-sm text-yellow-200">CPA Ontario</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Briefcase className="w-4 h-4 text-blue-300" />
-                      <span className="text-sm text-blue-200">5+ Years</span>
                     </div>
                   </div>
                 </div>
