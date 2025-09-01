@@ -61,7 +61,7 @@ export default function About() {
           <div className="relative">
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="/New-Canada-Income-Tax-Brackets-For-2025 copy copy.jpeg" 
+                src="/Wordpress-Promesses-de-baisses-dimpot-des-particuliers copy copy.jpg" 
                 alt="Professional Canadian tax preparation with TAX wooden blocks, Canadian currency, and calculator representing expert CPA services"
                 className="w-full h-96 object-cover"
               />
