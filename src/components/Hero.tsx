@@ -20,14 +20,6 @@ export default function Hero() {
               Get Free Consultation
             </a>
           </div>
-          
-          {/* Service Area */}
-          <div className="mt-12 flex justify-center">
-            <div className="text-center">
-              <div className="font-semibold text-lg">Services in Brantford and nearby areas</div>
-              <div className="text-blue-200 mt-2">Professional CPA expertise for your business success</div>
-            </div>
-          </div>
         </div>
       </div>
 
