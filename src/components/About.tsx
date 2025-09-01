@@ -61,8 +61,8 @@ export default function About() {
           <div className="relative">
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="https://images.pexels.com/photos/7681091/pexels-photo-7681091.jpeg?auto=compress&cs=tinysrgb&w=1200" 
-                alt="Professional business consultation meeting with CPA discussing financial strategies and business growth"
+                src="/New-Canada-Income-Tax-Brackets-For-2025 copy copy.jpeg" 
+                alt="Professional Canadian tax preparation with TAX wooden blocks, Canadian currency, and calculator representing expert CPA services"
                 className="w-full h-96 object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-6">
