@@ -7,7 +7,7 @@ const services = [
     title: "Tax Preparation (T1/T2/T3)",
     description: "Expert personal (T1), corporate (T2) and T3 tax return preparation and strategic tax planning services. We ensure full compliance with Canada Revenue Agency requirements while maximizing available deductions and credits to minimize your tax liability.",
     detailedDescription: "Our tax services go beyond basic compliance. We provide proactive tax planning, identify opportunities for tax savings, and ensure your returns are prepared accurately and filed on time. With extensive knowledge of Canadian tax law, we help individuals and corporations navigate complex tax situations.",
-    image: "/canadian-tax-forms-money.jpg",
+    image: "/New-Canada-Income-Tax-Brackets-For-2025 copy copy.jpeg",
     features: [
       "Personal tax return (T1) preparation and filing",
       "Corporate tax return (T2) preparation and filing", 
