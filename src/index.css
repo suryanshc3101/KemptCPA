@@ -174,7 +174,7 @@ body {
 
 /* Professional Hero Background */
 .hero-background {
-  background-image: linear-gradient(rgba(30, 58, 138, 0.9), rgba(30, 64, 175, 0.9)), url('https://images.pexels.com/photos/7413915/pexels-photo-7413915.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  background-image: linear-gradient(rgba(30, 58, 138, 0.9), rgba(30, 64, 175, 0.9)), url('/file-20240619-22-k6efwb copy copy.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
