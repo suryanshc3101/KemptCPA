@@ -162,14 +162,14 @@ export default function Contact() {
 
             <div className="professional-card text-center">
               <Calendar className="w-8 h-8 text-blue-900 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Book Online</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Online Scheduling</h3>
               <a 
                 href="https://calendly.com/kemptcpa/30min" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-900 hover:text-blue-700 font-medium"
               >
-                Schedule 30-min call
+                Schedule consultation
               </a>
             </div>
           </div>

@@ -3,7 +3,7 @@ import { Award, MapPin, Briefcase } from 'lucide-react';
 
 export default function About() {
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="about" className="section-padding about-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -53,7 +53,7 @@ export default function About() {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Serving Brantford Area</h4>
+                    <h4 className="font-semibold text-gray-900">Serving Brantford and nearby areas</h4>
                     <p className="text-sm text-professional">Local expertise with personalized service</p>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export default function About() {
 
               <div className="mt-8">
                 <a href="#contact" className="btn-primary">
-                  Schedule Consultation
+                  Get Free Consultation
                 </a>
               </div>
             </div>
@@ -71,8 +71,8 @@ export default function About() {
           <div className="relative">
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200" 
-                alt="Professional business consultation meeting with CPA discussing financial statements and business strategy"
+                src="https://images.pexels.com/photos/3184340/pexels-photo-3184340.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                alt="Professional business consultation meeting with CPA discussing financial strategies and business growth"
                 className="w-full h-96 object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-6">

@@ -136,7 +136,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-12">
           {services.map((service, index) => (
             <div key={index} className="service-card">
               {/* Service Image */}
@@ -148,9 +148,9 @@ export default function Services() {
               
               {/* Service Content */}
               <div className="service-content">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mr-4">
-                    <service.icon className="w-6 h-6 text-white" />
+                <div className="flex items-center mb-6">
+                  <div className="w-14 h-14 bg-blue-900 rounded-lg flex items-center justify-center mr-6">
+                    <service.icon className="w-7 h-7 text-white" />
                   </div>
                   <h3 className="service-title">{service.title}</h3>
                 </div>
@@ -189,8 +189,8 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <a href="#contact" className="btn-primary">
+        <div className="text-center mt-16">
+          <a href="#contact" className="btn-primary text-lg px-8 py-4">
             Request Free Consultation
           </a>
         </div>

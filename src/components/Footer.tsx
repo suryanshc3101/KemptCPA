@@ -11,15 +11,11 @@ export default function Footer() {
             <h3 className="text-2xl font-bold mb-4">Kempt CPA</h3>
             <p className="text-blue-100 mb-4 leading-relaxed">
               Professional Corporation providing comprehensive CPA services to individuals 
-              and businesses in Canada. Trusted expertise in tax preparation, 
-              bookkeeping, and business advisory.
+              and businesses in Canada. Services in Brantford and nearby areas.
             </p>
             <div className="flex items-center space-x-4">
               <span className="px-3 py-1 bg-blue-800 text-blue-100 text-xs rounded-full">
                 CPA Ontario
-              </span>
-              <span className="px-3 py-1 bg-blue-800 text-blue-100 text-xs rounded-full">
-                Licensed Professional
               </span>
             </div>
           </div>
