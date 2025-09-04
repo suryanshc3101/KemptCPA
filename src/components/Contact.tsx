@@ -156,8 +156,7 @@ export default function Contact() {
             <div className="professional-card text-center">
               <MapPin className="w-8 h-8 text-blue-900 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Location</h3>
-              <p className="text-professional">Brant County, Canada</p>
-              <p className="text-sm text-professional mt-1">Services in Brant County and surrounding areas</p>
+              <p className="text-professional">Brant County and surrounding areas</p>
             </div>
           </div>
 
