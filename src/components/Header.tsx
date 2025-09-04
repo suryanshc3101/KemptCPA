@@ -22,12 +22,6 @@ export default function Header() {
               </div>
             </div>
           </div>
-              Kempt CPA
-            </div>
-            <div className="text-sm text-gray-600 mt-1">
-              Keeping your finances neat, precise and stress free
-            </div>
-          </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex space-x-8">
