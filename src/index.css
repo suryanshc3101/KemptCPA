@@ -368,6 +368,13 @@ body {
     line-height: 1.3;
   }
   
+  /* Header mobile optimization */
+  header .btn-primary {
+    min-height: 36px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+  
   /* Mobile padding adjustments */
   .section-padding {
     padding: 3rem 1rem;
