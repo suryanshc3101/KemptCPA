@@ -11,7 +11,7 @@ export default function Header() {
             <img 
               src="/dLgjCDsV_XRM_LOGO_BG_png.png" 
               alt="Kempt CPA Logo" 
-             className="w-24 h-24 object-contain"
+             className="w-32 h-32 object-contain"
             />
             <div className="flex flex-col">
               <div className="text-3xl font-bold text-blue-900">
