@@ -66,7 +66,7 @@ export default function Footer() {
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-blue-300" />
                 <span className="text-blue-100">
-                  Brant County, Canada
+                  Brant County and surrounding areas
                 </span>
               </div>
             </div>

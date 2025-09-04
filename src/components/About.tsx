@@ -43,8 +43,8 @@ export default function About() {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">KEMPTCPA : Keeping your finances neat, precise and stress-free</h4>
-                    <p className="text-sm text-professional">Local Professional expertise with personalized service</p>
+                    <h4 className="font-semibold text-gray-900">Brant County and surrounding areas</h4>
+                    <p className="text-sm text-professional">KEMPTCPA : Keeping your finances neat, precise and stress-free</p>
                   </div>
                 </div>
               </div>

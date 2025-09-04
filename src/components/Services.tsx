@@ -74,7 +74,7 @@ const services = [
   {
     icon: Shield,
     title: "CRA Representation",
-    description: "Expert representation and advocacy with the Canada Revenue Agency for audits, disputes, objections, and complex compliance matters. We protect your interests while working toward favorable resolutions that minimize financial impact and stress.",
+    description: "Professional representation and advocacy with the Canada Revenue Agency for audits, disputes, objections, and complex compliance matters. We protect your interests while working toward favorable resolutions that minimize financial impact and stress.",
     detailedDescription: "When dealing with the CRA, having professional representation can make all the difference. Our experienced team understands CRA procedures, knows your rights as a taxpayer, and has the expertise to navigate complex situations while protecting your interests throughout the process.",
     image: "https://images.pexels.com/photos/5668882/pexels-photo-5668882.jpeg?auto=compress&cs=tinysrgb&w=1200",
     features: [
