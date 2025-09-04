@@ -53,7 +53,7 @@ const services = [
     title: "GST/HST Filings",
     description: "Comprehensive GST/HST services covering registration, filing, compliance, and optimization across all Canadian provinces and territories. We ensure full compliance while maximizing input tax credit recoveries and minimizing your administrative burden.",
     detailedDescription: "Navigate the complexities of Canadian GST/HST with confidence. Our services cover everything from initial registration to ongoing compliance, helping businesses of all sizes meet their obligations while optimizing their tax position through strategic planning and accurate reporting.",
-    image: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/GST-HST_istock-1024x683-1.jpg.jpg",
     features: [
       "GST/HST registration assistance",
       "Monthly, quarterly, and annual filing",
