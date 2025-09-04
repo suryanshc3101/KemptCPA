@@ -7,8 +7,21 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-6">
           {/* Logo and Brand */}
-          <div className="flex flex-col">
-            <div className="text-3xl font-bold text-blue-900">
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/dLgjCDsV_XRM_LOGO_BG_png.png" 
+              alt="Kempt CPA Logo" 
+              className="w-12 h-12 object-contain"
+            />
+            <div className="flex flex-col">
+              <div className="text-3xl font-bold text-blue-900">
+                Kempt CPA
+              </div>
+              <div className="text-sm text-gray-600 mt-1">
+                Keeping your finances neat, precise and stress free
+              </div>
+            </div>
+          </div>
               Kempt CPA
             </div>
             <div className="text-sm text-gray-600 mt-1">

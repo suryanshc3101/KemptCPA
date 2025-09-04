@@ -8,7 +8,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Kempt CPA</h3>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="/dLgjCDsV_XRM_LOGO_BG_png.png" 
+                alt="Kempt CPA Logo" 
+                className="w-8 h-8 object-contain"
+              />
+              <h3 className="text-2xl font-bold">Kempt CPA</h3>
+            </div>
             <p className="text-blue-100 mb-4 leading-relaxed">
               Professional Corporation providing comprehensive CPA services to individuals 
               and businesses in Canada. Services in Brant County and surrounding areas.
