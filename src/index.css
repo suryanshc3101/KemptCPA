@@ -399,10 +399,6 @@ a:focus-visible {
   }
   
   /* Grid adjustments for mobile */
-  .service-benefits ul {
-    grid-template-columns: 1fr;
-  }
-
   @media (max-width: 480px) {
   /* Extra small mobile devices */
   .heading-primary {
