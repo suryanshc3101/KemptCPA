@@ -135,21 +135,21 @@ export default function Services() {
 
         <div className="space-y-12">
           {services.map((service, index) => (
-            <div key={index} className="service-card">
+            <div key={index} className="service-card lg:grid lg:gap-8 lg:items-center">
               {/* Service Image */}
               <img 
                 src={service.image} 
-                alt={service.title}
+                alt={`${service.title} - Professional CPA services by Kempt CPA`}
                 className="service-image"
               />
               
               {/* Service Content */}
-              <div className="service-content">
+              <div className="service-content lg:p-8">
                 <div className="flex items-center mb-6">
                   <div className="w-14 h-14 bg-blue-900 rounded-lg flex items-center justify-center mr-6">
                     <service.icon className="w-7 h-7 text-white" />
                   </div>
-                  <h3 className="service-title">{service.title}</h3>
+                  <h3 className="service-title text-2xl lg:text-3xl font-bold text-blue-900">{service.title}</h3>
                 </div>
                 
                 {/* Overview */}
