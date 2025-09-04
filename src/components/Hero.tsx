@@ -6,17 +6,17 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center">
           {/* Main Heading */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 leading-tight px-4">
+          <h1 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">
             Professional Canadian CPA Services: Tax Preparation, Bookkeeping & Business Advisory
           </h1>
           
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 sm:mb-12 leading-relaxed max-w-4xl mx-auto px-4">
+          <p className="text-xl text-blue-100 mb-12 leading-relaxed max-w-4xl mx-auto">
             Trusted Canadian Chartered Professional Accountant providing comprehensive tax preparation, bookkeeping, and business advisory services to help your business thrive in Brantford and nearby areas.
           </p>
           
           {/* Single Call to Action */}
           <div className="flex justify-center">
-            <a href="#contact" className="btn-primary bg-white text-blue-900 hover:bg-gray-100 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 mx-4">
+            <a href="#contact" className="btn-primary bg-white text-blue-900 hover:bg-gray-100 text-lg px-8 py-4">
               Get Free Consultation
             </a>
           </div>

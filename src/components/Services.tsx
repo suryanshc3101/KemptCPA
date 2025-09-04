@@ -1,179 +1,197 @@
 import React from 'react';
-import { Calculator, FileText, TrendingUp, Users, Shield, Clock, Award, CheckCircle } from 'lucide-react';
+import { FileText, Calculator, ClipboardCheck, Shield, TrendingUp } from 'lucide-react';
 
-const Services = () => {
-  const services = [
-    {
-      title: "Personal & Corporate Tax Returns",
-      description: "Comprehensive tax preparation services for individuals and businesses. We ensure maximum deductions and credits while maintaining full compliance with CRA requirements.",
-      image: "/GettyImages-1368094662-scaled.jpg",
-      features: [
-        "Personal Income Tax Returns",
-        "Corporate Tax Returns", 
-        "Tax Planning & Optimization",
-        "CRA Representation"
-      ],
-      benefits: [
-        "Maximum Tax Savings",
-        "CRA Compliance",
-        "Expert Tax Advice",
-        "Year-Round Support"
-      ],
-      icon: Calculator
-    },
-    {
-      title: "QuickBooks/Xero Bookkeeping",
-      description: "Professional bookkeeping services using industry-leading software. Keep your financial records organized and up-to-date with our expert bookkeeping solutions.",
-      image: "/workplace-team-cooperation-businesswoman-laptop-office-2048x1365.png",
-      features: [
-        "Monthly Financial Statements",
-        "Accounts Payable/Receivable",
-        "Bank Reconciliation",
-        "Payroll Processing"
-      ],
-      benefits: [
-        "Real-Time Financial Insights",
-        "Improved Cash Flow",
-        "Automated Processes",
-        "Peace of Mind"
-      ],
-      icon: FileText
-    },
-    {
-      title: "GST/HST Filings",
-      description: "Accurate and timely GST/HST filing services. We handle all aspects of sales tax compliance to keep your business in good standing with the CRA.",
-      image: "/GST-HST_istock-1024x683-1.jpg.jpg",
-      features: [
-        "Monthly/Quarterly Filings",
-        "GST/HST Registration",
-        "Input Tax Credit Optimization",
-        "Compliance Monitoring"
-      ],
-      benefits: [
-        "Avoid CRA Penalties",
-        "Maximize ITC Claims",
-        "Timely Submissions",
-        "Expert Guidance"
-      ],
-      icon: TrendingUp
-    },
-    {
-      title: "Business Advisory Services",
-      description: "Strategic business consulting to help your company grow and thrive. From financial planning to operational efficiency, we provide the insights you need.",
-      image: "/pexels-fauxels-3182834.jpg",
-      features: [
-        "Financial Planning",
-        "Business Strategy",
-        "Performance Analysis",
-        "Growth Consulting"
-      ],
-      benefits: [
-        "Strategic Growth",
-        "Improved Profitability",
-        "Risk Management",
-        "Expert Guidance"
-      ],
-      icon: Users
-    }
-  ];
+const services = [
+  {
+    icon: FileText,
+    title: "Tax Preparation (T1/T2/T3)",
+    description: "Professional personal (T1), corporate (T2) and Trust (T3) tax return preparation and strategic tax planning services. We ensure full compliance with Canada Revenue Agency requirements while maximizing available deductions and credits to minimize your tax liability.",
+    detailedDescription: "Our tax services go beyond basic compliance. We provide proactive tax planning, identify opportunities for tax savings, and ensure your returns are prepared accurately and filed on time. With extensive knowledge of Canadian tax law, we help individuals and corporations navigate complex tax situations.",
+    image: "/New-Canada-Income-Tax-Brackets-For-2025 copy copy.jpeg",
+    features: [
+      "Personal tax return (T1) preparation and filing",
+      "Corporate tax return (T2) preparation and filing",
+      "Trust (T3) preparation and filing",
+      "Tax planning and optimization strategies",
+      "CRA correspondence and representation",
+      "Tax-efficient business structure advice"
+    ],
+    benefits: [
+      "Maximize tax deductions and credits",
+      "Ensure compliance with tax regulations",
+      "Professional CRA representation",
+      "Strategic tax planning for future years",
+      "Year-round tax support and advice",
+      "Time-efficient preparation process",
+    ]
+  },
+  {
+    icon: Calculator,
+    title: "QuickBooks/Xero Bookkeeping",
+    description: "Professional bookkeeping services utilizing industry-leading software platforms including QuickBooks Online/Desktop and Xero. We maintain accurate, up-to-date financial records while providing real-time insights into your business performance.",
+    detailedDescription: "Our bookkeeping services are designed to give you complete visibility into your business finances. We handle everything from daily transaction recording to monthly financial statements, ensuring your books are always accurate, compliant, and ready for tax time or business decisions.",
+    image: "/workplace-team-cooperation-businesswoman-laptop-office-2048x1365.png",
+    features: [
+      "QuickBooks Online and Desktop setup and maintenance",
+      "Xero cloud-based bookkeeping services",
+      "Monthly bank reconciliations",
+      "Financial statement preparation",
+      "Payroll processing and remittances",
+      "Accounts payable and receivable management"
+    ],
+    benefits: [
+      "Real-time access to financial information",
+      "Automated reporting and insights",
+      "Improved cash flow management",
+      "Better business decision making",
+      "Scalable systems that grow with your business",
+      "Streamlined business operations"
+    ]
+  },
+  {
+    icon: ClipboardCheck,
+    title: "GST/HST Filings",
+    description: "Comprehensive GST/HST services covering registration, filing, compliance, and optimization across all Canadian provinces and territories. We ensure full compliance while maximizing input tax credit recoveries and minimizing your administrative burden.",
+    detailedDescription: "Navigate the complexities of Canadian GST/HST with confidence. Our services cover everything from initial registration to ongoing compliance, helping businesses of all sizes meet their obligations while optimizing their tax position through strategic planning and accurate reporting.",
+    image: "/GST-HST_istock-1024x683-1.jpg.jpg",
+    features: [
+      "GST/HST registration assistance",
+      "Monthly, quarterly, and annual filing",
+      "Input tax credit optimization",
+      "Multi-provincial compliance management",
+      "GST/HST audit support and representation",
+      "New housing rebate applications"
+    ],
+    benefits: [
+      "Ensure compliance with provincial requirements",
+      "Maximize input tax credit recoveries",
+      "Reduced administrative burden",
+      "Professional guidance on complex transactions",
+      "Timely filing and remittance management",
+      "Comprehensive compliance support"
+    ]
+  },
+  {
+    icon: Shield,
+    title: "CRA Representation",
+    description: "Professional representation and advocacy with the Canada Revenue Agency for audits, disputes, objections, and complex compliance matters. We protect your interests while working toward favorable resolutions that minimize financial impact and stress.",
+    detailedDescription: "When dealing with the CRA, having professional representation can make all the difference. Our experienced team understands CRA procedures, knows your rights as a taxpayer, and has the expertise to navigate complex situations while protecting your interests throughout the process.",
+    image: "https://images.pexels.com/photos/5668882/pexels-photo-5668882.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    features: [
+      "Audit defense and representation",
+      "Dispute resolution",
+      "CRA correspondence management",
+      "Voluntary disclosures",
+      "Penalty and interest negotiations",
+      "Appeals and objections"
+    ],
+    benefits: [
+      "Professional advocacy with CRA",
+      "Reduced stress and time commitment",
+      "Professional knowledge of CRA procedures",
+      "Protection of taxpayer rights",
+      "Favorable resolution strategies",
+      "Confidential professional representation"
+    ]
+  },
+  {
+    icon: TrendingUp,
+    title: "Business Advisory Services",
+    description: "Strategic business advisory services designed to accelerate growth, improve profitability, and build sustainable competitive advantages. We combine financial expertise with practical business experience to guide your decision-making and strategic planning.",
+    detailedDescription: "Our business advisory services go beyond traditional accounting to provide strategic insights that drive business success. We work closely with business owners to understand their goals, identify opportunities, and implement strategies that deliver measurable results.",
+    image: "https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    features: [
+      "Financial planning and budgeting",
+      "Cash flow forecasting and management",
+      "Business performance analysis",
+      "Growth strategy development",
+      "Cost reduction and efficiency improvements",
+      "Acquisition and merger support"
+    ],
+    benefits: [
+      "Strategic business planning",
+      "Improved financial performance",
+      "Data-driven decision making",
+      "Risk management strategies",
+      "Growth acceleration",
+      "Competitive advantage development"
+    ]
+  }
+];
 
+export default function Services() {
   return (
     <section id="services" className="section-padding bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="text-center mb-12 lg:mb-16">
-          <h2 className="heading-secondary mb-4 lg:mb-6">Our Services</h2>
-          <p className="text-professional text-lg lg:text-xl max-w-3xl mx-auto">
-            Comprehensive accounting and tax services designed to support your financial success. 
-            From personal tax returns to complex business advisory services, we have you covered.
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="heading-secondary mb-4">
+            Professional CPA Services
+          </h2>
+          <p className="text-xl text-professional max-w-3xl mx-auto">
+            Comprehensive accounting services designed to keep your business compliant, 
+            profitable, and positioned for growth.
           </p>
         </div>
 
-        <div className="space-y-8 lg:space-y-16">
+        <div className="space-y-12">
           {services.map((service, index) => (
-            <div 
-              key={index}
-              className="service-card bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden"
-            >
-              <div className={`grid gap-0 ${index % 2 === 0 ? 'lg:grid-cols-[400px_1fr]' : 'lg:grid-cols-[1fr_400px]'}`}>
-                <div className={`${index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-64 sm:h-72 lg:h-full lg:min-h-[500px] object-cover"
-                  />
+            <div key={index} className="service-card">
+              {/* Service Image */}
+              <img 
+                src={service.image} 
+                alt={service.title}
+                className="service-image"
+              />
+              
+              {/* Service Content */}
+              <div className="service-content">
+                <div className="flex items-center mb-6">
+                  <div className="w-14 h-14 bg-blue-900 rounded-lg flex items-center justify-center mr-6">
+                    <service.icon className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="service-title">{service.title}</h3>
                 </div>
                 
-                <div className={`p-6 sm:p-8 lg:p-12 flex flex-col justify-center ${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}>
-                  <div className="flex items-center mb-4 lg:mb-6">
-                    <service.icon className="w-8 h-8 lg:w-10 lg:h-10 text-blue-800 mr-3 lg:mr-4" />
-                    <h3 className="service-title text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900">
-                      {service.title}
-                    </h3>
-                  </div>
-                  
-                  <p className="service-description text-base sm:text-lg lg:text-xl text-gray-600 mb-6 lg:mb-8 leading-relaxed">
-                    {service.description}
-                  </p>
+                {/* Overview */}
+                <p className="service-description">
+                  {service.description}
+                </p>
+                
+                {/* Detailed Description */}
+                <p className="service-description">
+                  {service.detailedDescription}
+                </p>
 
-                  <div className="grid gap-6 lg:gap-8 md:grid-cols-2">
-                    <div className="service-features">
-                      <h4 className="flex items-center font-semibold text-gray-900 mb-4 text-base sm:text-lg">
-                        <CheckCircle className="w-5 h-5 text-green-600 mr-2" />
-                        Key Features
-                      </h4>
-                      <ul className="space-y-3">
-                        {service.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start">
-                            <span className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-3 flex-shrink-0"></span>
-                            <span className="text-gray-700 text-sm sm:text-base leading-relaxed">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                {/* Features */}
+                <div className="service-features">
+                  <h4>What's Included:</h4>
+                  <ul>
+                    {service.features.map((feature, idx) => (
+                      <li key={idx}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
 
-                    <div className="service-benefits bg-gray-50 rounded-lg p-4 lg:p-6">
-                      <h4 className="flex items-center font-semibold text-gray-900 mb-4 text-base sm:text-lg">
-                        <Award className="w-5 h-5 text-blue-600 mr-2" />
-                        Benefits
-                      </h4>
-                      <ul className="space-y-3">
-                        {service.benefits.map((benefit, idx) => (
-                          <li key={idx} className="flex items-start">
-                            <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 mr-3 flex-shrink-0" />
-                            <span className="text-gray-700 text-sm sm:text-base leading-relaxed">{benefit}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
+                {/* Benefits */}
+                <div className="service-benefits">
+                  <h4>Key Benefits:</h4>
+                  <ul>
+                    {service.benefits.map((benefit, idx) => (
+                      <li key={idx}>{benefit}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12 lg:mt-16">
-          <p className="text-gray-600 mb-6 lg:mb-8 text-base sm:text-lg max-w-2xl mx-auto">
-            Ready to get started? Contact us today for a free consultation and discover how our services can benefit your business.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a 
-              href="#contact" 
-              className="btn-primary w-full sm:w-auto text-center"
-            >
-              Get Free Consultation
-            </a>
-            <a 
-              href="tel:+1-555-0123" 
-              className="btn-secondary w-full sm:w-auto text-center"
-            >
-              Call Us Today
-            </a>
-          </div>
+        <div className="text-center mt-16">
+          <a href="#contact" className="btn-primary text-lg px-8 py-4">
+            Request Free Consultation
+          </a>
         </div>
       </div>
     </section>
   );
-};
-
-export default Services;
+}
