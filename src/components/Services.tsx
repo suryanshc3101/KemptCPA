@@ -21,7 +21,9 @@ const services = [
       "Ensure compliance with tax regulations",
       "Professional CRA representation",
       "Strategic tax planning for future years",
-      "Year-round tax support and advice"
+      "Year-round tax support and advice",
+      "Time-efficient preparation process",
+      "Stress-free tax season experience"
     ]
   },
   {
@@ -43,7 +45,8 @@ const services = [
       "Automated reporting and insights",
       "Improved cash flow management",
       "Better business decision making",
-      "Scalable systems that grow with your business"
+      "Scalable systems that grow with your business",
+      "Streamlined business operations"
     ]
   },
   {
@@ -65,7 +68,8 @@ const services = [
       "Maximize input tax credit recoveries",
       "Reduced administrative burden",
       "Professional guidance on complex transactions",
-      "Professional guidance on complex transactions",
+      "Timely filing and remittance management",
+      "Comprehensive compliance support"
     ]
   },
   {
