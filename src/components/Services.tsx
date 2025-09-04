@@ -5,13 +5,13 @@ const services = [
   {
     icon: FileText,
     title: "Tax Preparation (T1/T2/T3)",
-    description: "Expert personal (T1), corporate (T2) and T3 tax return preparation and strategic tax planning services. We ensure full compliance with Canada Revenue Agency requirements while maximizing available deductions and credits to minimize your tax liability.",
+    description: "Professional personal (T1), corporate (T2) and Trust (T3) tax return preparation and strategic tax planning services. We ensure full compliance with Canada Revenue Agency requirements while maximizing available deductions and credits to minimize your tax liability.",
     detailedDescription: "Our tax services go beyond basic compliance. We provide proactive tax planning, identify opportunities for tax savings, and ensure your returns are prepared accurately and filed on time. With extensive knowledge of Canadian tax law, we help individuals and corporations navigate complex tax situations.",
     image: "/New-Canada-Income-Tax-Brackets-For-2025 copy copy.jpeg",
     features: [
       "Personal tax return (T1) preparation and filing",
       "Corporate tax return (T2) preparation and filing",
-      "T3 (Trust) tax return filing and preparation",
+      "Trust (T3) preparation and filing",
       "Tax planning and optimization strategies",
       "CRA correspondence and representation",
       "Tax-efficient business structure advice"
@@ -23,7 +23,6 @@ const services = [
       "Strategic tax planning for future years",
       "Year-round tax support and advice",
       "Time-efficient preparation process",
-      "Stress-free tax season experience"
     ]
   },
   {
