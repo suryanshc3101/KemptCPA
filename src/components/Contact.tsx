@@ -130,7 +130,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-xl text-professional max-w-3xl mx-auto">
-            Ready to discuss your accounting needs? We'll reply within 1 business day.
+            Ready to discuss your accounting needs? Fill the form.
           </p>
         </div>
 
@@ -156,8 +156,8 @@ export default function Contact() {
             <div className="professional-card text-center">
               <MapPin className="w-8 h-8 text-blue-900 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Location</h3>
-              <p className="text-professional">Brantford, Canada</p>
-              <p className="text-sm text-professional mt-1">Services in Brantford and nearby areas</p>
+              <p className="text-professional">Brant County, Canada</p>
+              <p className="text-sm text-professional mt-1">Services in Brant County and surrounding areas</p>
             </div>
           </div>
 
@@ -259,8 +259,6 @@ export default function Contact() {
                       className="px-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:opacity-50"
                     >
                       <option value="+1">🇨🇦 +1</option>
-                      <option value="+1">🇺🇸 +1</option>
-                      <option value="+44">🇬🇧 +44</option>
                     </select>
                     <input 
                       id="phone"
@@ -270,7 +268,7 @@ export default function Contact() {
                       onChange={handleChange}
                       disabled={isSubmitting}
                       className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:opacity-50"
-                      placeholder="(519) 771-7862"
+                      placeholder=""
                     />
                   </div>
                 </div>

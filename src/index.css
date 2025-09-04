@@ -186,30 +186,6 @@ body {
   }
 }
 
-/* Service Section Styles */
-.service-card {
-  background: white;
-  border: 1px solid #e2e8f0;
-  border-radius: 0.75rem;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 3rem;
-}
-
-.service-card:hover {
-  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.1);
-}
-
-.service-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.service-content {
-  padding: 2.5rem;
-}
-
 .service-title {
   font-size: 1.75rem;
   font-weight: 600;
@@ -303,7 +279,135 @@ body {
 
 /* Professional About Background */
 .about-background {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('/Wordpress-Promesses-de-baisses-dimpot-des-particuliers copy copy.jpg');
   background-size: cover;
   background-position: center;
+}
+
+/* Mobile Responsiveness Enhancements */
+@media (max-width: 640px) {
+  /* Typography adjustments for mobile */
+  .heading-primary {
+    font-size: 1.875rem;
+    line-height: 1.3;
+  }
+  
+  .heading-secondary {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+  
+  /* Mobile padding adjustments */
+  .section-padding {
+    padding: 3rem 1rem;
+  }
+  
+  /* Service card mobile optimization */
+  .service-card {
+    margin-bottom: 2rem;
+  }
+  
+  .service-content {
+    padding: 1.5rem;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+  }
+  
+  /* Professional card mobile optimization */
+  .professional-card {
+    padding: 1.5rem;
+  }
+  
+  /* Button mobile optimization */
+  .btn-primary, .btn-secondary {
+    min-height: 44px;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Navigation mobile optimization */
+  .nav-link {
+    padding: 0.75rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Form input mobile optimization */
+  input[type="text"],
+  input[type="email"], 
+  input[type="tel"],
+  textarea,
+  select {
+    min-height: 44px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  /* Grid adjustments for mobile */
+  .service-benefits ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small mobile devices */
+  .heading-primary {
+    font-size: 1.75rem;
+  }
+  
+  .heading-secondary {
+    font-size: 1.375rem;
+  }
+  
+  .section-padding {
+    padding: 2.5rem 0.75rem;
+  }
+  
+  .professional-card {
+    padding: 1rem;
+  }
+  
+  .service-content {
+    padding: 1rem;
+  }
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+  /* Fix viewport height issues on iOS Safari */
+  .hero-background {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  
+  /* Prevent zoom on form inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Android Chrome specific optimizations */
+@media screen and (-webkit-min-device-pixel-ratio: 1) {
+  /* Ensure proper rendering on Android devices */
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  /* Fix potential rendering issues */
+  .professional-card,
+  .service-card {
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
 }

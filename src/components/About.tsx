@@ -8,6 +8,11 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div>
+            <div className="text-center lg:text-left mb-8">
+              <h1 className="text-4xl font-bold text-blue-900 mb-2">KemptCPA</h1>
+              <p className="text-xl text-professional">Keeping your finances neat, precise and stress-free</p>
+            </div>
+            
             <h2 className="heading-secondary mb-6">
               About Kempt CPA Professional Corporation
             </h2>
@@ -43,8 +48,8 @@ export default function About() {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Serving Brantford and nearby areas</h4>
-                    <p className="text-sm text-professional">Local expertise with personalized service</p>
+                    <h4 className="font-semibold text-gray-900">Serving Brant County and surrounding areas</h4>
+                    <p className="text-sm text-professional">Local Professional expertise with personalized service</p>
                   </div>
                 </div>
               </div>

@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="text-center">
           {/* Main Heading */}
           <h1 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">
-            Expert Canadian CPA Services: Tax Preparation, Bookkeeping & Business Advisory
+            Professional Canadian CPA Services: Tax Preparation, Bookkeeping & Business Advisory
           </h1>
           
           <p className="text-xl text-blue-100 mb-12 leading-relaxed max-w-4xl mx-auto">

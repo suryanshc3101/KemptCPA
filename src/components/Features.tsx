@@ -34,7 +34,7 @@ export default function Features() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="feature-card professional-card text-center">
+            <div key={index} className="professional-card text-center">
               <div className="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-6">
                 <feature.icon className="w-8 h-8 text-white" />
               </div>
@@ -43,11 +43,9 @@ export default function Features() {
                 {feature.title}
               </h3>
               
-              <div className="expanded-content">
-                <p className="text-professional">
-                  {feature.expandedText}
-                </p>
-              </div>
+              <p className="text-professional">
+                {feature.expandedText}
+              </p>
             </div>
           ))}
         </div>

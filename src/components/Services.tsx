@@ -10,8 +10,8 @@ const services = [
     image: "/New-Canada-Income-Tax-Brackets-For-2025 copy copy.jpeg",
     features: [
       "Personal tax return (T1) preparation and filing",
-      "Corporate tax return (T2) preparation and filing", 
-      "T3 tax return filing and preparation",
+      "Corporate tax return (T2) preparation and filing",
+      "T3 (Trust) tax return filing and preparation",
       "Tax planning and optimization strategies",
       "CRA correspondence and representation",
       "Tax-efficient business structure advice"
@@ -21,8 +21,6 @@ const services = [
       "Ensure compliance with tax regulations",
       "Professional CRA representation",
       "Strategic tax planning for future years",
-      "Reduced audit risk through accurate preparation",
-      "Time savings and peace of mind",
       "Year-round tax support and advice"
     ]
   },
@@ -44,8 +42,6 @@ const services = [
       "Real-time access to financial information",
       "Automated reporting and insights",
       "Improved cash flow management",
-      "Time savings for business owners",
-      "Reduced errors through automation",
       "Better business decision making",
       "Scalable systems that grow with your business"
     ]
@@ -67,11 +63,9 @@ const services = [
     benefits: [
       "Ensure compliance with provincial requirements",
       "Maximize input tax credit recoveries",
-      "Professional audit representation",
-      "Timely filing to avoid penalties",
       "Reduced administrative burden",
-      "Expert guidance on complex transactions",
-      "Peace of mind with professional oversight"
+      "Professional guidance on complex transactions",
+      "Professional guidance on complex transactions",
     ]
   },
   {
@@ -91,7 +85,7 @@ const services = [
     benefits: [
       "Professional advocacy with CRA",
       "Reduced stress and time commitment",
-      "Expert knowledge of CRA procedures",
+      "Professional knowledge of CRA procedures",
       "Protection of taxpayer rights",
       "Favorable resolution strategies",
       "Confidential professional representation"
