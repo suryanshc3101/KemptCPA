@@ -703,3 +703,5 @@ body {
   
   /* Enhanced spacing for touch interaction */
   .nav-link {
+  }
+}
