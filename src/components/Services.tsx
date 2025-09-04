@@ -30,7 +30,7 @@ const services = [
     title: "QuickBooks/Xero Bookkeeping",
     description: "Professional bookkeeping services utilizing industry-leading software platforms including QuickBooks Online/Desktop and Xero. We maintain accurate, up-to-date financial records while providing real-time insights into your business performance.",
     detailedDescription: "Our bookkeeping services are designed to give you complete visibility into your business finances. We handle everything from daily transaction recording to monthly financial statements, ensuring your books are always accurate, compliant, and ready for tax time or business decisions.",
-    image: "/xero-bookkeeping.jpg",
+    image: "/workplace-team-cooperation-businesswoman-laptop-office-2048x1365.png",
     features: [
       "QuickBooks Online and Desktop setup and maintenance",
       "Xero cloud-based bookkeeping services",
