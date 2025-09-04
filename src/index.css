@@ -402,9 +402,8 @@ a:focus-visible {
   .service-benefits ul {
     grid-template-columns: 1fr;
   }
-}
 
-@media (max-width: 480px) {
+  @media (max-width: 480px) {
   /* Extra small mobile devices */
   .heading-primary {
     font-size: 1.75rem;

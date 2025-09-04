@@ -1,707 +1,179 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+import React from 'react';
+import { Calculator, FileText, TrendingUp, Users, Shield, Clock, Award, CheckCircle } from 'lucide-react';
 
-/* Professional Typography - Inter Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+const Services = () => {
+  const services = [
+    {
+      title: "Personal & Corporate Tax Returns",
+      description: "Comprehensive tax preparation services for individuals and businesses. We ensure maximum deductions and credits while maintaining full compliance with CRA requirements.",
+      image: "/GettyImages-1368094662-scaled.jpg",
+      features: [
+        "Personal Income Tax Returns",
+        "Corporate Tax Returns", 
+        "Tax Planning & Optimization",
+        "CRA Representation"
+      ],
+      benefits: [
+        "Maximum Tax Savings",
+        "CRA Compliance",
+        "Expert Tax Advice",
+        "Year-Round Support"
+      ],
+      icon: Calculator
+    },
+    {
+      title: "QuickBooks/Xero Bookkeeping",
+      description: "Professional bookkeeping services using industry-leading software. Keep your financial records organized and up-to-date with our expert bookkeeping solutions.",
+      image: "/workplace-team-cooperation-businesswoman-laptop-office-2048x1365.png",
+      features: [
+        "Monthly Financial Statements",
+        "Accounts Payable/Receivable",
+        "Bank Reconciliation",
+        "Payroll Processing"
+      ],
+      benefits: [
+        "Real-Time Financial Insights",
+        "Improved Cash Flow",
+        "Automated Processes",
+        "Peace of Mind"
+      ],
+      icon: FileText
+    },
+    {
+      title: "GST/HST Filings",
+      description: "Accurate and timely GST/HST filing services. We handle all aspects of sales tax compliance to keep your business in good standing with the CRA.",
+      image: "/GST-HST_istock-1024x683-1.jpg.jpg",
+      features: [
+        "Monthly/Quarterly Filings",
+        "GST/HST Registration",
+        "Input Tax Credit Optimization",
+        "Compliance Monitoring"
+      ],
+      benefits: [
+        "Avoid CRA Penalties",
+        "Maximize ITC Claims",
+        "Timely Submissions",
+        "Expert Guidance"
+      ],
+      icon: TrendingUp
+    },
+    {
+      title: "Business Advisory Services",
+      description: "Strategic business consulting to help your company grow and thrive. From financial planning to operational efficiency, we provide the insights you need.",
+      image: "/pexels-fauxels-3182834.jpg",
+      features: [
+        "Financial Planning",
+        "Business Strategy",
+        "Performance Analysis",
+        "Growth Consulting"
+      ],
+      benefits: [
+        "Strategic Growth",
+        "Improved Profitability",
+        "Risk Management",
+        "Expert Guidance"
+      ],
+      icon: Users
+    }
+  ];
 
-/* Base Styles */
-html {
-  scroll-behavior: smooth;
-}
+  return (
+    <section id="services" className="section-padding bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="heading-secondary mb-4 lg:mb-6">Our Services</h2>
+          <p className="text-professional text-lg lg:text-xl max-w-3xl mx-auto">
+            Comprehensive accounting and tax services designed to support your financial success. 
+            From personal tax returns to complex business advisory services, we have you covered.
+          </p>
+        </div>
 
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #1e293b;
-  background-color: #ffffff;
-}
+        <div className="space-y-8 lg:space-y-16">
+          {services.map((service, index) => (
+            <div 
+              key={index}
+              className="service-card bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden"
+            >
+              <div className={`grid gap-0 ${index % 2 === 0 ? 'lg:grid-cols-[400px_1fr]' : 'lg:grid-cols-[1fr_400px]'}`}>
+                <div className={`${index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-64 sm:h-72 lg:h-full lg:min-h-[500px] object-cover"
+                  />
+                </div>
+                
+                <div className={`p-6 sm:p-8 lg:p-12 flex flex-col justify-center ${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}>
+                  <div className="flex items-center mb-4 lg:mb-6">
+                    <service.icon className="w-8 h-8 lg:w-10 lg:h-10 text-blue-800 mr-3 lg:mr-4" />
+                    <h3 className="service-title text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900">
+                      {service.title}
+                    </h3>
+                  </div>
+                  
+                  <p className="service-description text-base sm:text-lg lg:text-xl text-gray-600 mb-6 lg:mb-8 leading-relaxed">
+                    {service.description}
+                  </p>
 
-/* Professional Color Scheme */
-:root {
-  --primary-navy: #1e3a8a;
-  --secondary-navy: #1e40af;
-  --light-gray: #f8fafc;
-  --medium-gray: #64748b;
-  --dark-gray: #334155;
-}
+                  <div className="grid gap-6 lg:gap-8 md:grid-cols-2">
+                    <div className="service-features">
+                      <h4 className="flex items-center font-semibold text-gray-900 mb-4 text-base sm:text-lg">
+                        <CheckCircle className="w-5 h-5 text-green-600 mr-2" />
+                        Key Features
+                      </h4>
+                      <ul className="space-y-3">
+                        {service.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-start">
+                            <span className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                            <span className="text-gray-700 text-sm sm:text-base leading-relaxed">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
-/* Remove all animations - Professional static design */
-*, *::before, *::after {
-  animation: none !important;
-  transition: none !important;
-}
+                    <div className="service-benefits bg-gray-50 rounded-lg p-4 lg:p-6">
+                      <h4 className="flex items-center font-semibold text-gray-900 mb-4 text-base sm:text-lg">
+                        <Award className="w-5 h-5 text-blue-600 mr-2" />
+                        Benefits
+                      </h4>
+                      <ul className="space-y-3">
+                        {service.benefits.map((benefit, idx) => (
+                          <li key={idx} className="flex items-start">
+                            <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 mr-3 flex-shrink-0" />
+                            <span className="text-gray-700 text-sm sm:text-base leading-relaxed">{benefit}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
 
-/* Add back only professional hover transitions */
-.professional-hover {
-  transition: all 0.2s ease !important;
-}
+        <div className="text-center mt-12 lg:mt-16">
+          <p className="text-gray-600 mb-6 lg:mb-8 text-base sm:text-lg max-w-2xl mx-auto">
+            Ready to get started? Contact us today for a free consultation and discover how our services can benefit your business.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a 
+              href="#contact" 
+              className="btn-primary w-full sm:w-auto text-center"
+            >
+              Get Free Consultation
+            </a>
+            <a 
+              href="tel:+1-555-0123" 
+              className="btn-secondary w-full sm:w-auto text-center"
+            >
+              Call Us Today
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-.professional-hover:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.1);
-}
-
-/* Feature Card Hover Expansion */
-.feature-card {
-  transition: all 0.3s ease !important;
-  overflow: hidden;
-}
-
-.feature-card .expanded-content {
-  max-height: 0;
-  opacity: 0;
-  transition: all 0.3s ease !important;
-  overflow: hidden;
-}
-
-.feature-card:hover .expanded-content {
-  max-height: 200px;
-  opacity: 1;
-  margin-top: 1rem;
-}
-
-.feature-card:hover {
-  background-color: #f8fafc;
-  border-color: #1e40af;
-}
-
-/* Professional Button Styles */
-.btn-primary {
-  background-color: var(--primary-navy);
-  color: white;
-  padding: 0.75rem 2rem;
-  border-radius: 0.375rem;
-  font-weight: 600;
-  border: none;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  transition: background-color 0.2s ease !important;
-}
-
-.btn-primary:hover {
-  background-color: var(--secondary-navy);
-}
-
-.btn-secondary {
-  background: transparent;
-  color: var(--primary-navy);
-  padding: 0.75rem 2rem;
-  border: 2px solid var(--primary-navy);
-  border-radius: 0.375rem;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  transition: all 0.2s ease !important;
-}
-
-.btn-secondary:hover {
-  background: var(--primary-navy);
-  color: white;
-}
-
-/* Professional Card Styles */
-.professional-card {
-  background: white;
-  border: 1px solid #e2e8f0;
-  border-radius: 0.5rem;
-  padding: 2rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.professional-card:hover {
-  border-color: var(--secondary-navy);
-  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.1);
-}
-
-/* Navigation Styles */
-.nav-link {
-  color: var(--dark-gray);
-  font-weight: 500;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  transition: all 0.2s ease !important;
-}
-
-.nav-link:hover {
-  color: var(--primary-navy);
-  background-color: var(--light-gray);
-}
-
-/* Section Spacing */
-.section-padding {
-  padding: 4rem 1rem;
-}
-
-@media (min-width: 768px) {
-  .section-padding {
-    padding: 6rem 2rem;
-  }
-}
-
-/* Professional Typography Classes */
-.heading-primary {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #1e293b;
-}
-
-.heading-secondary {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 1.3;
-  color: #1e293b;
-}
-
-.text-professional {
-  color: var(--medium-gray);
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .heading-primary {
-    font-size: 2rem;
-  }
-  
-  .heading-secondary {
-    font-size: 1.75rem;
-  }
-}
-
-/* Professional Hero Background */
-.hero-background {
-  background-image: linear-gradient(rgba(30, 58, 138, 0.9), rgba(30, 64, 175, 0.9)), url('/file-20240619-22-k6efwb copy copy.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-@media (max-width: 768px) {
-  .hero-background {
-    background-attachment: scroll;
-  }
-}
-
-.service-title {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: var(--primary-navy);
-  margin-bottom: 1rem;
-}
-
-.service-description {
-  color: var(--medium-gray);
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-  font-size: 1.1rem;
-}
-
-.service-features {
-  margin-bottom: 2rem;
-}
-
-.service-features h4 {
-  font-weight: 600;
-  color: var(--dark-gray);
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-.service-features ul {
-  list-style: none;
-  padding: 0;
-}
-
-.service-features li {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 0.75rem;
-  padding-left: 1.5rem;
-  position: relative;
-}
-
-.service-features li::before {
-  content: "•";
-  color: var(--secondary-navy);
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-}
-
-.service-benefits {
-  background-color: var(--light-gray);
-  padding: 2rem;
-  border-radius: 0.5rem;
-  margin-top: 2rem;
-}
-
-.service-benefits h4 {
-  font-weight: 600;
-  color: var(--primary-navy);
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-}
-
-.service-benefits ul {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  gap: 1rem;
-}
-
-@media (min-width: 768px) {
-  .service-benefits ul {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.service-benefits li {
-  display: flex;
-  align-items: flex-start;
-  padding: 1rem;
-  background: white;
-  border-radius: 0.375rem;
-  border-left: 4px solid var(--secondary-navy);
-}
-
-.service-benefits li::before {
-  content: "✓";
-  color: var(--secondary-navy);
-  font-weight: bold;
-  margin-right: 0.75rem;
-  margin-top: 0.1rem;
-}
-
-/* Professional About Background */
-.about-background {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('/Wordpress-Promesses-de-baisses-dimpot-des-particuliers copy copy.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-/* Mobile Responsiveness Enhancements */
-@media (max-width: 640px) {
-  /* Typography adjustments for mobile */
-  .heading-primary {
-    font-size: 1.875rem;
-    line-height: 1.3;
-  }
-  
-  .heading-secondary {
-    font-size: 1.5rem;
-    line-height: 1.3;
-  }
-  
-  /* Mobile padding adjustments */
-  .section-padding {
-    padding: 3rem 1rem;
-  }
-  
-  /* Service card mobile optimization */
-  .service-card {
-    margin-bottom: 2rem;
-  }
-  
-  .service-content {
-    padding: 1.5rem;
-  }
-  
-  .service-title {
-    font-size: 1.5rem;
-  }
-  
-  .service-description {
-    font-size: 1rem;
-  }
-  
-  /* Professional card mobile optimization */
-  .professional-card {
-    padding: 1.5rem;
-  }
-  
-  /* Button mobile optimization */
-  .btn-primary, .btn-secondary {
-    min-height: 44px;
-    padding: 0.875rem 1.5rem;
-    font-size: 1rem;
-  }
-  
-  /* Navigation mobile optimization */
-  .nav-link {
-    padding: 0.75rem;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Form input mobile optimization */
-  input[type="text"],
-  input[type="email"], 
-  input[type="tel"],
-  textarea,
-  select {
-    min-height: 44px;
-    font-size: 16px; /* Prevents zoom on iOS */
-  }
-  
-  /* Grid adjustments for mobile */
-  .service-benefits ul {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Extra small mobile devices */
-  .heading-primary {
-    font-size: 1.75rem;
-  }
-  
-  .heading-secondary {
-    font-size: 1.375rem;
-  }
-  
-  .section-padding {
-    padding: 2.5rem 0.75rem;
-  }
-  
-  .professional-card {
-    padding: 1rem;
-  }
-  
-  .service-content {
-    padding: 1rem;
-  }
-}
-
-/* iOS Safari specific fixes */
-@supports (-webkit-touch-callout: none) {
-  /* Fix viewport height issues on iOS Safari */
-  .hero-background {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  }
-  
-  /* Prevent zoom on form inputs */
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea {
-    font-size: 16px !important;
-  }
-}
-
-/* Android Chrome specific optimizations */
-@media screen and (-webkit-min-device-pixel-ratio: 1) {
-  /* Ensure proper rendering on Android devices */
-  body {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-  }
-  
-  /* Fix potential rendering issues */
-  .professional-card,
-  .service-card {
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-}
-/* Service Card Layout */
-.service-card {
-  display: grid;
-  background: white;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 3rem;
-  border: 1px solid #e2e8f0;
-}
-
-/* Desktop Layout - Image and Content Side by Side */
-@media (min-width: 1024px) {
-  .service-card {
-    grid-template-columns: 400px 1fr;
-    align-items: stretch;
-  }
-  
-  .service-card:nth-child(even) {
-    grid-template-columns: 1fr 400px;
-  }
-  
-  .service-card:nth-child(even) .service-image {
-    order: 2;
-  }
-  
-  .service-card:nth-child(even) .service-content {
-    order: 1;
-  }
-}
-
-/* Service Image Styling */
-.service-image {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  object-position: center;
-}
-
-@media (min-width: 1024px) {
-  .service-image {
-    height: 100%;
-    min-height: 500px;
-  }
-}
-
-/* Service Content Styling */
-.service-content {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 768px) {
-  .service-content {
-    padding: 3rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .service-content {
-    padding: 4rem;
-  }
-}
-
-/* Enhanced Mobile Optimizations */
-@media (max-width: 640px) {
-  /* Comprehensive mobile fixes */
-  * {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-  
-  /* Prevent horizontal overflow */
-  body, html {
-    overflow-x: hidden;
-    width: 100%;
-  }
-  
-  /* Service card mobile optimization */
-  .service-card {
-    margin-bottom: 2rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .service-content {
-    padding: 1.5rem;
-  }
-  
-  .service-title {
-    font-size: 1.375rem;
-    line-height: 1.3;
-    margin-bottom: 1rem;
-  }
-  
-  .service-description {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 1.25rem;
-  }
-  
-  /* Professional card mobile optimization */
-  .professional-card {
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Typography mobile adjustments */
-  .heading-primary {
-    font-size: 1.75rem;
-    line-height: 1.2;
-    padding: 0 0.5rem;
-    text-align: center;
-  }
-  
-  .heading-secondary {
-    font-size: 1.5rem;
-    line-height: 1.2;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  /* Button mobile optimization */
-  .btn-primary, .btn-secondary {
-    min-height: 48px;
-    padding: 0.875rem 1.5rem;
-    font-size: 1rem;
-    width: 100%;
-    text-align: center;
-    touch-action: manipulation;
-  }
-  
-  /* Navigation mobile optimization */
-  .nav-link {
-    padding: 0.75rem;
-    min-height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Form optimization for mobile */
-  input[type="text"],
-  input[type="email"], 
-  input[type="tel"],
-  textarea,
-  select {
-    min-height: 48px;
-    font-size: 16px;
-    padding: 0.875rem;
-    border-radius: 0.5rem;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  /* Grid mobile adjustments */
-  .service-benefits ul {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-  }
-  
-  /* Section padding mobile */
-  .section-padding {
-    padding: 2.5rem 1rem;
-  }
-  
-  /* Hero mobile optimization */
-  .hero-background {
-    text-align: center;
-    padding: 3rem 1rem;
-  }
-  
-  /* Features grid mobile */
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-}
-
-/* iPhone specific optimizations */
-@media (max-width: 428px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* iPhone 14 Pro Max, iPhone 14 Plus optimization */
-  .heading-primary {
-    font-size: 1.625rem;
-    padding: 0 0.75rem;
-  }
-  
-  .service-content {
-    padding: 1.25rem;
-  }
-  
-  .professional-card {
-    padding: 1.25rem;
-  }
-}
-
-@media (max-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* iPhone 11 Pro Max, iPhone XS Max optimization */
-  .heading-primary {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 390px) and (-webkit-min-device-pixel-ratio: 3) {
-  /* iPhone 14, iPhone 13 Pro optimization */
-  .service-features,
-  .service-benefits {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 375px) {
-  /* iPhone SE, iPhone 8, smaller Android devices */
-  .heading-primary {
-    font-size: 1.375rem;
-    line-height: 1.15;
-  }
-  
-  .heading-secondary {
-    font-size: 1.25rem;
-  }
-  
-  .service-content {
-    padding: 1rem;
-  }
-  
-  .professional-card {
-    padding: 1rem;
-  }
-  
-  .section-padding {
-    padding: 2rem 0.75rem;
-  }
-}
-
-/* Android specific optimizations */
-@media (max-width: 412px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Android devices like Pixel, Samsung Galaxy */
-  .service-image {
-    height: 240px;
-  }
-  
-  .btn-primary, .btn-secondary {
-    font-weight: 600;
-    letter-spacing: 0.025em;
-  }
-}
-
-@media (max-width: 393px) {
-  /* Pixel 5, newer Android devices */
-  .hero-background {
-    padding: 2.5rem 1rem;
-  }
-}
-
-@media (max-width: 360px) {
-  /* Smaller Android devices */
-  .service-content {
-    padding: 0.875rem;
-  }
-  
-  .professional-card {
-    padding: 0.875rem;
-  }
-  
-  .heading-primary {
-    font-size: 1.25rem;
-  }
-  
-  .section-padding {
-    padding: 1.75rem 0.5rem;
-  }
-}
-
-/* Touch optimization for all mobile devices */
-@media (max-width: 768px) {
-  /* Ensure all interactive elements are touch-friendly */
-  a, button, input, textarea, select {
-    min-height: 48px;
-    touch-action: manipulation;
-  }
-  
-  /* Prevent text selection on buttons and nav */
-  .btn-primary, .btn-secondary, .nav-link {
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-  }
-  
-  /* Enhanced spacing for touch interaction */
-  .nav-link {
-  }
-}
+export default Services;
