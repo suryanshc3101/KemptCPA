@@ -168,7 +168,7 @@ export default function Contact() {
               {/* Success Message */}
               {submitStatus === 'success' && (
                 <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
-                  <h4 className="font-semibold text-green-800 mb-2">Thank You!</h4>
+                  <h4 className="font-semibold text-green-800 mb-2">Thank you for reaching us!</h4>
                   <p className="text-green-700 text-sm">
                     Your message has been successfully submitted. We'll reply within 1 business day.
                   </p>
