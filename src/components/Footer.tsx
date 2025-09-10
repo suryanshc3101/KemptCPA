@@ -55,7 +55,7 @@ export default function Footer() {
                 <img 
                   src="/Chartered_Professional_Accountants_of_Ontario_CPA_Ontario_Announ (1).jpg" 
                   alt="CPA Ontario - Chartered Professional Accountants of Ontario" 
-                  className="w-16 h-12 object-contain"
+                  className="w-20 h-14 object-contain"
                 />
               </div>
             </div>
