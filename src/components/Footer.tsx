@@ -49,16 +49,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <div className="flex items-center justify-between mb-4">
-              <h4 className="font-semibold">Contact Information</h4>
-              <div className="bg-white p-2 rounded-lg shadow-sm">
-                <img 
-                  src="/dLgjCDsV_XRM_LOGO_BG_png.png" 
-                  alt="Kempt CPA Logo" 
-                  className="w-20 h-20 object-contain"
-                />
-              </div>
-            </div>
+            <h4 className="font-semibold mb-4">Contact Information</h4>
             
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
