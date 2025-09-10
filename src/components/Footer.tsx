@@ -53,11 +53,13 @@ export default function Footer() {
             
             {/* Kempt CPA Logo */}
             <div className="flex justify-center mb-6">
-              <img 
-                src="/dLgjCDsV_XRM_LOGO_BG_png.png" 
-                alt="Kempt CPA Logo" 
-                className="w-20 h-20 object-contain"
-              />
+              <div className="bg-white p-3 rounded-lg shadow-md">
+                <img 
+                  src="/dLgjCDsV_XRM_LOGO_BG_png.png" 
+                  alt="Kempt CPA Logo" 
+                  className="w-20 h-20 object-contain"
+                />
+              </div>
             </div>
             
             <div className="space-y-3">
