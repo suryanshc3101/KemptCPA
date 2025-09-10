@@ -51,18 +51,51 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact Information</h4>
             
-            {/* Kempt CPA Logo */}
-            <div className="flex justify-center mb-6">
-              <div className="bg-white p-3 rounded-lg shadow-md">
-                <img 
-                  src="/dLgjCDsV_XRM_LOGO_BG_png.png" 
-                  alt="Kempt CPA Logo" 
-                  className="w-20 h-20 object-contain"
-                />
+            <div className="flex items-start justify-between">
+              <div className="space-y-3 flex-1">
+                <div className="flex items-center space-x-3">
+                  <Phone className="w-4 h-4 text-blue-300" />
+                  <a href="tel:+15197717862" className="text-blue-100 hover:text-white">
+                    +1 519 771 7862
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="w-4 h-4 text-blue-300" />
+                  <a href="mailto:info@kemptcpa.ca" className="text-blue-100 hover:text-white">
+                    info@kemptcpa.ca
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <MapPin className="w-4 h-4 text-blue-300" />
+                  <span className="text-blue-100">
+                    Brant County and surrounding areas
+                  </span>
+                </div>
+              </div>
+              
+              {/* Kempt CPA Logo on the right */}
+              <div className="ml-4">
+                <div className="bg-white p-2 rounded-lg shadow-md">
+                  <img 
+                    src="/dLgjCDsV_XRM_LOGO_BG_png.png" 
+                    alt="Kempt CPA Logo" 
+                    className="w-28 h-28 object-contain"
+                  />
+                </div>
               </div>
             </div>
-            
-            <div className="space-y-3">
+          </div>
+        </div>
+
+        <div className="border-t border-blue-800 mt-8 pt-8 text-center">
+          <p className="text-blue-100">
+            © 2025 Kempt CPA Professional Corporation. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-blue-300" />
                 <a href="tel:+15197717862" className="text-blue-100 hover:text-white">
