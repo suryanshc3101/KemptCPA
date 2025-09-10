@@ -49,7 +49,16 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold mb-4">Contact Information</h4>
+            <div className="flex items-center justify-between mb-4">
+              <h4 className="font-semibold">Contact Information</h4>
+              <div className="bg-white rounded-md p-1">
+                <img 
+                  src="/Chartered_Professional_Accountants_of_Ontario_CPA_Ontario_Announ (1).jpg" 
+                  alt="CPA Ontario - Chartered Professional Accountants of Ontario" 
+                  className="w-16 h-12 object-contain"
+                />
+              </div>
+            </div>
             
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
