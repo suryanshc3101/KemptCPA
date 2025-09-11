@@ -357,6 +357,20 @@ body {
 
 /* Mobile Responsiveness Enhancements */
 @media (max-width: 640px) {
+  /* Fixed header mobile optimization */
+  header {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  /* Prevent iOS Safari header bounce */
+  header.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  
   /* Typography adjustments for mobile */
   .heading-primary {
     font-size: 1.875rem;
