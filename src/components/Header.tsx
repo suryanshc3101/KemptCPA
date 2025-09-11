@@ -17,7 +17,7 @@ export default function Header() {
               <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-900 leading-tight">
                 Kempt CPA
               </div>
-              <div className="text-xs sm:text-sm text-gray-600 mt-0.5 sm:mt-1 leading-tight hidden xs:block">
+              <div className="text-xs sm:text-sm text-gray-600 mt-0.5 sm:mt-1 leading-tight">
                 Keeping your finances neat, precise and stress free
               </div>
             </div>
